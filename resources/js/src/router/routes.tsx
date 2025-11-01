@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-const Index = lazy(() => import('../pages/Index'));
+const Index = lazy(() => import('../pages/Admin/Dashboard'));
 const Analytics = lazy(() => import('../pages/Analytics'));
 const Finance = lazy(() => import('../pages/Finance'));
 const Crypto = lazy(() => import('../pages/Crypto'));

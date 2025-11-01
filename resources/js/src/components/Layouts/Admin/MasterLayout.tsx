@@ -1,15 +1,16 @@
 import { PropsWithChildren, Suspense, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import App from '../../App';
-import { IRootState } from '../../store';
-import { toggleSidebar } from '../../store/themeConfigSlice';
+import App from '../../../App';
+import { IRootState } from '../../../store';
+import { toggleSidebar } from '../../../store/themeConfigSlice';
 import Footer from './Footer';
 import Header from './Header';
 import Setting from './Setting';
 import Sidebar from './Sidebar';
-import Portals from '../../components/Portals';
+import Portals from '../../Portals';
+import { Outlet } from 'react-router';
 
-const DefaultLayout = ({ children }: PropsWithChildren) => {
+const MasterLayout = ({ children }: PropsWithChildren) => {
     const themeConfig = useSelector((state: IRootState) => state.themeConfig);
     const dispatch = useDispatch();
 
@@ -46,7 +47,7 @@ const DefaultLayout = ({ children }: PropsWithChildren) => {
     }, []);
 
     return (
-        <App>
+        <App menuPosition="vertical">
             {/* BEGIN MAIN CONTAINER */}
             <div className="relative">
                 {/* sidebar menu overlay */}
@@ -90,7 +91,9 @@ const DefaultLayout = ({ children }: PropsWithChildren) => {
 
                         {/* BEGIN CONTENT AREA */}
                         <Suspense>
-                            <div className={`${themeConfig.animation} p-6 animate__animated`}>{children}</div>
+                            <div className={`${themeConfig.animation} p-6 animate__animated`}>
+                                <Outlet />
+                            </div>
                         </Suspense>
                         {/* END CONTENT AREA */}
 
@@ -105,4 +108,4 @@ const DefaultLayout = ({ children }: PropsWithChildren) => {
     );
 };
 
-export default DefaultLayout;
+export default MasterLayout;

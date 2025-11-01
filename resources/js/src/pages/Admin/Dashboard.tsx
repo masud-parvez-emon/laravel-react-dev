@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
-import { IRootState } from '../store';
+import { IRootState } from '../../store';
 import ReactApexChart from 'react-apexcharts';
 import PerfectScrollbar from 'react-perfect-scrollbar';
-import Dropdown from '../components/Dropdown';
-import { setPageTitle } from '../store/themeConfigSlice';
+import Dropdown from '../../components/Dropdown';
+import { setPageTitle } from '../../store/themeConfigSlice';
 
 const Index = () => {
     const dispatch = useDispatch();

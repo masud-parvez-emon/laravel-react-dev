@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, NavLink, useLocation } from 'react-router-dom';
-import { IRootState } from '../../store';
-import { toggleRTL, toggleTheme, toggleSidebar } from '../../store/themeConfigSlice';
+import { Link, NavLink, useLocation } from 'react-router';
+import { IRootState } from '../../../store';
+import { toggleRTL, toggleTheme, toggleSidebar } from '../../../store/themeConfigSlice';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
-import Dropdown from '../Dropdown';
+import Dropdown from '../../Dropdown';
 
 const Header = () => {
     const location = useLocation();
@@ -114,14 +114,14 @@ const Header = () => {
 
     return (
         <header className={`z-40 ${themeConfig.semidark && themeConfig.menu === 'horizontal' ? 'dark' : ''}`}>
-            <div className="shadow-sm">
-                <div className="relative bg-white flex w-full items-center px-5 py-2.5 dark:bg-black">
+            {/* <div className="shadow-sm"> */}
+                <div className="relative bg-[#fafafa] flex w-full items-center justify-center px-5 py-2.5 dark:bg-black">
                     <div className="horizontal-logo flex lg:hidden justify-between items-center ltr:mr-2 rtl:ml-2">
                         <Link to="/" className="main-logo flex items-center shrink-0">
-                            <img className="w-8 ltr:-ml-1 rtl:-mr-1 inline" src="/assets/images/logo.svg" alt="logo" />
-                            <span className="text-2xl ltr:ml-1.5 rtl:mr-1.5  font-semibold  align-middle hidden md:inline dark:text-white-light transition-all duration-300">VRISTO</span>
+                            <img className="w-20 ltr:-ml-1 rtl:-mr-1 inline" src="/assets/images/mtc.svg" alt="Mostofa Trade Center logo" title='Mostofa Trade Center'/>
+                            {/* <span className="text-2xl ltr:ml-1.5 rtl:mr-1.5  font-semibold  align-middle hidden sm:inline dark:text-white-light transition-all duration-300">Mostofa Trade Center</span> */}
                         </Link>
-                        <button
+                        {/* <button
                             type="button"
                             className="collapse-icon flex-none dark:text-[#d0d2d6] hover:text-primary dark:hover:text-primary flex lg:hidden ltr:ml-2 rtl:mr-2 p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:bg-white-light/90 dark:hover:bg-dark/60"
                             onClick={() => {
@@ -133,12 +133,12 @@ const Header = () => {
                                 <path opacity="0.5" d="M20 12L4 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                                 <path d="M20 17L4 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                             </svg>
-                        </button>
+                        </button> */}
                     </div>
 
-                    <div className="ltr:mr-2 rtl:ml-2 hidden sm:block">
+                    {/* <div className="ltr:mr-2 rtl:ml-2 hidden sm:block">
                         <ul className="flex items-center space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6]">
-                            {/* <li>
+                            <li>
                                 <Link to="/apps/calendar" className="block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -151,8 +151,8 @@ const Header = () => {
                                         <path opacity="0.5" d="M2 9H22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                                     </svg>
                                 </Link>
-                            </li> */}
-                            {/* <li>
+                            </li>
+                            <li>
                                 <Link to="/apps/todolist" className="block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -175,8 +175,8 @@ const Header = () => {
                                         />
                                     </svg>
                                 </Link>
-                            </li> */}
-                            {/* <li>
+                            </li>
+                            <li>
                                 <Link to="/apps/chat" className="block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle r="3" transform="matrix(-1 0 0 1 19 5)" stroke="currentColor" strokeWidth="1.5" />
@@ -189,10 +189,10 @@ const Header = () => {
                                         />
                                     </svg>
                                 </Link>
-                            </li> */}
+                            </li>
                         </ul>
-                    </div>
-                    <div className="sm:flex-1 ltr:sm:ml-0 ltr:ml-auto sm:rtl:mr-0 rtl:mr-auto flex items-center space-x-1.5 lg:space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6]">
+                    </div> */}
+                    {/* <div className="sm:flex-1 ltr:sm:ml-0 ltr:ml-auto sm:rtl:mr-0 rtl:mr-auto flex items-center space-x-1.5 lg:space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6]">
                         <div className="sm:ltr:mr-auto sm:rtl:ml-auto">
                             <form
                                 className={`${search && '!block'} sm:relative absolute inset-x-0 sm:top-0 top-1/2 sm:translate-y-0 -translate-y-1/2 sm:mx-0 mx-4 z-10 sm:block hidden`}
@@ -324,7 +324,7 @@ const Header = () => {
                                 </ul>
                             </Dropdown>
                         </div>
-                        {/* <div className="dropdown shrink-0">
+                        <div className="dropdown shrink-0">
                             <Dropdown
                                 offset={[0, 8]}
                                 placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
@@ -428,7 +428,7 @@ const Header = () => {
                                     )}
                                 </ul>
                             </Dropdown>
-                        </div> */}
+                        </div>
                         <div className="dropdown shrink-0">
                             <Dropdown
                                 offset={[0, 8]}
@@ -542,7 +542,7 @@ const Header = () => {
                                             <div className="ltr:pl-4 rtl:pr-4 truncate">
                                                 <h4 className="text-base">
                                                     John Doe
-                                                    {/* <span className="text-xs bg-success-light rounded text-success px-1 ltr:ml-2 rtl:ml-2">Pro</span> */}
+                                                    <span className="text-xs bg-success-light rounded text-success px-1 ltr:ml-2 rtl:ml-2">Pro</span>
                                                 </h4>
                                                 <button type="button" className="text-black/60 hover:text-primary dark:text-dark-light/60 dark:hover:text-white">
                                                     johndoe@gmail.com
@@ -550,7 +550,7 @@ const Header = () => {
                                             </div>
                                         </div>
                                     </li>
-                                    {/* <li>
+                                    <li>
                                         <Link to="/users/profile" className="dark:hover:text-white">
                                             <svg className="ltr:mr-2 rtl:ml-2 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="12" cy="6" r="4" stroke="currentColor" strokeWidth="1.5" />
@@ -563,8 +563,8 @@ const Header = () => {
                                             </svg>
                                             Profile
                                         </Link>
-                                    </li> */}
-                                    {/* <li>
+                                    </li>
+                                    <li>
                                         <Link to="/apps/mailbox" className="dark:hover:text-white">
                                             <svg className="ltr:mr-2 rtl:ml-2 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -582,8 +582,8 @@ const Header = () => {
                                             </svg>
                                             Inbox
                                         </Link>
-                                    </li> */}
-                                    {/* <li>
+                                    </li>
+                                    <li>
                                         <Link to="/auth/boxed-lockscreen" className="dark:hover:text-white">
                                             <svg className="ltr:mr-2 rtl:ml-2 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -606,7 +606,7 @@ const Header = () => {
                                             </svg>
                                             Lock Screen
                                         </Link>
-                                    </li> */}
+                                    </li>
                                     <li className="border-t border-white-light dark:border-white-light/10">
                                         <Link to="/auth/boxed-signin" className="text-danger !py-3">
                                             <svg className="ltr:mr-2 rtl:ml-2 rotate-90 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -625,7 +625,7 @@ const Header = () => {
                                 </ul>
                             </Dropdown>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* horizontal menu */}
@@ -1317,7 +1317,7 @@ const Header = () => {
                         </ul>
                     </li>
                 </ul> */}
-            </div>
+            {/* </div> */}
         </header>
     );
 };

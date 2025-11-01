@@ -1,10 +1,10 @@
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink, useLocation } from 'react-router-dom';
-import { toggleSidebar } from '../../store/themeConfigSlice';
+import { NavLink, useLocation } from 'react-router';
+import { toggleSidebar } from '../../../store/themeConfigSlice';
 import AnimateHeight from 'react-animate-height';
-import { IRootState } from '../../store';
+import { IRootState } from '../../../store';
 import { useState, useEffect } from 'react';
 
 const Sidebar = () => {

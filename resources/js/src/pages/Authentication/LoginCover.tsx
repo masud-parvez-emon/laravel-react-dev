@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router';
 import { setPageTitle, toggleRTL } from '../../store/themeConfigSlice';
-import Dropdown from '../../components/Dropdown';
+// import Dropdown from '../../components/Dropdown';
 import { IRootState } from '../../store';
 import i18next from 'i18next';
 
@@ -55,7 +55,7 @@ const LoginCover = () => {
                             <Link to="/" className="w-8 block lg:hidden">
                                 <img src="/assets/images/logo.svg" alt="Logo" className="mx-auto w-10" />
                             </Link>
-                            <div className="dropdown ms-auto w-max">
+                            {/* <div className="dropdown ms-auto w-max">
                                 <Dropdown
                                     offset={[0, 8]}
                                     placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
@@ -98,7 +98,7 @@ const LoginCover = () => {
                                         })}
                                     </ul>
                                 </Dropdown>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="w-full max-w-[440px] lg:mt-16">
                             <div className="mb-10">

@@ -1,32 +1,49 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { IRootState } from '../../store';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { setPageTitle, toggleRTL } from '../../store/themeConfigSlice';
-import Dropdown from '../../components/Dropdown';
+// import Dropdown from '../../components/Dropdown';
 import i18next from 'i18next';
+import axiosInstance from '../../axiosInstance';
+import { login } from '../../store/AuthSlice';
+import { useAppDispatch } from '../../hooks';
 
 const LoginBoxed = () => {
-    const dispatch = useDispatch();
-    useEffect(() => {
-        dispatch(setPageTitle('Login Boxed'));
-    });
+    const dispatch = useAppDispatch();
     const navigate = useNavigate();
-    const isDark = useSelector((state: IRootState) => state.themeConfig.theme === 'dark' || state.themeConfig.isDarkMode);
-    const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) === 'rtl' ? true : false;
-    const themeConfig = useSelector((state: IRootState) => state.themeConfig);
-    const setLocale = (flag: string) => {
-        setFlag(flag);
-        if (flag.toLowerCase() === 'ae') {
-            dispatch(toggleRTL('rtl'));
-        } else {
-            dispatch(toggleRTL('ltr'));
-        }
-    };
-    const [flag, setFlag] = useState(themeConfig.locale);
+    useEffect(() => {
+        dispatch(setPageTitle('Login'));
+    });
 
-    const submitForm = () => {
-        navigate('/');
+    const [isSubmited, setIsSubmitting] = useState(false);
+    const [error, setError] = useState<String | null>(null);
+    const email = useRef<HTMLInputElement>(null);
+    const password = useRef<HTMLInputElement>(null);
+
+    const submitForm = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        setError(null);
+        setIsSubmitting(true);
+
+        const emailValue = email.current?.value;
+        const passwordValue = password.current?.value;
+
+        if (!emailValue || !passwordValue) {
+            setError('Please fill in all fields');
+            setIsSubmitting(false);
+            return;
+        }
+        
+        dispatch(login({ email: emailValue, password: passwordValue }))
+        .unwrap() // unwrap the promise returned by createAsyncThunk for easier handling
+        .then(() => {
+            navigate('/dashboard');  
+        })
+        .catch((errMessage: string) => {
+            setError(errMessage || 'Login failed');
+            setIsSubmitting(false);
+        });
     };
 
     return (
@@ -44,7 +61,7 @@ const LoginBoxed = () => {
                     <div className="relative flex flex-col justify-center rounded-md bg-white/60 backdrop-blur-lg dark:bg-black/50 px-6 lg:min-h-[758px] py-20">
                         <div className="absolute top-6 end-6">
                             <div className="dropdown">
-                                <Dropdown
+                                {/* <Dropdown
                                     offset={[0, 8]}
                                     placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                     btnClassName="flex items-center gap-2.5 rounded-lg border border-white-dark/30 bg-white px-2 py-1.5 text-white-dark hover:border-primary hover:text-primary dark:bg-black"
@@ -85,19 +102,26 @@ const LoginBoxed = () => {
                                             );
                                         })}
                                     </ul>
-                                </Dropdown>
+                                </Dropdown> */}
                             </div>
                         </div>
                         <div className="mx-auto w-full max-w-[440px]">
-                            <div className="mb-10">
+                            <div className="mb-2">
                                 <h1 className="text-3xl font-extrabold uppercase !leading-snug text-primary md:text-4xl">Sign in</h1>
                                 <p className="text-base font-bold leading-normal text-white-dark">Enter your email and password to login</p>
+                                {error && (
+                                    <div className="p-3.5 rounded border-red-500 border-[1px] text-danger bg-danger-light">
+                                        <span className="pr-2">
+                                            {error}
+                                        </span>
+                                    </div>
+                                )}
                             </div>
                             <form className="space-y-5 dark:text-white" onSubmit={submitForm}>
                                 <div>
-                                    <label htmlFor="Email">Email</label>
+                                    <label htmlFor="email">Email</label>
                                     <div className="relative text-white-dark">
-                                        <input id="Email" type="email" placeholder="Enter Email" className="form-input ps-10 placeholder:text-white-dark" />
+                                        <input required ref={email} id="email" type="email" placeholder="Enter Email" className="form-input ps-10 placeholder:text-white-dark" />
                                         <span className="absolute start-4 top-1/2 -translate-y-1/2">
                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                 <path
@@ -116,7 +140,7 @@ const LoginBoxed = () => {
                                 <div>
                                     <label htmlFor="Password">Password</label>
                                     <div className="relative text-white-dark">
-                                        <input id="Password" type="password" placeholder="Enter Password" className="form-input ps-10 placeholder:text-white-dark" />
+                                        <input required ref={password} id="Password" type="password" placeholder="Enter Password" className="form-input ps-10 placeholder:text-white-dark" />
                                         <span className="absolute start-4 top-1/2 -translate-y-1/2">
                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                 <path
@@ -144,17 +168,21 @@ const LoginBoxed = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <label className="flex cursor-pointer items-center">
                                         <input type="checkbox" className="form-checkbox bg-white dark:bg-black" />
                                         <span className="text-white-dark">Subscribe to weekly newsletter</span>
                                     </label>
-                                </div>
+                                </div> */}
                                 <button type="submit" className="btn btn-gradient !mt-6 w-full border-0 uppercase shadow-[0_10px_20px_-10px_rgba(67,97,238,0.44)]">
-                                    Sign in
+                                    {isSubmited ? (
+                                        <span className="animate-spin border-2 border-white border-l-transparent rounded-full w-5 h-5 ltr:mr-4 rtl:ml-4 inline-block align-middle"></span>
+                                    ) : (
+                                        <span>Sign in</span>
+                                    )}
                                 </button>
                             </form>
-                            <div className="relative my-7 text-center md:mb-9">
+                            {/* <div className="relative my-7 text-center md:mb-9">
                                 <span className="absolute inset-x-0 top-1/2 h-px w-full -translate-y-1/2 bg-white-light dark:bg-white-dark"></span>
                                 <span className="relative bg-white px-2 font-bold uppercase text-white-dark dark:bg-dark dark:text-white-light">or</span>
                             </div>
@@ -245,13 +273,13 @@ const LoginBoxed = () => {
                                         </Link>
                                     </li>
                                 </ul>
-                            </div>
-                            <div className="text-center dark:text-white">
+                            </div> */}
+                            {/* <div className="text-center dark:text-white">
                                 Don't have an account ?&nbsp;
                                 <Link to="/auth/boxed-signup" className="uppercase text-primary underline transition hover:text-black dark:hover:text-white">
                                     SIGN UP
                                 </Link>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
