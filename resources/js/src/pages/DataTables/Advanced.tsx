@@ -745,7 +745,7 @@ const Basic = () => {
                             {
                                 accessor: 'rating',
                                 title: 'Rate',
-                                titleClassName: '!text-center',
+                                titleClassName: 'text-center!',
                                 render: ({ id }) => (
                                     <div className="flex items-center justify-center text-warning">
                                         {Array.from(Array(getRandomNumber(1, 5)).keys()).map((i) => {

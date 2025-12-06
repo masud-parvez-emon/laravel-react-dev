@@ -349,7 +349,7 @@ const Contacts = () => {
                                     <th>Email</th>
                                     <th>Location</th>
                                     <th>Phone</th>
-                                    <th className="!text-center">Actions</th>
+                                    <th className="text-center!">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -403,8 +403,8 @@ const Contacts = () => {
                 <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mt-5 w-full">
                     {filteredItems.map((contact: any) => {
                         return (
-                            <div className="bg-white dark:bg-[#1c232f] rounded-md overflow-hidden text-center shadow relative" key={contact.id}>
-                                <div className="bg-white dark:bg-[#1c232f] rounded-md overflow-hidden text-center shadow relative">
+                            <div className="bg-white dark:bg-[#1c232f] rounded-md overflow-hidden text-center shadow-sm relative" key={contact.id}>
+                                <div className="bg-white dark:bg-[#1c232f] rounded-md overflow-hidden text-center shadow-sm relative">
                                     <div
                                         className="bg-white/40 rounded-t-md bg-center bg-cover p-6 pb-0 bg-"
                                         style={{
@@ -546,7 +546,7 @@ const Contacts = () => {
             )}
 
             <Transition appear show={addContactModal} as={Fragment}>
-                <Dialog as="div" open={addContactModal} onClose={() => setAddContactModal(false)} className="relative z-[51]">
+                <Dialog as="div" open={addContactModal} onClose={() => setAddContactModal(false)} className="relative z-51">
                     <Transition.Child as={Fragment} enter="ease-out duration-300" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in duration-200" leaveFrom="opacity-100" leaveTo="opacity-0">
                         <div className="fixed inset-0 bg-[black]/60" />
                     </Transition.Child>
@@ -565,7 +565,7 @@ const Contacts = () => {
                                     <button
                                         type="button"
                                         onClick={() => setAddContactModal(false)}
-                                        className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none"
+                                        className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-hidden"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"

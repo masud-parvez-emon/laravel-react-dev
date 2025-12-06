@@ -90,7 +90,7 @@ const Edit = () => {
 
     return (
         <div className="flex xl:flex-row flex-col gap-2.5">
-            <div className="panel px-0 flex-1 py-6 ltr:xl:mr-6 rtl:xl:ml-6">
+            <div className="panel px-0 flex-1 py-6 xl:ltr:mr-6 xl:rtl:ml-6">
                 <div className="flex justify-between flex-wrap px-4">
                     <div className="mb-6 lg:w-1/2 w-full">
                         <div className="flex items-center text-black dark:text-white shrink-0">
@@ -132,7 +132,7 @@ const Edit = () => {
                 <hr className="border-white-light dark:border-[#1b2e4b] my-6" />
                 <div className="mt-8 px-4">
                     <div className="flex justify-between lg:flex-row flex-col">
-                        <div className="lg:w-1/2 w-full ltr:lg:mr-6 rtl:lg:ml-6 mb-6">
+                        <div className="lg:w-1/2 w-full lg:ltr:mr-6 lg:rtl:ml-6 mb-6">
                             <div className="text-lg">Bill To :-</div>
                             <div className="mt-4 flex items-center">
                                 <label htmlFor="reciever-name" className="ltr:mr-2 rtl:ml-2 w-1/3 mb-0">
@@ -401,7 +401,7 @@ const Edit = () => {
                             <tbody>
                                 {items.length <= 0 && (
                                     <tr>
-                                        <td colSpan={5} className="!text-center font-semibold">
+                                        <td colSpan={5} className="text-center! font-semibold">
                                             No Item Available
                                         </td>
                                     </tr>

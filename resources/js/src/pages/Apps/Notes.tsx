@@ -359,8 +359,8 @@ const Notes = () => {
 
     return (
         <div>
-            <div className="flex gap-5 relative sm:h-[calc(100vh_-_150px)] h-full">
-                <div className={`bg-black/60 z-10 w-full h-full rounded-md absolute hidden ${isShowNoteMenu ? '!block xl:!hidden' : ''}`} onClick={() => setIsShowNoteMenu(!isShowNoteMenu)}></div>
+            <div className="flex gap-5 relative sm:h-[calc(100vh-150px)] h-full">
+                <div className={`bg-black/60 z-10 w-full h-full rounded-md absolute hidden ${isShowNoteMenu ? 'block! xl:hidden!' : ''}`} onClick={() => setIsShowNoteMenu(!isShowNoteMenu)}></div>
                 <div
                     className={`panel
                     p-4
@@ -374,9 +374,9 @@ const Notes = () => {
                     xl:h-auto
                     hidden
                     xl:block
-                    ltr:lg:rounded-r-md ltr:rounded-r-none
-                    rtl:lg:rounded-l-md rtl:rounded-l-none
-                    overflow-hidden ${isShowNoteMenu ? '!block h-full ltr:left-0 rtl:right-0' : 'hidden shadow'}`}
+                    lg:ltr:rounded-r-md ltr:rounded-r-none
+                    lg:rtl:rounded-l-md rtl:rounded-l-none
+                    overflow-hidden ${isShowNoteMenu ? 'block! h-full ltr:left-0 rtl:right-0' : 'hidden shadow-sm'}`}
                 >
                     <div className="flex flex-col h-full pb-16">
                         <div className="flex text-center items-center">
@@ -452,7 +452,7 @@ const Notes = () => {
                                 <div className="px-1 py-3 text-white-dark">Tags</div>
                                 <button
                                     type="button"
-                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-primary ltr:hover:pl-3 rtl:hover:pr-3 duration-300 ${
+                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-primary hover:ltr:pl-3 hover:rtl:pr-3 duration-300 ${
                                         selectedTab === 'personal' && 'ltr:pl-3 rtl:pr-3 bg-gray-100 dark:bg-[#181F32]'
                                     }`}
                                     onClick={() => tabChanged('personal')}
@@ -468,7 +468,7 @@ const Notes = () => {
                                 </button>
                                 <button
                                     type="button"
-                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-warning ltr:hover:pl-3 rtl:hover:pr-3 duration-300 ${
+                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-warning hover:ltr:pl-3 hover:rtl:pr-3 duration-300 ${
                                         selectedTab === 'work' && 'ltr:pl-3 rtl:pr-3 bg-gray-100 dark:bg-[#181F32]'
                                     }`}
                                     onClick={() => tabChanged('work')}
@@ -484,7 +484,7 @@ const Notes = () => {
                                 </button>
                                 <button
                                     type="button"
-                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-info ltr:hover:pl-3 rtl:hover:pr-3 duration-300 ${
+                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-info hover:ltr:pl-3 hover:rtl:pr-3 duration-300 ${
                                         selectedTab === 'social' && 'ltr:pl-3 rtl:pr-3 bg-gray-100 dark:bg-[#181F32]'
                                     }`}
                                     onClick={() => tabChanged('social')}
@@ -500,7 +500,7 @@ const Notes = () => {
                                 </button>
                                 <button
                                     type="button"
-                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-danger ltr:hover:pl-3 rtl:hover:pr-3 duration-300 ${
+                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-danger hover:ltr:pl-3 hover:rtl:pr-3 duration-300 ${
                                         selectedTab === 'important' && 'ltr:pl-3 rtl:pr-3 bg-gray-100 dark:bg-[#181F32]'
                                     }`}
                                     onClick={() => tabChanged('important')}
@@ -866,7 +866,7 @@ const Notes = () => {
                     )}
 
                     <Transition appear show={addContactModal} as={Fragment}>
-                        <Dialog as="div" open={addContactModal} onClose={() => setAddContactModal(false)} className="relative z-[51]">
+                        <Dialog as="div" open={addContactModal} onClose={() => setAddContactModal(false)} className="relative z-51">
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-out duration-300"
@@ -894,7 +894,7 @@ const Notes = () => {
                                             <button
                                                 type="button"
                                                 onClick={() => setAddContactModal(false)}
-                                                className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none"
+                                                className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-hidden"
                                             >
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -982,7 +982,7 @@ const Notes = () => {
                     </Transition>
 
                     <Transition appear show={isDeleteNoteModal} as={Fragment}>
-                        <Dialog as="div" open={isDeleteNoteModal} onClose={() => setIsDeleteNoteModal(false)} className="relative z-[51]">
+                        <Dialog as="div" open={isDeleteNoteModal} onClose={() => setIsDeleteNoteModal(false)} className="relative z-51">
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-out duration-300"
@@ -1010,7 +1010,7 @@ const Notes = () => {
                                             <button
                                                 type="button"
                                                 onClick={() => setIsDeleteNoteModal(false)}
-                                                className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none"
+                                                className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-hidden"
                                             >
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -1068,7 +1068,7 @@ const Notes = () => {
                     </Transition>
 
                     <Transition appear show={isViewNoteModal} as={Fragment}>
-                        <Dialog as="div" open={isViewNoteModal} onClose={() => setIsViewNoteModal(false)} className="relative z-[51]">
+                        <Dialog as="div" open={isViewNoteModal} onClose={() => setIsViewNoteModal(false)} className="relative z-51">
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-out duration-300"
@@ -1096,7 +1096,7 @@ const Notes = () => {
                                             <button
                                                 type="button"
                                                 onClick={() => setIsViewNoteModal(false)}
-                                                className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none"
+                                                className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-hidden"
                                             >
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"

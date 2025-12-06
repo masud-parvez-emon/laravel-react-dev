@@ -32,7 +32,7 @@ const FontIcons = () => {
                         <p className="mb-5">
                             Solar is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and usability.
                         </p>
-                        <div className="bg-[#009688]/[.26] text-[#009688] py-1 px-2 rounded inline-block text-base mb-5">Line Duotone</div>
+                        <div className="bg-[#009688]/26 text-[#009688] py-1 px-2 rounded-sm inline-block text-base mb-5">Line Duotone</div>
                         <div className="flex items-center flex-wrap gap-10 mb-5">
                             <div className="grid place-content-center w-14 h-14 border border-white-dark/20 dark:border-[#191e3a] rounded-md">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -303,7 +303,7 @@ const FontIcons = () => {
                             </div>
                         </div>
 
-                        <div className="bg-[#009688]/[.26] text-[#009688] py-1 px-2 rounded inline-block text-base mb-5">Bold Duotone</div>
+                        <div className="bg-[#009688]/26 text-[#009688] py-1 px-2 rounded-sm inline-block text-base mb-5">Bold Duotone</div>
                         <div className="flex items-center flex-wrap gap-10 mb-5">
                             <div className="grid place-content-center w-14 h-14 border border-white-dark/20 dark:border-[#191e3a] rounded-md">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -636,7 +636,7 @@ const FontIcons = () => {
                             </div>
                         </div>
 
-                        <div className="bg-[#009688]/[.26] text-[#009688] py-1 px-2 rounded inline-block text-base mb-5">Broken</div>
+                        <div className="bg-[#009688]/26 text-[#009688] py-1 px-2 rounded-sm inline-block text-base mb-5">Broken</div>
                         <div className="flex items-center flex-wrap gap-10 mb-5">
                             <div className="grid place-content-center w-14 h-14 border border-white-dark/20 dark:border-[#191e3a] rounded-md">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -927,7 +927,7 @@ const FontIcons = () => {
                             </div>
                         </div>
 
-                        <div className="bg-[#009688]/[.26] text-[#009688] py-1 px-2 rounded inline-block text-base mb-5">Outline</div>
+                        <div className="bg-[#009688]/26 text-[#009688] py-1 px-2 rounded-sm inline-block text-base mb-5">Outline</div>
                         <div className="flex items-center flex-wrap gap-10 mb-5">
                             <div className="grid place-content-center w-14 h-14 border border-white-dark/20 dark:border-[#191e3a] rounded-md">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1229,7 +1229,7 @@ const FontIcons = () => {
                             </div>
                         </div>
 
-                        <div className="bg-[#009688]/[.26] text-[#009688] py-1 px-2 rounded inline-block text-base mb-5">Bold</div>
+                        <div className="bg-[#009688]/26 text-[#009688] py-1 px-2 rounded-sm inline-block text-base mb-5">Bold</div>
                         <div className="flex items-center flex-wrap gap-10">
                             <div className="grid place-content-center w-14 h-14 border border-white-dark/20 dark:border-[#191e3a] rounded-md">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

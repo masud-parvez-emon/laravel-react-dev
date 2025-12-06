@@ -57,7 +57,7 @@ const Alerts = () => {
                         </button>
                     </div>
                     <div className="grid lg:grid-cols-2 gap-5 mb-5">
-                        <div className="flex items-center p-3.5 rounded text-primary bg-primary-light dark:bg-primary-dark-light">
+                        <div className="flex items-center p-3.5 rounded-sm text-primary bg-primary-light dark:bg-primary-dark-light">
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-1 rtl:ml-1">Primary!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -78,7 +78,7 @@ const Alerts = () => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex items-center p-3.5 rounded text-secondary bg-secondary-light dark:bg-secondary-dark-light">
+                        <div className="flex items-center p-3.5 rounded-sm text-secondary bg-secondary-light dark:bg-secondary-dark-light">
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-1 rtl:ml-1">Secondary!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -99,7 +99,7 @@ const Alerts = () => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex items-center p-3.5 rounded text-success bg-success-light dark:bg-success-dark-light">
+                        <div className="flex items-center p-3.5 rounded-sm text-success bg-success-light dark:bg-success-dark-light">
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-1 rtl:ml-1">Success!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -120,7 +120,7 @@ const Alerts = () => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex items-center p-3.5 rounded text-warning bg-warning-light dark:bg-warning-dark-light">
+                        <div className="flex items-center p-3.5 rounded-sm text-warning bg-warning-light dark:bg-warning-dark-light">
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-1 rtl:ml-1">Warning!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -141,7 +141,7 @@ const Alerts = () => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex items-center p-3.5 rounded text-danger bg-danger-light dark:bg-danger-dark-light">
+                        <div className="flex items-center p-3.5 rounded-sm text-danger bg-danger-light dark:bg-danger-dark-light">
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-1 rtl:ml-1">Danger!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -162,7 +162,7 @@ const Alerts = () => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex items-center p-3.5 rounded text-info bg-info-light dark:bg-info-dark-light">
+                        <div className="flex items-center p-3.5 rounded-sm text-info bg-info-light dark:bg-info-dark-light">
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-1 rtl:ml-1">Info!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -186,7 +186,7 @@ const Alerts = () => {
                     </div>
                     {codeArr.includes('code1') && (
                         <CodeHighlight>
-                            <pre>{`<div className="flex items-center p-3.5 rounded text-primary bg-primary-light dark:bg-primary-dark-light">
+                            <pre>{`<div className="flex items-center p-3.5 rounded-sm text-primary bg-primary-light dark:bg-primary-dark-light">
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-1 rtl:ml-1">Primary!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>
@@ -195,7 +195,7 @@ const Alerts = () => {
     </button>
 </div>
 
-<div className="flex items-center p-3.5 rounded text-secondary bg-secondary-light dark:bg-secondary-dark-light">
+<div className="flex items-center p-3.5 rounded-sm text-secondary bg-secondary-light dark:bg-secondary-dark-light">
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-1 rtl:ml-1">Secondary!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>
@@ -204,7 +204,7 @@ const Alerts = () => {
     </button>
 </div>
 
-<div className="flex items-center p-3.5 rounded text-success bg-success-light dark:bg-success-dark-light">
+<div className="flex items-center p-3.5 rounded-sm text-success bg-success-light dark:bg-success-dark-light">
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-1 rtl:ml-1">Success!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>
@@ -213,7 +213,7 @@ const Alerts = () => {
     </button>
 </div>
 
-<div className="flex items-center p-3.5 rounded text-warning bg-warning-light dark:bg-warning-dark-light">
+<div className="flex items-center p-3.5 rounded-sm text-warning bg-warning-light dark:bg-warning-dark-light">
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-1 rtl:ml-1">Warning!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>
@@ -222,7 +222,7 @@ const Alerts = () => {
     </button>
 </div>
 
-<div className="flex items-center p-3.5 rounded text-danger bg-danger-light dark:bg-danger-dark-light">
+<div className="flex items-center p-3.5 rounded-sm text-danger bg-danger-light dark:bg-danger-dark-light">
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-1 rtl:ml-1">Danger!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>
@@ -231,7 +231,7 @@ const Alerts = () => {
     </button>
 </div>
 
-<div className="flex items-center p-3.5 rounded text-info bg-info-light dark:bg-info-dark-light">
+<div className="flex items-center p-3.5 rounded-sm text-info bg-info-light dark:bg-info-dark-light">
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-1 rtl:ml-1">Info!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>
@@ -275,7 +275,7 @@ const Alerts = () => {
                         </button>
                     </div>
                     <div className="grid lg:grid-cols-2 gap-5 mb-5">
-                        <div className="flex items-center p-3.5 rounded text-white-dark border border-primary">
+                        <div className="flex items-center p-3.5 rounded-sm text-white-dark border border-primary">
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-2 rtl:ml-2">Primary!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -296,7 +296,7 @@ const Alerts = () => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex items-center border p-3.5 rounded text-white-dark border-danger">
+                        <div className="flex items-center border p-3.5 rounded-sm text-white-dark border-danger">
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-2 rtl:ml-2">Danger!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -321,7 +321,7 @@ const Alerts = () => {
                     {codeArr.includes('code2') && (
                         <CodeHighlight>
                             <pre>
-                                {`<div className="flex items-center p-3.5 rounded text-white-dark border border-primary">
+                                {`<div className="flex items-center p-3.5 rounded-sm text-white-dark border border-primary">
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-2 rtl:ml-2">Primary!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>
@@ -329,7 +329,7 @@ const Alerts = () => {
         <svg>...</svg>
     </button>
 </div>
-<div className="flex items-center border p-3.5 rounded text-white-dark border-danger">
+<div className="flex items-center border p-3.5 rounded-sm text-white-dark border-danger">
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-2 rtl:ml-2">Danger!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>
@@ -374,7 +374,7 @@ const Alerts = () => {
                         </button>
                     </div>
                     <div className="grid lg:grid-cols-2 gap-5 mb-5">
-                        <div className="flex items-center p-3.5 rounded text-white bg-primary">
+                        <div className="flex items-center p-3.5 rounded-sm text-white bg-primary">
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-1 rtl:ml-1">Warning!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -395,7 +395,7 @@ const Alerts = () => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex items-center p-3.5 rounded text-white bg-warning">
+                        <div className="flex items-center p-3.5 rounded-sm text-white bg-warning">
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-1 rtl:ml-1">Info!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -420,7 +420,7 @@ const Alerts = () => {
                     {codeArr.includes('code3') && (
                         <CodeHighlight>
                             <pre>
-                                {`<div className="flex items-center p-3.5 rounded text-white bg-primary">
+                                {`<div className="flex items-center p-3.5 rounded-sm text-white bg-primary">
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-1 rtl:ml-1">Warning!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>
@@ -428,7 +428,7 @@ const Alerts = () => {
         <svg>...</svg>
     </button>
 </div>
-<div className="flex items-center p-3.5 rounded text-white bg-warning">
+<div className="flex items-center p-3.5 rounded-sm text-white bg-warning">
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-1 rtl:ml-1">Info!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>
@@ -473,7 +473,7 @@ const Alerts = () => {
                         </button>
                     </div>
                     <div className="grid lg:grid-cols-2 gap-5 mb-5">
-                        <div className="relative flex items-center border p-3.5 rounded text-success bg-success-light border-success ltr:border-l-[64px] rtl:border-r-[64px] dark:bg-success-dark-light">
+                        <div className="relative flex items-center border p-3.5 rounded-sm text-success bg-success-light border-success ltr:border-l-64 rtl:border-r-64 dark:bg-success-dark-light">
                             <span className="absolute ltr:-left-11 rtl:-right-11 inset-y-0 text-white w-6 h-6 m-auto">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -506,7 +506,7 @@ const Alerts = () => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="relative flex items-center border p-3.5 rounded text-dark bg-dark-light border-dark ltr:border-r-[64px] rtl:border-l-[64px] dark:bg-dark-dark-light dark:text-white-light dark:border-white-light/20">
+                        <div className="relative flex items-center border p-3.5 rounded-sm text-dark bg-dark-light border-dark ltr:border-r-64 rtl:border-l-64 dark:bg-dark-dark-light dark:text-white-light dark:border-white-light/20">
                             <span className="absolute ltr:-right-11 rtl:-left-11 inset-y-0 text-white w-6 h-6 m-auto">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="1.5"></circle>
@@ -542,7 +542,7 @@ const Alerts = () => {
                     {codeArr.includes('code4') && (
                         <CodeHighlight>
                             <pre>
-                                {`<div className="relative flex items-center border p-3.5 rounded text-success bg-success-light border-success ltr:border-l-[64px] rtl:border-r-[64px] dark:bg-success-dark-light">
+                                {`<div className="relative flex items-center border p-3.5 rounded-sm text-success bg-success-light border-success ltr:border-l-64 rtl:border-r-64 dark:bg-success-dark-light">
     <span className="absolute ltr:-left-11 rtl:-right-11 inset-y-0 text-white w-6 h-6 m-auto">
         <svg>...</svg>
     </span>
@@ -553,7 +553,7 @@ const Alerts = () => {
         <svg>...</svg>
     </button>
 </div>
-<div className="relative flex items-center border p-3.5 rounded text-dark bg-dark-light border-dark ltr:border-r-[64px] rtl:border-l-[64px] dark:bg-dark-dark-light dark:text-white-light dark:border-white-light/20">
+<div className="relative flex items-center border p-3.5 rounded-sm text-dark bg-dark-light border-dark ltr:border-r-64 rtl:border-l-64 dark:bg-dark-dark-light dark:text-white-light dark:border-white-light/20">
     <span className="absolute ltr:-right-11 rtl:-left-11 inset-y-0 text-white w-6 h-6 m-auto">
         <svg>...</svg>
     </span>
@@ -601,7 +601,7 @@ const Alerts = () => {
                         </button>
                     </div>
                     <div className="grid lg:grid-cols-2 gap-5 mb-5">
-                        <div className="relative flex items-center border p-3.5 rounded before:absolute before:top-1/2 ltr:before:left-0 rtl:before:right-0 rtl:before:rotate-180 before:-mt-2 before:border-l-8 before:border-t-8 before:border-b-8 before:border-t-transparent before:border-b-transparent before:border-l-inherit text-primary bg-primary-light !border-primary ltr:border-l-[64px] rtl:border-r-[64px] dark:bg-primary-dark-light">
+                        <div className="relative flex items-center border p-3.5 rounded-sm before:absolute before:top-1/2 ltr:before:left-0 rtl:before:right-0 rtl:before:rotate-180 before:-mt-2 before:border-l-8 before:border-t-8 before:border-b-8 before:border-t-transparent before:border-b-transparent before:border-l-inherit text-primary bg-primary-light border-primary! ltr:border-l-64 rtl:border-r-64 dark:bg-primary-dark-light">
                             <span className="absolute ltr:-left-11 rtl:-right-11 inset-y-0 text-white w-6 h-6 m-auto">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -632,7 +632,7 @@ const Alerts = () => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="relative flex items-center border p-3.5 rounded before:inline-block before:absolute before:top-1/2 ltr:before:right-0 rtl:before:left-0 rtl:before:rotate-180 before:-mt-2 before:border-r-8 before:border-t-8 before:border-b-8 before:border-t-transparent before:border-b-transparent before:border-r-inherit text-danger bg-danger-light border-danger ltr:border-r-[64px] rtl:border-l-[64px] dark:bg-danger-dark-light">
+                        <div className="relative flex items-center border p-3.5 rounded-sm before:inline-block before:absolute before:top-1/2 ltr:before:right-0 rtl:before:left-0 rtl:before:rotate-180 before:-mt-2 before:border-r-8 before:border-t-8 before:border-b-8 before:border-t-transparent before:border-b-transparent before:border-r-inherit text-danger bg-danger-light border-danger ltr:border-r-64 rtl:border-l-64 dark:bg-danger-dark-light">
                             <span className="absolute ltr:-right-11 rtl:-left-11 inset-y-0 text-white w-6 h-6 m-auto">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle opacity="0.5" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5" />
@@ -664,7 +664,7 @@ const Alerts = () => {
                     {codeArr.includes('code5') && (
                         <CodeHighlight>
                             <pre>
-                                {`<div className="relative flex items-center border p-3.5 rounded before:absolute before:top-1/2 ltr:before:left-0 rtl:before:right-0 rtl:before:rotate-180 before:-mt-2 before:border-l-8 before:border-t-8 before:border-b-8 before:border-t-transparent before:border-b-transparent before:border-l-inherit text-primary bg-primary-light !border-primary ltr:border-l-[64px] rtl:border-r-[64px] dark:bg-primary-dark-light">
+                                {`<div className="relative flex items-center border p-3.5 rounded-sm before:absolute before:top-1/2 ltr:before:left-0 rtl:before:right-0 rtl:before:rotate-180 before:-mt-2 before:border-l-8 before:border-t-8 before:border-b-8 before:border-t-transparent before:border-b-transparent before:border-l-inherit text-primary bg-primary-light border-primary! ltr:border-l-64 rtl:border-r-64 dark:bg-primary-dark-light">
     <span className="absolute ltr:-left-11 rtl:-right-11 inset-y-0 text-white w-6 h-6 m-auto">
         <svg>...</svg>
     </span>
@@ -675,7 +675,7 @@ const Alerts = () => {
         <svg>...</svg>
     </button>
 </div>
-<div className="relative flex items-center border p-3.5 rounded before:inline-block before:absolute before:top-1/2 ltr:before:right-0 rtl:before:left-0 rtl:before:rotate-180 before:-mt-2 before:border-r-8 before:border-t-8 before:border-b-8 before:border-t-transparent before:border-b-transparent before:border-r-inherit text-danger bg-danger-light border-danger ltr:border-r-[64px] rtl:border-l-[64px] dark:bg-danger-dark-light">
+<div className="relative flex items-center border p-3.5 rounded-sm before:inline-block before:absolute before:top-1/2 ltr:before:right-0 rtl:before:left-0 rtl:before:rotate-180 before:-mt-2 before:border-r-8 before:border-t-8 before:border-b-8 before:border-t-transparent before:border-b-transparent before:border-r-inherit text-danger bg-danger-light border-danger ltr:border-r-64 rtl:border-l-64 dark:bg-danger-dark-light">
     <span className="absolute ltr:-right-11 rtl:-left-11 inset-y-0 text-white w-6 h-6 m-auto">
         <svg>...</svg>
     </span>
@@ -723,7 +723,7 @@ const Alerts = () => {
                         </button>
                     </div>
                     <div className="grid lg:grid-cols-2 gap-5 mb-5">
-                        <div className="flex items-center p-3.5 rounded text-white bg-info">
+                        <div className="flex items-center p-3.5 rounded-sm text-white bg-info">
                             <span className="text-white w-6 h-6 ltr:mr-4 rtl:ml-4">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -758,7 +758,7 @@ const Alerts = () => {
                             </button>
                         </div>
 
-                        <div className="flex items-center p-3.5 rounded text-white bg-gradient-to-r from-[#BD194D] to-[#004fe6]">
+                        <div className="flex items-center p-3.5 rounded-sm text-white bg-linear-to-r from-[#BD194D] to-[#004fe6]">
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-1 rtl:ml-1">Warning!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -780,7 +780,7 @@ const Alerts = () => {
                             </button>
                         </div>
 
-                        <div className="flex items-center p-3.5 rounded text-white bg-no-repeat bg-center bg-cover" style={{ backgroundImage: `url("/assets/images/menu-heade.jpg")` }}>
+                        <div className="flex items-center p-3.5 rounded-sm text-white bg-no-repeat bg-center bg-cover" style={{ backgroundImage: `url("/assets/images/menu-heade.jpg")` }}>
                             <span className="ltr:pr-2 rtl:pl-2">
                                 <strong className="ltr:mr-1 rtl:ml-1">Warning!</strong>Lorem Ipsum is simply dummy text of the printing.
                             </span>
@@ -804,7 +804,7 @@ const Alerts = () => {
                     </div>
                     {codeArr.includes('code6') && (
                         <CodeHighlight>
-                            <pre>{`<div className="flex items-center p-3.5 rounded text-white bg-info">
+                            <pre>{`<div className="flex items-center p-3.5 rounded-sm text-white bg-info">
     <span className="text-white w-6 h-6 ltr:mr-4 rtl:ml-4">
         <svg>...</svg>
     </span>
@@ -819,7 +819,7 @@ const Alerts = () => {
     </button>
 </div>
 
-<div className="flex items-center p-3.5 rounded text-white bg-gradient-to-r from-[#BD194D] to-[#004fe6]">
+<div className="flex items-center p-3.5 rounded-sm text-white bg-linear-to-r from-[#BD194D] to-[#004fe6]">
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-1 rtl:ml-1">Warning!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>
@@ -828,7 +828,7 @@ const Alerts = () => {
     </button>
 </div>
 
-<div className="flex items-center p-3.5 rounded text-white bg-no-repeat bg-center bg-cover" style={{ backgroundImage: \`url("/assets/images/menu-heade.jpg")\`}}>
+<div className="flex items-center p-3.5 rounded-sm text-white bg-no-repeat bg-center bg-cover" style={{ backgroundImage: \`url("/assets/images/menu-heade.jpg")\`}}>
     <span className="ltr:pr-2 rtl:pl-2">
         <strong className="ltr:mr-1 rtl:ml-1">Warning!</strong>Lorem Ipsum is simply dummy text of the printing.
     </span>

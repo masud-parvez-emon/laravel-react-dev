@@ -100,10 +100,10 @@ const Accordians = () => {
                         </div>
                         <div className="mb-5">
                             <div className="space-y-2 font-semibold">
-                                <div className="border border-[#d3d3d3] rounded dark:border-[#1b2e4b]">
+                                <div className="border border-[#d3d3d3] rounded-sm dark:border-[#1b2e4b]">
                                     <button
                                         type="button"
-                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '1' ? '!text-primary' : ''}`}
+                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '1' ? 'text-primary!' : ''}`}
                                         onClick={() => togglePara('1')}
                                     >
                                         Collapsible Group Item #1
@@ -128,10 +128,10 @@ const Accordians = () => {
                                         </AnimateHeight>
                                     </div>
                                 </div>
-                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
                                     <button
                                         type="button"
-                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '2' ? '!text-primary' : ''}`}
+                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '2' ? 'text-primary!' : ''}`}
                                         onClick={() => togglePara('2')}
                                     >
                                         Collapsible Group Item #2
@@ -162,10 +162,10 @@ const Accordians = () => {
                                         </AnimateHeight>
                                     </div>
                                 </div>
-                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
                                     <button
                                         type="button"
-                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '3' ? '!text-primary' : ''}`}
+                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '3' ? 'text-primary!' : ''}`}
                                         onClick={() => togglePara('3')}
                                     >
                                         Collapsible Group Item #3
@@ -209,10 +209,10 @@ const [active, setActive] = useState<string>('1');
 
 <div className="mb-5">
     <div className="space-y-2 font-semibold">
-        <div className="border border-[#d3d3d3] rounded dark:border-[#1b2e4b]">
+        <div className="border border-[#d3d3d3] rounded-sm dark:border-[#1b2e4b]">
             <button
                 type="button"
-                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '1' ? '!text-primary' : ''}\`}
+                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '1' ? 'text-primary!' : ''}\`}
                 onClick={() => togglePara('1')}
             >
                 Collapsible Group Item #1
@@ -235,10 +235,10 @@ const [active, setActive] = useState<string>('1');
                 </AnimateHeight>
             </div>
         </div>
-        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
             <button
                 type="button"
-                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '2' ? '!text-primary' : ''}\`}
+                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '2' ? 'text-primary!' : ''}\`}
                 onClick={() => togglePara('2')}
             >
                 Collapsible Group Item #2
@@ -267,10 +267,10 @@ const [active, setActive] = useState<string>('1');
                 </AnimateHeight>
             </div>
         </div>
-        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
             <button
                 type="button"
-                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '3' ? '!text-primary' : ''}\`}
+                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active === '3' ? 'text-primary!' : ''}\`}
                 onClick={() => togglePara('3')}
             >
                 Collapsible Group Item #3
@@ -327,11 +327,11 @@ const [active, setActive] = useState<string>('1');
                             </button>
                         </div>
                         <div className="mb-5">
-                            <div className="border border-[#d3d3d3] dark:border-[#3b3f5c] rounded font-semibold">
-                                <div className="border-b border-[#d3d3d3] dark:border-[#3b3f5c]">
+                            <div className="border border-[#d3d3d3] dark:border-dark rounded-sm font-semibold">
+                                <div className="border-b border-[#d3d3d3] dark:border-dark">
                                     <button
                                         type="button"
-                                        className={` ${active1 === '1' ? '!text-primary' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]`}
+                                        className={` ${active1 === '1' ? 'text-primary!' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]`}
                                         onClick={() => togglePara1('1')}
                                     >
                                         Collapsible Group Item #1
@@ -357,10 +357,10 @@ const [active, setActive] = useState<string>('1');
                                     </div>
                                 </div>
 
-                                <div className="border-b border-[#d3d3d3] dark:border-[#3b3f5c]">
+                                <div className="border-b border-[#d3d3d3] dark:border-dark">
                                     <button
                                         type="button"
-                                        className={` ${active1 === '2' ? '!text-primary' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]`}
+                                        className={` ${active1 === '2' ? 'text-primary!' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]`}
                                         onClick={() => togglePara1('2')}
                                     >
                                         Collapsible Group Item #2
@@ -395,7 +395,7 @@ const [active, setActive] = useState<string>('1');
                                 <div>
                                     <button
                                         type="button"
-                                        className={` ${active1 === '3' ? '!text-primary' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]`}
+                                        className={` ${active1 === '3' ? 'text-primary!' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]`}
                                         onClick={() => togglePara1('3')}
                                     >
                                         Collapsible Group Item #3
@@ -438,11 +438,11 @@ const [active1, setActive1] = useState<string>('1');
     };
 
 <div className="mb-5">
-    <div className="border border-[#d3d3d3] dark:border-[#3b3f5c] rounded font-semibold">
-        <div className="border-b border-[#d3d3d3] dark:border-[#3b3f5c]">
+    <div className="border border-[#d3d3d3] dark:border-dark rounded-sm font-semibold">
+        <div className="border-b border-[#d3d3d3] dark:border-dark">
             <button
                 type="button"
-                className={\`${active1 === '1' ? '!text-primary' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]\`}
+                className={\`${active1 === '1' ? 'text-primary!' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]\`}
                 onClick={() => togglePara1('1')}
             >
                 Collapsible Group Item #1
@@ -466,10 +466,10 @@ const [active1, setActive1] = useState<string>('1');
             </div>
         </div>
 
-        <div className="border-b border-[#d3d3d3] dark:border-[#3b3f5c]">
+        <div className="border-b border-[#d3d3d3] dark:border-dark">
             <button
                 type="button"
-                className={\`${active1 === '2' ? '!text-primary' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]\`}
+                className={\`${active1 === '2' ? 'text-primary!' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]\`}
                 onClick={() => togglePara1('2')}
             >
                 Collapsible Group Item #2
@@ -502,7 +502,7 @@ const [active1, setActive1] = useState<string>('1');
         <div>
             <button
                 type="button"
-                className={\`${active1 === '3' ? '!text-primary' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]\`}
+                className={\`${active1 === '3' ? 'text-primary!' : ''} p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b]\`}
                 onClick={() => togglePara1('3')}
             >
                 Collapsible Group Item #3
@@ -560,10 +560,10 @@ const [active1, setActive1] = useState<string>('1');
                         </div>
                         <div className="mb-5">
                             <div className="space-y-2 font-semibold">
-                                <div className="border border-[#d3d3d3] rounded dark:border-[#1b2e4b]">
+                                <div className="border border-[#d3d3d3] rounded-sm dark:border-[#1b2e4b]">
                                     <button
                                         type="button"
-                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '1' ? '!text-primary' : ''}`}
+                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '1' ? 'text-primary!' : ''}`}
                                         onClick={() => togglePara2('1')}
                                     >
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ltr:mr-2 rtl:ml-2 text-primary shrink-0">
@@ -602,10 +602,10 @@ const [active1, setActive1] = useState<string>('1');
                                         </AnimateHeight>
                                     </div>
                                 </div>
-                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
                                     <button
                                         type="button"
-                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '2' ? '!text-primary' : ''}`}
+                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '2' ? 'text-primary!' : ''}`}
                                         onClick={() => togglePara2('2')}
                                     >
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ltr:mr-2 rtl:ml-2 text-primary shrink-0">
@@ -645,10 +645,10 @@ const [active1, setActive1] = useState<string>('1');
                                         </AnimateHeight>
                                     </div>
                                 </div>
-                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
                                     <button
                                         type="button"
-                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '3' ? '!text-primary' : ''}`}
+                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '3' ? 'text-primary!' : ''}`}
                                         onClick={() => togglePara2('3')}
                                     >
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ltr:mr-2 rtl:ml-2 text-primary shrink-0">
@@ -704,10 +704,10 @@ const [active2, setActive2] = useState<string>('1');
 
 <div className="mb-5">
     <div className="space-y-2 font-semibold">
-        <div className="border border-[#d3d3d3] rounded dark:border-[#1b2e4b]">
+        <div className="border border-[#d3d3d3] rounded-sm dark:border-[#1b2e4b]">
             <button
                 type="button"
-                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '1' ? '!text-primary' : ''}\`}
+                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '1' ? 'text-primary!' : ''}\`}
                 onClick={() => togglePara2('1')}
             >
                 <svg>...</svg>
@@ -731,10 +731,10 @@ const [active2, setActive2] = useState<string>('1');
                 </AnimateHeight>
             </div>
         </div>
-        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
             <button
                 type="button"
-                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '2' ? '!text-primary' : ''}\`}
+                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '2' ? 'text-primary!' : ''}\`}
                 onClick={() => togglePara2('2')}
             >
                 <svg>...</svg>
@@ -764,10 +764,10 @@ const [active2, setActive2] = useState<string>('1');
                 </AnimateHeight>
             </div>
         </div>
-        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
             <button
                 type="button"
-                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '3' ? '!text-primary' : ''}\`}
+                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active2 === '3' ? 'text-primary!' : ''}\`}
                 onClick={() => togglePara2('3')}
             >
                 <svg>...</svg>
@@ -826,10 +826,10 @@ const [active2, setActive2] = useState<string>('1');
                         </div>
                         <div className="mb-5">
                             <div className="space-y-2 font-semibold">
-                                <div className="border border-[#d3d3d3] rounded dark:border-[#1b2e4b]">
+                                <div className="border border-[#d3d3d3] rounded-sm dark:border-[#1b2e4b]">
                                     <button
                                         type="button"
-                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '1' ? '!text-primary' : ''}`}
+                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '1' ? 'text-primary!' : ''}`}
                                         onClick={() => togglePara3('1')}
                                     >
                                         Collapsible Group Item #1
@@ -849,10 +849,10 @@ const [active2, setActive2] = useState<string>('1');
                                         </AnimateHeight>
                                     </div>
                                 </div>
-                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
                                     <button
                                         type="button"
-                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '2' ? '!text-primary' : ''}`}
+                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '2' ? 'text-primary!' : ''}`}
                                         onClick={() => togglePara3('2')}
                                     >
                                         Collapsible Group Item #2
@@ -878,10 +878,10 @@ const [active2, setActive2] = useState<string>('1');
                                         </AnimateHeight>
                                     </div>
                                 </div>
-                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+                                <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
                                     <button
                                         type="button"
-                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '3' ? '!text-primary' : ''}`}
+                                        className={`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '3' ? 'text-primary!' : ''}`}
                                         onClick={() => togglePara3('3')}
                                     >
                                         Collapsible Group Item #3
@@ -920,10 +920,10 @@ const [active3, setActive3] = useState<string>('1');
 
 <div className="mb-5">
     <div className="space-y-2 font-semibold">
-        <div className="border border-[#d3d3d3] rounded dark:border-[#1b2e4b]">
+        <div className="border border-[#d3d3d3] rounded-sm dark:border-[#1b2e4b]">
             <button
                 type="button"
-                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '1' ? '!text-primary' : ''}\`}
+                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '1' ? 'text-primary!' : ''}\`}
                 onClick={() => togglePara3('1')}
             >
                 Collapsible Group Item #1
@@ -943,10 +943,10 @@ const [active3, setActive3] = useState<string>('1');
                 </AnimateHeight>
             </div>
         </div>
-        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
             <button
                 type="button"
-                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '2' ? '!text-primary' : ''}\`}
+                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '2' ? 'text-primary!' : ''}\`}
                 onClick={() => togglePara3('2')}
             >
                 Collapsible Group Item #2
@@ -972,10 +972,10 @@ const [active3, setActive3] = useState<string>('1');
                 </AnimateHeight>
             </div>
         </div>
-        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded">
+        <div className="border border-[#d3d3d3] dark:border-[#1b2e4b] rounded-sm">
             <button
                 type="button"
-                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '3' ? '!text-primary' : ''}\`}
+                className={\`p-4 w-full flex items-center text-white-dark dark:bg-[#1b2e4b] ${active3 === '3' ? 'text-primary!' : ''}\`}
                 onClick={() => togglePara3('3')}
             >
                 Collapsible Group Item #3

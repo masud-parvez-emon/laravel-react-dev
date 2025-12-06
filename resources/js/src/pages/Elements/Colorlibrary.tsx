@@ -24,7 +24,7 @@ const Colorlibrary = () => {
                 {/* main */}
                 <div>
                     <div className="w-fit mb-5">
-                        <h5 className="font-semibold text-base text-success bg-success/20 rounded px-3 py-1">
+                        <h5 className="font-semibold text-base text-success bg-success/20 rounded-sm px-3 py-1">
                             Main Colors
                         </h5>
                     </div>
@@ -165,7 +165,7 @@ const Colorlibrary = () => {
                 {/* more */}
                 <div>
                     <div className="w-fit mb-5">
-                        <h5 className="font-semibold text-sm sm:text-base text-success bg-success/20 rounded px-3 py-1">
+                        <h5 className="font-semibold text-sm sm:text-base text-success bg-success/20 rounded-sm px-3 py-1">
                             More Colors
                         </h5>
                     </div>

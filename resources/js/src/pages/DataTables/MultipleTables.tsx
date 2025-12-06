@@ -685,7 +685,7 @@ const MultipleTables = () => {
                             {
                                 accessor: 'action',
                                 title: 'Action',
-                                titleClassName: '!text-center',
+                                titleClassName: 'text-center!',
                                 render: () => (
                                     <div className="flex items-center w-max mx-auto">
                                         <Tippy content="Delete">
@@ -757,7 +757,7 @@ const MultipleTables = () => {
                             {
                                 accessor: 'action',
                                 title: 'Action',
-                                titleClassName: '!text-center',
+                                titleClassName: 'text-center!',
                                 render: () => (
                                     <div className="flex items-center w-max mx-auto gap-2">
                                         <Tippy content="Edit">

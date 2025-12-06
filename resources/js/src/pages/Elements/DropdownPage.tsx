@@ -100,7 +100,7 @@ const DropdownPage = () => {
                                                 </>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -133,7 +133,7 @@ const DropdownPage = () => {
                                                 </>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -171,7 +171,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             </>
         }
     >
-    <ul className="!min-w-[170px]">
+    <ul className="min-w-[170px]!">
         <li>
             <button type="button">
                 Action
@@ -208,7 +208,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                 </>
             }
         >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -282,7 +282,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                     </>
                                                 }
                                             >
-                                                <ul className="!min-w-[170px]">
+                                                <ul className="min-w-[170px]!">
                                                     <li>
                                                         <button type="button">Action</button>
                                                     </li>
@@ -320,7 +320,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                     </>
                                                 }
                                             >
-                                                <ul className="!min-w-[170px]">
+                                                <ul className="min-w-[170px]!">
                                                     <li>
                                                         <button type="button">Action</button>
                                                     </li>
@@ -356,7 +356,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             </>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -384,7 +384,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             </>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -440,7 +440,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                     <div className="dropdown">
                                         <Dropdown
                                             placement={`${isRtl ? 'right-end' : 'right-start'}`}
-                                            btnClassName="btn btn-warning dropdown-toggle !flex"
+                                            btnClassName="btn btn-warning dropdown-toggle flex!"
                                             button={
                                                 <>
                                                     Right
@@ -457,7 +457,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 </>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -478,7 +478,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                     <div className="dropdown">
                                         <Dropdown
                                             placement={`${isRtl ? 'right-end' : 'right-start'}`}
-                                            btnClassName="btn btn-outline-warning dropdown-toggle !flex"
+                                            btnClassName="btn btn-outline-warning dropdown-toggle flex!"
                                             button={
                                                 <>
                                                     Right
@@ -495,7 +495,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 </>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -523,7 +523,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
 <div className="dropdown">
     <Dropdown
         placement={\`\${isRtl ? 'right-end' : 'right-start'}\`}
-        btnClassName="btn btn-warning dropdown-toggle !flex"
+        btnClassName="btn btn-warning dropdown-toggle flex!"
         button={
             <>
                 Right
@@ -531,7 +531,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             </>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -551,7 +551,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
 <div className="dropdown">
     <Dropdown
         placement={\`\${isRtl ? 'right-end' : 'right-start'}\`}
-        btnClassName="btn btn-outline-warning dropdown-toggle !flex"
+        btnClassName="btn btn-outline-warning dropdown-toggle flex!"
         button={
             <>
                 Right
@@ -559,7 +559,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             </>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -614,7 +614,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                     <div className="dropdown">
                                         <Dropdown
                                             placement={`${isRtl ? 'left-end' : 'left-start'}`}
-                                            btnClassName="btn btn-danger dropdown-toggle !flex"
+                                            btnClassName="btn btn-danger dropdown-toggle flex!"
                                             button={
                                                 <>
                                                     <svg
@@ -631,7 +631,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 </>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -652,7 +652,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                     <div className="dropdown">
                                         <Dropdown
                                             placement={`${isRtl ? 'left-end' : 'left-start'}`}
-                                            btnClassName="btn btn-outline-danger dropdown-toggle !flex"
+                                            btnClassName="btn btn-outline-danger dropdown-toggle flex!"
                                             button={
                                                 <>
                                                     <svg
@@ -669,7 +669,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 </>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -697,7 +697,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
 <div className="dropdown">
     <Dropdown
         placement={\`\${isRtl ? 'left-end' : 'left-start'}\`}
-        btnClassName="btn btn-danger dropdown-toggle !flex"
+        btnClassName="btn btn-danger dropdown-toggle flex!"
         button={
             <>
                 <svg>...</svg>
@@ -705,7 +705,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             </>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -725,7 +725,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
 <div className="dropdown">
     <Dropdown
         placement={\`\${isRtl ? 'left-end' : 'left-start'}\`}
-        btnClassName="btn btn-outline-danger dropdown-toggle !flex"
+        btnClassName="btn btn-outline-danger dropdown-toggle flex!"
         button={
             <>
                 <svg>...</svg>
@@ -733,7 +733,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             </>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -801,7 +801,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 </>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -834,7 +834,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 </>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -872,7 +872,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             </>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -902,7 +902,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             </>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -969,7 +969,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 </>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -1002,7 +1002,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 </>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -1041,7 +1041,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             </>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -1071,7 +1071,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             </>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -1146,7 +1146,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                         </>
                                                     }
                                                 >
-                                                    <ul className="!min-w-[170px]">
+                                                    <ul className="min-w-[170px]!">
                                                         <li>
                                                             <button type="button">Action</button>
                                                         </li>
@@ -1188,7 +1188,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                     </>
                                                 }
                                             >
-                                                <ul className="!min-w-[170px]">
+                                                <ul className="min-w-[170px]!">
                                                     <li>
                                                         <button type="button">Action</button>
                                                     </li>
@@ -1235,7 +1235,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                     </>
                 }
             >
-                <ul className="!min-w-[170px]">
+                <ul className="min-w-[170px]!">
                     <li>
                         <button type="button">        Action</button>
                     </li>
@@ -1273,7 +1273,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                 </>
             }
         >
-            <ul className="!min-w-[170px]">
+            <ul className="min-w-[170px]!">
                 <li>
                     <button type="button">    Action</button>
                 </li>
@@ -1334,7 +1334,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 btnClassName="btn dropdown-toggle btn-primary ltr:rounded-l-none rtl:rounded-r-none border-l-[#4468fd] before:border-[5px] before:border-l-transparent before:border-r-transparent before:border-t-inherit before:border-b-0 before:inline-block before:border-t-white-light h-full"
                                                 button={<span className="sr-only">Toggle dropdown</span>}
                                             >
-                                                <ul className="!min-w-[170px]">
+                                                <ul className="min-w-[170px]!">
                                                     <li>
                                                         <button type="button">Action</button>
                                                     </li>
@@ -1361,7 +1361,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 btnClassName="btn btn-outline-primary ltr:rounded-l-none rtl:rounded-r-none dropdown-toggle before:border-[5px] before:border-l-transparent before:border-r-transparent before:border-t-inherit before:border-b-0 before:inline-block hover:before:border-t-white-light h-full"
                                                 button={<span className="sr-only">Toggle dropdown</span>}
                                             >
-                                                <ul className="!min-w-[170px]">
+                                                <ul className="min-w-[170px]!">
                                                     <li>
                                                         <button type="button">Action</button>
                                                     </li>
@@ -1395,7 +1395,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             btnClassName="btn dropdown-toggle btn-primary ltr:rounded-l-none rtl:rounded-r-none border-l-[#4468fd] before:border-[5px] before:border-l-transparent before:border-r-transparent before:border-t-inherit before:border-b-0 before:inline-block before:border-t-white-light h-full"
             button={<span className="sr-only">Toggle dropdown</span>}
         >
-            <ul className="!min-w-[170px]">
+            <ul className="min-w-[170px]!">
                 <li>
                     <button type="button">    Action</button>
                 </li>
@@ -1420,7 +1420,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             btnClassName="btn btn-outline-primary ltr:rounded-l-none rtl:rounded-r-none dropdown-toggle before:border-[5px] before:border-l-transparent before:border-r-transparent before:border-t-inherit before:border-b-0 before:inline-block hover:before:border-t-white-light h-full"
             button={<span className="sr-only">Toggle dropdown</span>}
         >
-            <ul className="!min-w-[170px]">
+            <ul className="min-w-[170px]!">
                 <li>
                     <button type="button">    Action</button>
                 </li>
@@ -1485,7 +1485,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 </svg>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -1508,14 +1508,14 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                             placement={`${isRtl ? 'top-end' : 'top-start'}`}
                                             btnClassName="btn p-0 rounded-none border-0 shadow-none dropdown-toggle text-black dark:text-white-dark hover:text-primary dark:hover:text-primary"
                                             button={
-                                                <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:!text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:text-primary!" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                                     <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                                     <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                                 </svg>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -1545,7 +1545,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                                 </svg>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -1568,14 +1568,14 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
                                             placement={`${isRtl ? 'top-start' : 'top-end'}`}
                                             btnClassName="btn p-0 rounded-none border-0 shadow-none dropdown-toggle text-black dark:text-white-dark hover:text-primary dark:hover:text-primary"
                                             button={
-                                                <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:!text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:text-primary!" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                                     <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                                     <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                                 </svg>
                                             }
                                         >
-                                            <ul className="!min-w-[170px]">
+                                            <ul className="min-w-[170px]!">
                                                 <li>
                                                     <button type="button">Action</button>
                                                 </li>
@@ -1608,7 +1608,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             <svg>...</svg>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -1633,7 +1633,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             <svg>...</svg>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -1658,7 +1658,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             <svg>...</svg>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>
@@ -1683,7 +1683,7 @@ const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) ===
             <svg>...</svg>
         }
     >
-        <ul className="!min-w-[170px]">
+        <ul className="min-w-[170px]!">
             <li>
                 <button type="button">Action</button>
             </li>

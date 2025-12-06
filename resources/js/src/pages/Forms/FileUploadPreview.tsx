@@ -248,7 +248,7 @@ const onChange = (imageList: ImageListType, addUpdateIndex: number[] | undefined
                                                                 <line x1="6" y1="6" x2="18" y2="18"></line>
                                                             </svg>
                                                         </button>
-                                                        <img src={image.dataURL} alt="img" className="object-cover shadow rounded w-full !max-h-48" />
+                                                        <img src={image.dataURL} alt="img" className="object-cover shadow-sm rounded-sm w-full max-h-48!" />
                                                     </div>
                                                 ))}
                                             </div>
@@ -306,7 +306,7 @@ const onChange2 = (imageList: ImageListType, addUpdateIndex: number[] | undefine
                             >
                                 <svg>...</svg>
                             </button>
-                            <img src={image.dataURL} alt="img" className="object-cover shadow rounded w-full !max-h-48" />
+                            <img src={image.dataURL} alt="img" className="object-cover shadow-sm rounded-sm w-full max-h-48!" />
                         </div>
                     ))}
                 </div>

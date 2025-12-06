@@ -35,7 +35,7 @@ const KnowledgeBase = () => {
 
     return (
         <div>
-            <div className="relative rounded-t-md bg-primary-light bg-[url('/assets/images/knowledge/pattern.png')] bg-contain bg-left-top bg-no-repeat px-5 py-10 dark:bg-black md:px-10">
+            <div className="relative rounded-t-md bg-primary-light bg-[url('/assets/images/knowledge/pattern.png')] bg-contain bg-top-left bg-no-repeat px-5 py-10 dark:bg-black md:px-10">
                 <div className="absolute -bottom-1 -end-6 hidden text-[#DBE7FF] rtl:rotate-y-180 dark:text-[#1B2E4B] lg:block xl:end-0">
                     <svg width="375" height="185" viewBox="0 0 375 185" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-72 max-w-xs xl:w-full">
                         <g clipPath="url(#clip0_1109_89938)">
@@ -327,7 +327,7 @@ const KnowledgeBase = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active1 === 1 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active1 === 1 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive1(active1 === 1 ? null : 1)}
                             >
                                 <span>How to install VRISTO Admin</span>
@@ -376,7 +376,7 @@ const KnowledgeBase = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active1 === 2 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active1 === 2 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive1(active1 === 2 ? null : 2)}
                             >
                                 <span> Where can I subscribe to your newsletter?</span>
@@ -425,7 +425,7 @@ const KnowledgeBase = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active1 === 3 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active1 === 3 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive1(active1 === 3 ? null : 3)}
                             >
                                 <span>How to install VRISTO Admin</span>
@@ -474,7 +474,7 @@ const KnowledgeBase = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active1 === 5 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active1 === 5 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive1(active1 === 5 ? null : 5)}
                             >
                                 <span>How to install VRISTO Admin</span>
@@ -528,7 +528,7 @@ const KnowledgeBase = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active2 === 1 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active2 === 1 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive2(active2 === 1 ? null : 1)}
                             >
                                 <span>How to use Browser Sync</span>
@@ -577,7 +577,7 @@ const KnowledgeBase = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active2 === 2 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active2 === 2 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive2(active2 === 2 ? null : 2)}
                             >
                                 <span> Sidebar not rendering CSS</span>
@@ -626,7 +626,7 @@ const KnowledgeBase = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active2 === 3 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active2 === 3 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive2(active2 === 3 ? null : 3)}
                             >
                                 <span>Connect with us Personally</span>
@@ -675,7 +675,7 @@ const KnowledgeBase = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active2 === 5 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active2 === 5 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive2(active2 === 5 ? null : 5)}
                             >
                                 <span>Compilation Issue</span>
@@ -738,7 +738,7 @@ const KnowledgeBase = () => {
                     </button>
                 </div>
             </div>
-            <div className="mt-10 flex flex-col-reverse items-center justify-between gap-5 rounded-md bg-gradient-to-tl from-[rgba(234,241,255,0.44)] to-[rgba(234,241,255,0.96)] px-6 py-2.5 dark:from-[rgba(14,23,38,0.44)] dark:to-[#0E1726] md:flex-row lg:mt-20 xl:px-16">
+            <div className="mt-10 flex flex-col-reverse items-center justify-between gap-5 rounded-md bg-linear-to-tl from-[rgba(234,241,255,0.44)] to-[rgba(234,241,255,0.96)] px-6 py-2.5 dark:from-[rgba(14,23,38,0.44)] dark:to-[#0E1726] md:flex-row lg:mt-20 xl:px-16">
                 <div className="flex-1 py-3.5 text-center md:text-start">
                     <h3 className="mb-2 text-xl font-bold dark:text-white md:text-2xl">Didn’t find any solutions?</h3>
                     <div className="text-lg font-medium text-white-dark">Loaded with awesome features like documentation, knowledge base forum, domain transfer, affiliates etc.</div>
@@ -749,7 +749,7 @@ const KnowledgeBase = () => {
                     </div>
                 </div>
                 <div className="w-52 max-w-xs lg:w-full">
-                    <img src="/assets/images/knowledge/find-solution.svg" alt="find-solution" className="w-full object-cover rtl:rotate-y-180 dark:brightness-[2.59] dark:grayscale-[83%]" />
+                    <img src="/assets/images/knowledge/find-solution.svg" alt="find-solution" className="w-full object-cover rtl:rotate-y-180 dark:brightness-[2.59] dark:grayscale-83" />
                 </div>
             </div>
             <div className="mt-10">
@@ -863,7 +863,7 @@ const KnowledgeBase = () => {
                         >
                             <div className="fixed inset-0" />
                         </Transition.Child>
-                        <div className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                        <div className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                             <div className="flex min-h-screen items-start justify-center px-4">
                                 <Transition.Child
                                     as={Fragment}

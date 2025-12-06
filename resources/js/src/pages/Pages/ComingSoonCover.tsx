@@ -65,11 +65,11 @@ const ComingSoonCover = () => {
                 <img src="/assets/images/auth/polygon-object.svg" alt="image" className="absolute bottom-0 end-[28%]" />
                 <div className="relative flex w-full max-w-[1502px] flex-col justify-between overflow-hidden rounded-md bg-white/60 text-center backdrop-blur-lg dark:bg-black/50 lg:min-h-[758px] lg:flex-row lg:gap-10 xl:gap-0">
                     <div
-                        className="relative hidden w-full items-center justify-center p-5 lg:inline-flex lg:max-w-[835px] ltr:xl:-ml-24 ltr:xl:skew-x-[14deg] rtl:xl:-mr-24 rtl:xl:skew-x-[-14deg]"
+                        className="relative hidden w-full items-center justify-center p-5 lg:inline-flex lg:max-w-[835px] xl:ltr:-ml-24 xl:ltr:skew-x-14 xl:rtl:-mr-24 xl:rtl:skew-x-[-14deg]"
                         style={{ background: 'linear-gradient(225deg, rgba(239, 18, 98, 1) 0%, rgba(67, 97, 238, 1) 100%)' }}
                     >
-                        <div className="absolute inset-y-0 w-8 from-primary/10 via-transparent to-transparent ltr:-right-10 ltr:bg-gradient-to-r rtl:-left-10 rtl:bg-gradient-to-l xl:w-16 ltr:xl:-right-20 rtl:xl:-left-20"></div>
-                        <div className="ltr:xl:-skew-x-[14deg] rtl:xl:skew-x-[14deg]">
+                        <div className="absolute inset-y-0 w-8 from-primary/10 via-transparent to-transparent ltr:-right-10 ltr:bg-linear-to-r rtl:-left-10 rtl:bg-linear-to-l xl:w-16 xl:ltr:-right-20 xl:rtl:-left-20"></div>
+                        <div className="xl:ltr:-skew-x-14 xl:rtl:skew-x-14">
                             <Link to="/" className="w-48 block lg:w-72 mx-auto 2xl:m-0">
                                 <img src="/assets/images/auth/logo-white.svg" alt="Logo" className="w-full" />
                             </Link>
@@ -84,7 +84,7 @@ const ComingSoonCover = () => {
                                 <img src="/assets/images/logo.svg" alt="Logo" className="mx-auto w-10" />
                             </Link>
                             <div className="mb-12">
-                                <h1 className="text-3xl font-extrabold uppercase !leading-snug text-primary md:text-4xl">Coming Soon</h1>
+                                <h1 className="text-3xl font-extrabold uppercase leading-snug! text-primary md:text-4xl">Coming Soon</h1>
                                 <p className="text-base font-bold leading-normal text-white-dark">We will be here in a shortwhile.....</p>
                             </div>
                             <div
@@ -92,7 +92,7 @@ const ComingSoonCover = () => {
                             >
                                 <div className="relative inline-flex h-12 w-14 items-center justify-center rounded-md bg-primary-light p-2 sm:h-16 sm:w-16 md:h-24 md:min-w-[120px]">
                                     <div className="absolute inset-1 flex flex-col gap-1">
-                                        <span className="h-full w-full rounded-md bg-primary/[12%]"></span>
+                                        <span className="h-full w-full rounded-md bg-primary/12"></span>
                                         <span className="h-full w-full rounded-md bg-white"></span>
                                     </div>
                                     <span className="relative">{demo1.days}</span>
@@ -100,7 +100,7 @@ const ComingSoonCover = () => {
                                 <span>:</span>
                                 <div className="relative inline-flex h-12 w-12 items-center justify-center rounded-md bg-primary-light p-2 sm:h-16 sm:w-16 md:h-24 md:min-w-[96px]">
                                     <div className="absolute inset-1 flex flex-col gap-1">
-                                        <span className="h-full w-full rounded-md bg-primary/[12%]"></span>
+                                        <span className="h-full w-full rounded-md bg-primary/12"></span>
                                         <span className="h-full w-full rounded-md bg-white"></span>
                                     </div>
                                     <span className="relative">{demo1.hours}</span>
@@ -108,7 +108,7 @@ const ComingSoonCover = () => {
                                 <span>:</span>
                                 <div className="relative inline-flex h-12 w-12 items-center justify-center rounded-md bg-primary-light p-2 sm:h-16 sm:w-16 md:h-24 md:min-w-[96px]">
                                     <div className="absolute inset-1 flex flex-col gap-1">
-                                        <span className="h-full w-full rounded-md bg-primary/[12%]"></span>
+                                        <span className="h-full w-full rounded-md bg-primary/12"></span>
                                         <span className="h-full w-full rounded-md bg-white"></span>
                                     </div>
                                     <span className="relative">{demo1.minutes}</span>
@@ -116,7 +116,7 @@ const ComingSoonCover = () => {
                                 <span>:</span>
                                 <div className="relative inline-flex h-12 w-12 items-center justify-center rounded-md bg-primary-light p-2 sm:h-16 sm:w-16 md:h-24 md:min-w-[96px]">
                                     <div className="absolute inset-1 flex flex-col gap-1">
-                                        <span className="h-full w-full rounded-md bg-primary/[12%]"></span>
+                                        <span className="h-full w-full rounded-md bg-primary/12"></span>
                                         <span className="h-full w-full rounded-md bg-white"></span>
                                     </div>
                                     <span className="relative">{demo1.seconds}</span>

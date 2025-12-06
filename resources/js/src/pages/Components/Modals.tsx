@@ -128,7 +128,7 @@ const Modals = () => {
                                     >
                                         <div className="fixed inset-0" />
                                     </Transition.Child>
-                                    <div className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                    <div className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                         <div className="flex min-h-screen items-start justify-center px-4">
                                             <Transition.Child
                                                 as={Fragment}
@@ -208,7 +208,7 @@ const [modal1, setModal1] = useState(false);
             >
                 <div className="fixed inset-0" />
             </Transition.Child>
-            <div className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+            <div className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                 <div className="flex items-start justify-center min-h-screen px-4">
                     <Transition.Child
                         as={Fragment}
@@ -298,7 +298,7 @@ const [modal1, setModal1] = useState(false);
                                     >
                                         <div className="fixed inset-0" />
                                     </Transition.Child>
-                                    <div className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                    <div className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                         <div className="flex min-h-screen items-center justify-center px-4">
                                             <Transition.Child
                                                 as={Fragment}
@@ -378,7 +378,7 @@ const [modal2, setModal2] = useState(false);
             >
                 <div className="fixed inset-0" />
             </Transition.Child>
-            <div className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+            <div className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                 <div className="flex items-center justify-center min-h-screen px-4">
                     <Transition.Child
                         as={Fragment}
@@ -467,7 +467,7 @@ const [modal2, setModal2] = useState(false);
                                     >
                                         <div className="fixed inset-0" />
                                     </Transition.Child>
-                                    <div className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                    <div className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                         <div className="flex min-h-screen items-start justify-center px-4">
                                             <Transition.Child
                                                 as={Fragment}
@@ -547,7 +547,7 @@ const [modal3, setModal3] = useState(false);
             >
                 <div className="fixed inset-0" />
             </Transition.Child>
-            <div className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+            <div className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                 <div className="flex items-start justify-center min-h-screen px-4">
                     <Transition.Child
                         as={Fragment}
@@ -637,7 +637,7 @@ const [modal3, setModal3] = useState(false);
                                     >
                                         <div className="fixed inset-0" />
                                     </Transition.Child>
-                                    <div className="fixed inset-0 z-[999] bg-[black]/60 px-4">
+                                    <div className="fixed inset-0 z-999 bg-[black]/60 px-4">
                                         <div className="flex min-h-screen items-start justify-center px-4">
                                             <Dialog.Panel className="panel my-8 w-full max-w-lg overflow-hidden  rounded-lg border-0 p-0 text-black dark:text-white-dark">
                                                 <div className="flex items-center justify-between bg-[#fbfbfb] px-5 py-3 dark:bg-[#121c2c]">
@@ -706,7 +706,7 @@ const [modal4, setModal4] = useState(false);
             >
                 <div className="fixed inset-0" />
             </Transition.Child>
-            <div className="fixed inset-0 bg-[black]/60 z-[999] px-4">
+            <div className="fixed inset-0 bg-[black]/60 z-999 px-4">
                 <div className="flex items-start justify-center min-h-screen px-4">
                     <Dialog.Panel className="panel border-0 p-0 rounded-lg overflow-hidden  w-full max-w-lg my-8 text-black dark:text-white-dark">
                         <div className="flex bg-[#fbfbfb] dark:bg-[#121c2c] items-center justify-between px-5 py-3">
@@ -786,7 +786,7 @@ const [modal4, setModal4] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div className="fixed inset-0 z-[999] bg-[black]/60">
+                                            <div className="fixed inset-0 z-999 bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Transition.Child
                                                         as={Fragment}
@@ -858,7 +858,7 @@ const [modal4, setModal4] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div className="fixed inset-0 z-[999] bg-[black]/60">
+                                            <div className="fixed inset-0 z-999 bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Transition.Child
                                                         as={Fragment}
@@ -930,7 +930,7 @@ const [modal4, setModal4] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Transition.Child
                                                         as={Fragment}
@@ -1015,7 +1015,7 @@ const [modal7, setModal7] = useState(false);
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div className="fixed inset-0 bg-[black]/60 z-[999]">
+                    <div className="fixed inset-0 bg-[black]/60 z-999">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Transition.Child
                                 as={Fragment}
@@ -1073,7 +1073,7 @@ const [modal7, setModal7] = useState(false);
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div className="fixed inset-0 bg-[black]/60 z-[999]">
+                    <div className="fixed inset-0 bg-[black]/60 z-999">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Transition.Child
                                 as={Fragment}
@@ -1133,7 +1133,7 @@ const [modal7, setModal7] = useState(false);
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Transition.Child
                                 as={Fragment}
@@ -1227,7 +1227,7 @@ const [modal7, setModal7] = useState(false);
                                     >
                                         <div className="fixed inset-0" />
                                     </Transition.Child>
-                                    <div className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                    <div className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                         <div className="flex min-h-screen items-start justify-center px-4">
                                             <Transition.Child
                                                 as={Fragment}
@@ -1292,7 +1292,7 @@ const [modal8, setModal8] = useState(false);
         >
             <div className="fixed inset-0" />
         </Transition.Child>
-        <div className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+        <div className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
             <div className="flex items-start justify-center min-h-screen px-4">
                 <Transition.Child
                     as={Fragment}
@@ -1367,7 +1367,7 @@ const [modal8, setModal8] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="fadein_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="fadein_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Dialog.Panel className="panel animate__animated animate__fadeIn my-8 w-full max-w-lg overflow-hidden rounded-lg border-0 p-0 text-black dark:text-white-dark">
                                                         <div className="flex items-center justify-between bg-[#fbfbfb] px-5 py-3 dark:bg-[#121c2c]">
@@ -1428,7 +1428,7 @@ const [modal8, setModal8] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="slideIn_down_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="slideIn_down_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Dialog.Panel className="panel animate__animated animate__slideInDown my-8 w-full max-w-lg overflow-hidden rounded-lg border-0 p-0 text-black dark:text-white-dark">
                                                         <div className="flex items-center justify-between bg-[#fbfbfb] px-5 py-3 dark:bg-[#121c2c]">
@@ -1489,7 +1489,7 @@ const [modal8, setModal8] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="fadein_left_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="fadein_left_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Dialog.Panel className="panel animate__animated animate__fadeInUp my-8 w-full max-w-lg overflow-hidden rounded-lg border-0 p-0 text-black dark:text-white-dark">
                                                         <div className="flex items-center justify-between bg-[#fbfbfb] px-5 py-3 dark:bg-[#121c2c]">
@@ -1550,7 +1550,7 @@ const [modal8, setModal8] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="slidein_up_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="slidein_up_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Dialog.Panel className="panel animate__animated animate__slideInUp my-8 w-full max-w-lg overflow-hidden rounded-lg border-0 p-0 text-black dark:text-white-dark">
                                                         <div className="flex items-center justify-between bg-[#fbfbfb] px-5 py-3 dark:bg-[#121c2c]">
@@ -1611,7 +1611,7 @@ const [modal8, setModal8] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="fadein_up_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="fadein_up_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Dialog.Panel
                                                         className={`panel animate__animated my-8 w-full max-w-lg overflow-hidden rounded-lg border-0 p-0 text-black dark:text-white-dark ${
@@ -1676,7 +1676,7 @@ const [modal8, setModal8] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="rotatein_left_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="rotatein_left_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Dialog.Panel
                                                         className={`panel animate__animated my-8 w-full max-w-lg overflow-hidden rounded-lg border-0 p-0 text-black dark:text-white-dark ${
@@ -1741,7 +1741,7 @@ const [modal8, setModal8] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="fadein_right_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="fadein_right_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Dialog.Panel
                                                         className={`panel animate__animated my-8 w-full max-w-lg overflow-hidden rounded-lg border-0 p-0 text-black dark:text-white-dark ${
@@ -1806,7 +1806,7 @@ const [modal8, setModal8] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="zoomIn_up_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="zoomIn_up_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Dialog.Panel className="panel animate__animated animate__zoomInUp my-8 w-full max-w-lg overflow-hidden rounded-lg border-0 p-0 text-black dark:text-white-dark">
                                                         <div className="flex items-center justify-between bg-[#fbfbfb] px-5 py-3 dark:bg-[#121c2c]">
@@ -1885,7 +1885,7 @@ const [modal16, setModal16] = useState(false);
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="fadein_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="fadein_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Dialog.Panel className="panel border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg my-8 text-black dark:text-white-dark animate__animated animate__fadeIn">
                                 <div className="flex bg-[#fbfbfb] dark:bg-[#121c2c] items-center justify-between px-5 py-3">
@@ -1932,7 +1932,7 @@ const [modal16, setModal16] = useState(false);
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="slideIn_down_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="slideIn_down_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Dialog.Panel className="panel border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg my-8 text-black dark:text-white-dark animate__animated animate__slideInDown">
                                 <div className="flex bg-[#fbfbfb] dark:bg-[#121c2c] items-center justify-between px-5 py-3">
@@ -1979,7 +1979,7 @@ const [modal16, setModal16] = useState(false);
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="fadein_left_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="fadein_left_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Dialog.Panel className="panel border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg my-8 text-black dark:text-white-dark animate__animated animate__fadeInUp">
                                 <div className="flex bg-[#fbfbfb] dark:bg-[#121c2c] items-center justify-between px-5 py-3">
@@ -2026,7 +2026,7 @@ const [modal16, setModal16] = useState(false);
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="slidein_up_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="slidein_up_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Dialog.Panel className="panel border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg my-8 text-black dark:text-white-dark animate__animated animate__slideInUp">
                                 <div className="flex bg-[#fbfbfb] dark:bg-[#121c2c] items-center justify-between px-5 py-3">
@@ -2073,7 +2073,7 @@ const [modal16, setModal16] = useState(false);
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="fadein_up_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="fadein_up_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Dialog.Panel
                                 className='panel border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg my-8 text-black dark:text-white-dark animate__animated'
@@ -2123,7 +2123,7 @@ const [modal16, setModal16] = useState(false);
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="rotatein_left_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="rotatein_left_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Dialog.Panel
                                 className='panel border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg my-8 text-black dark:text-white-dark animate__animated'
@@ -2172,7 +2172,7 @@ const [modal16, setModal16] = useState(false);
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="fadein_right_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="fadein_right_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Dialog.Panel
                                 className='panel border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg my-8 text-black dark:text-white-dark animate__animated'
@@ -2221,7 +2221,7 @@ const [modal16, setModal16] = useState(false);
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="zoomIn_up_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="zoomIn_up_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Dialog.Panel className="panel border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg my-8 text-black dark:text-white-dark animate__animated animate__zoomInUp">
                                 <div className="flex bg-[#fbfbfb] dark:bg-[#121c2c] items-center justify-between px-5 py-3">
@@ -2305,7 +2305,7 @@ const [modal16, setModal16] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="standard_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="standard_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Transition.Child
                                                         as={Fragment}
@@ -2377,7 +2377,7 @@ const [modal16, setModal16] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="tabs_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="tabs_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Transition.Child
                                                         as={Fragment}
@@ -2417,9 +2417,9 @@ const [modal16, setModal16] = useState(false);
                                                                                     type="button"
                                                                                     className={`${
                                                                                         selected
-                                                                                            ? '!border-white-light !border-b-white  text-primary !outline-none dark:!border-[#191e3a] dark:!border-b-black '
+                                                                                            ? 'border-white-light! border-b-white!  text-primary outline-hidden! dark:border-[#191e3a]! dark:border-b-black! '
                                                                                             : ''
-                                                                                    } -mb-[1px] block border border-transparent p-3.5 py-2 hover:text-primary dark:hover:border-b-black`}
+                                                                                    } -mb-px block border border-transparent p-3.5 py-2 hover:text-primary dark:hover:border-b-black`}
                                                                                 >
                                                                                     Home
                                                                                 </button>
@@ -2431,9 +2431,9 @@ const [modal16, setModal16] = useState(false);
                                                                                     type="button"
                                                                                     className={`${
                                                                                         selected
-                                                                                            ? '!border-white-light !border-b-white  text-primary !outline-none dark:!border-[#191e3a] dark:!border-b-black '
+                                                                                            ? 'border-white-light! border-b-white!  text-primary outline-hidden! dark:border-[#191e3a]! dark:border-b-black! '
                                                                                             : ''
-                                                                                    }-mb-[1px] block border border-transparent p-3.5 py-2 hover:text-primary dark:hover:border-b-black`}
+                                                                                    }-mb-px block border border-transparent p-3.5 py-2 hover:text-primary dark:hover:border-b-black`}
                                                                                 >
                                                                                     Profile
                                                                                 </button>
@@ -2445,15 +2445,15 @@ const [modal16, setModal16] = useState(false);
                                                                                     type="button"
                                                                                     className={`${
                                                                                         selected
-                                                                                            ? '!border-white-light !border-b-white  text-primary !outline-none dark:!border-[#191e3a] dark:!border-b-black '
+                                                                                            ? 'border-white-light! border-b-white!  text-primary outline-hidden! dark:border-[#191e3a]! dark:border-b-black! '
                                                                                             : ''
-                                                                                    }-mb-[1px] block border border-transparent p-3.5 py-2 hover:text-primary dark:hover:border-b-black`}
+                                                                                    }-mb-px block border border-transparent p-3.5 py-2 hover:text-primary dark:hover:border-b-black`}
                                                                                 >
                                                                                     Contact
                                                                                 </button>
                                                                             )}
                                                                         </Tab>
-                                                                        <Tab className="pointer-events-none -mb-[1px] block p-3.5 py-2 text-white-light outline-none dark:text-dark">Disabled</Tab>
+                                                                        <Tab className="pointer-events-none -mb-px block p-3.5 py-2 text-white-light outline-hidden dark:text-dark">Disabled</Tab>
                                                                     </Tab.List>
                                                                     <Tab.Panels>
                                                                         <Tab.Panel>
@@ -2537,7 +2537,7 @@ const [modal16, setModal16] = useState(false);
                                             >
                                                 <div className="fixed inset-0"></div>
                                             </Transition.Child>
-                                            <div id="profile_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="profile_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Transition.Child
                                                         as={Fragment}
@@ -2608,7 +2608,7 @@ const [modal16, setModal16] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="login_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="login_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Transition.Child
                                                         as={Fragment}
@@ -2752,7 +2752,7 @@ const [modal16, setModal16] = useState(false);
                                             >
                                                 <div className="fixed inset-0" />
                                             </Transition.Child>
-                                            <div id="register_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                            <div id="register_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                                 <div className="flex min-h-screen items-start justify-center px-4">
                                                     <Transition.Child
                                                         as={Fragment}
@@ -2901,7 +2901,7 @@ const [modal16, setModal16] = useState(false);
                                             setModal22(false);
                                         }}
                                     >
-                                        <div id="slider_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                                        <div id="slider_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                                             <div className="flex min-h-screen items-start justify-center px-4">
                                                 <Dialog.Panel className="animate__animated animate__fadeIn panel my-8 w-full max-w-xl overflow-hidden rounded-lg border-0 py-1 px-4">
                                                     <div className="flex items-center justify-between py-5 text-lg font-semibold dark:text-white">
@@ -2946,7 +2946,7 @@ const [modal16, setModal16] = useState(false);
                                                         </div>
                                                         <button
                                                             type="button"
-                                                            className="swiper-button-prev1 absolute top-1/2 z-[999] grid -translate-y-1/2 place-content-center rounded-full border border-primary p-1  text-primary transition hover:border-primary hover:bg-primary hover:text-white ltr:left-2 rtl:right-2"
+                                                            className="swiper-button-prev1 absolute top-1/2 z-999 grid -translate-y-1/2 place-content-center rounded-full border border-primary p-1  text-primary transition hover:border-primary hover:bg-primary hover:text-white ltr:left-2 rtl:right-2"
                                                         >
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 rtl:rotate-180">
                                                                 <path d="M15 5L9 12L15 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -2954,7 +2954,7 @@ const [modal16, setModal16] = useState(false);
                                                         </button>
                                                         <button
                                                             type="button"
-                                                            className="swiper-button-next1 absolute top-1/2 z-[999] grid -translate-y-1/2 place-content-center rounded-full border border-primary p-1 text-primary transition hover:border-primary hover:bg-primary hover:text-white ltr:right-2 rtl:left-2"
+                                                            className="swiper-button-next1 absolute top-1/2 z-999 grid -translate-y-1/2 place-content-center rounded-full border border-primary p-1 text-primary transition hover:border-primary hover:bg-primary hover:text-white ltr:right-2 rtl:left-2"
                                                         >
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="rtl:rotate-180">
                                                                 <path d="M9 5L15 12L9 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -3008,7 +3008,7 @@ import { Navigation, Pagination } from 'swiper';
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="standard_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="standard_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Transition.Child
                                 as={Fragment}
@@ -3067,7 +3067,7 @@ import { Navigation, Pagination } from 'swiper';
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="tabs_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="tabs_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Transition.Child
                                 as={Fragment}
@@ -3094,9 +3094,9 @@ import { Navigation, Pagination } from 'swiper';
                                                             type="button"
                                                             className={\`\${
                                                                 selected
-                                                                    ? '!border-white-light !border-b-white  text-primary dark:!border-[#191e3a] dark:!border-b-black !outline-none '
+                                                                    ? 'border-white-light! border-b-white!  text-primary dark:border-[#191e3a]! dark:border-b-black! outline-hidden! '
                                                                     : ''
-                                                            } p-3.5 py-2 -mb-[1px] block border border-transparent hover:text-primary dark:hover:border-b-black\`}
+                                                            } p-3.5 py-2 -mb-px block border border-transparent hover:text-primary dark:hover:border-b-black\`}
                                                         >
                                                             Home
                                                         </button>
@@ -3108,9 +3108,9 @@ import { Navigation, Pagination } from 'swiper';
                                                             type="button"
                                                             className={\`\${
                                                                 selected
-                                                                    ? '!border-white-light !border-b-white  text-primary dark:!border-[#191e3a] dark:!border-b-black !outline-none '
+                                                                    ? 'border-white-light! border-b-white!  text-primary dark:border-[#191e3a]! dark:border-b-black! outline-hidden! '
                                                                     : ''
-                                                            } p-3.5 py-2 -mb-[1px] block border border-transparent hover:text-primary dark:hover:border-b-black\`}
+                                                            } p-3.5 py-2 -mb-px block border border-transparent hover:text-primary dark:hover:border-b-black\`}
                                                         >
                                                             Profile
                                                         </button>
@@ -3122,15 +3122,15 @@ import { Navigation, Pagination } from 'swiper';
                                                             type="button"
                                                             className={\`\${
                                                                 selected
-                                                                    ? '!border-white-light !border-b-white  text-primary dark:!border-[#191e3a] dark:!border-b-black !outline-none '
+                                                                    ? 'border-white-light! border-b-white!  text-primary dark:border-[#191e3a]! dark:border-b-black! outline-hidden! '
                                                                     : ''
-                                                            } p-3.5 py-2 -mb-[1px] block border border-transparent hover:text-primary dark:hover:border-b-black\`}
+                                                            } p-3.5 py-2 -mb-px block border border-transparent hover:text-primary dark:hover:border-b-black\`}
                                                         >
                                                             Contact
                                                         </button>
                                                     )}
                                                 </Tab>
-                                                <Tab className="p-3.5 py-2 -mb-[1px] block pointer-events-none text-white-light dark:text-dark outline-none">Disabled</Tab>
+                                                <Tab className="p-3.5 py-2 -mb-px block pointer-events-none text-white-light dark:text-dark outline-hidden">Disabled</Tab>
                                             </Tab.List>
                                             <Tab.Panels>
                                                 <Tab.Panel>
@@ -3214,7 +3214,7 @@ import { Navigation, Pagination } from 'swiper';
                     >
                         <div className="fixed inset-0"></div>
                     </Transition.Child>
-                    <div id="profile_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="profile_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Transition.Child
                                 as={Fragment}
@@ -3272,7 +3272,7 @@ import { Navigation, Pagination } from 'swiper';
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="login_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="login_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Transition.Child
                                 as={Fragment}
@@ -3361,7 +3361,7 @@ import { Navigation, Pagination } from 'swiper';
                     >
                         <div className="fixed inset-0" />
                     </Transition.Child>
-                    <div id="register_modal" className="fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto">
+                    <div id="register_modal" className="fixed inset-0 bg-[black]/60 z-999 overflow-y-auto">
                         <div className="flex items-start justify-center min-h-screen px-4">
                             <Transition.Child
                                 as={Fragment}
@@ -3442,7 +3442,7 @@ import { Navigation, Pagination } from 'swiper';
                     setModal22(false);
                 }}
             >
-                <div id="slider_modal" className="fixed inset-0 z-[999] overflow-y-auto bg-[black]/60">
+                <div id="slider_modal" className="fixed inset-0 z-999 overflow-y-auto bg-[black]/60">
                     <div className="flex min-h-screen items-start justify-center px-4">
                         <Dialog.Panel className="animate__animated animate__fadeIn panel my-8 w-full max-w-xl overflow-hidden rounded-lg border-0 py-1 px-4">
                             <div className="flex items-center justify-between py-5 text-lg font-semibold dark:text-white">
@@ -3490,7 +3490,7 @@ import { Navigation, Pagination } from 'swiper';
                                 </div>
                                 <button
                                     type="button"
-                                    className="swiper-button-prev-ex1 absolute top-1/2 z-[999] grid -translate-y-1/2 place-content-center rounded-full border border-primary p-1  text-primary transition hover:border-primary hover:bg-primary hover:text-white ltr:left-2 rtl:right-2"
+                                    className="swiper-button-prev-ex1 absolute top-1/2 z-999 grid -translate-y-1/2 place-content-center rounded-full border border-primary p-1  text-primary transition hover:border-primary hover:bg-primary hover:text-white ltr:left-2 rtl:right-2"
                                 >
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 rtl:rotate-180">
                                         <path d="M15 5L9 12L15 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -3498,7 +3498,7 @@ import { Navigation, Pagination } from 'swiper';
                                 </button>
                                 <button
                                     type="button"
-                                    className="swiper-button-next-ex1 absolute top-1/2 z-[999] grid -translate-y-1/2 place-content-center rounded-full border border-primary p-1 text-primary transition hover:border-primary hover:bg-primary hover:text-white ltr:right-2 rtl:left-2"
+                                    className="swiper-button-next-ex1 absolute top-1/2 z-999 grid -translate-y-1/2 place-content-center rounded-full border border-primary p-1 text-primary transition hover:border-primary hover:bg-primary hover:text-white ltr:right-2 rtl:left-2"
                                 >
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="rtl:rotate-180">
                                         <path d="M9 5L15 12L9 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

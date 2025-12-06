@@ -57,9 +57,9 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+                        <div className="max-w-76 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
                             <div className="py-7 px-6">
-                                <div className="bg-[#3b3f5c] mb-5 inline-block p-3 text-[#f1f2f3] rounded-full">
+                                <div className="bg-dark mb-5 inline-block p-3 text-[#f1f2f3] rounded-full">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
                                         <path
                                             opacity="0.5"
@@ -70,7 +70,7 @@ const Cards = () => {
                                         <path d="M7.61475 10.7237C8.2495 8.71826 9.63062 7.08805 11.3858 6.27637" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                                     </svg>
                                 </div>
-                                <h5 className="text-[#3b3f5c] text-xl font-semibold mb-4 dark:text-white-light">Simple</h5>
+                                <h5 className="text-dark text-xl font-semibold mb-4 dark:text-white-light">Simple</h5>
                                 <p className="text-white-dark">Mauris nisi felis, placerat in volutpat id, varius et sapien.</p>
                             </div>
                         </div>
@@ -79,12 +79,12 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+    <div className="max-w-76 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div className="py-7 px-6">
-            <div className="bg-[#3b3f5c] mb-5 inline-block p-3 text-[#f1f2f3] rounded-full">
+            <div className="bg-dark mb-5 inline-block p-3 text-[#f1f2f3] rounded-full">
                 <svg>...</svg>
             </div>
-            <h5 className="text-[#3b3f5c] text-xl font-semibold mb-4 dark:text-white-light">Simple</h5>
+            <h5 className="text-dark text-xl font-semibold mb-4 dark:text-white-light">Simple</h5>
             <p className="text-white-dark">Mauris nisi felis, placerat in volutpat id, varius et sapien.</p>
         </div>
     </div>
@@ -119,12 +119,12 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+                        <div className="max-w-76 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
                             <div className="py-7 px-6">
                                 <div className="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
                                     <img src="/assets/images/profile-28.jpeg" alt="cover" className="w-full h-full object-cover" />
                                 </div>
-                                <h5 className="text-[#3b3f5c] text-xl font-semibold mb-4 dark:text-white-light">CLI Based</h5>
+                                <h5 className="text-dark text-xl font-semibold mb-4 dark:text-white-light">CLI Based</h5>
                                 <p className="text-white-dark">Etiam sed augue ac justo tincidunt posuere. Vivamus euismod eros, nec risus malesuada.</p>
                                 <button type="button" className="btn btn-primary mt-6">
                                     Explore More
@@ -136,12 +136,12 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+    <div className="max-w-76 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div className="py-7 px-6">
             <div className="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
                 <img src="/assets/images/profile-28.jpeg" alt="cover" className="w-full h-full object-cover" />
             </div>
-            <h5 className="text-[#3b3f5c] text-xl font-semibold mb-4 dark:text-white-light">CLI Based</h5>
+            <h5 className="text-dark text-xl font-semibold mb-4 dark:text-white-light">CLI Based</h5>
             <p className="text-white-dark">Etiam sed augue ac justo tincidunt posuere. Vivamus euismod eros, nec risus malesuada.</p>
             <button type="button" className="btn btn-primary mt-6">
                 Explore More
@@ -179,14 +179,14 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[18rem] w-full bg-[#3b3f5c] shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
+                        <div className="max-w-[18rem] w-full bg-dark shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
                             <div className="text-center text-black-light">
                                 <div className="mb-5 w-20 h-20 rounded-full overflow-hidden mx-auto">
                                     <img src="/assets/images/profile-34.jpeg" alt="profile" className="w-full h-full object-cover" />
                                 </div>
                                 <h5 className="text-white text-[15px] font-semibold mb-2">Luke Ivory</h5>
                                 <p>Manager</p>
-                                <div className="flex justify-center items-center text-[#e2a03f] my-4">
+                                <div className="flex justify-center items-center text-warning my-4">
                                     <svg className="fill-[#e2a03f]" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
@@ -231,14 +231,14 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[18rem] w-full bg-[#3b3f5c] shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
+    <div className="max-w-[18rem] w-full bg-dark shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
         <div className="text-center text-black-light">
             <div className="mb-5 w-20 h-20 rounded-full overflow-hidden mx-auto">
                 <img src="/assets/images/profile-34.jpeg" alt="profile" className="w-full h-full object-cover" />
             </div>
             <h5 className="text-white text-[15px] font-semibold mb-2">Luke Ivory</h5>
             <p>Manager</p>
-            <div className="flex justify-center items-center text-[#e2a03f] my-4">
+            <div className="flex justify-center items-center text-warning my-4">
                 <svg>...</svg>
                 <svg>...</svg>
                 <svg>...</svg>
@@ -279,13 +279,13 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[30rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+                        <div className="max-w-120 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
                             <div className="p-5 flex items-center flex-col sm:flex-row">
                                 <div className="mb-5 w-20 h-20 rounded-full overflow-hidden">
                                     <img src="/assets/images/profile-34.jpeg" alt="profile" className="w-full h-full object-cover" />
                                 </div>
-                                <div className="flex-1 ltr:sm:pl-5 rtl:sm:pr-5 text-center sm:text-left">
-                                    <h5 className="text-[#3b3f5c] text-[15px] font-semibold mb-2 dark:text-white-light">Luke Ivory</h5>
+                                <div className="flex-1 sm:ltr:pl-5 sm:rtl:pr-5 text-center sm:text-left">
+                                    <h5 className="text-dark text-[15px] font-semibold mb-2 dark:text-white-light">Luke Ivory</h5>
                                     <p className="mb-2 text-white-dark">Manager</p>
                                     <span className="badge bg-primary rounded-full">4.5</span>
                                     <p className="font-semibold text-white-dark mt-4 sm:mt-8">
@@ -299,13 +299,13 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[30rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+    <div className="max-w-120 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div className="p-5 flex items-center flex-col sm:flex-row">
             <div className="mb-5 w-20 h-20 rounded-full overflow-hidden">
                 <img src="/assets/images/profile-34.jpeg" alt="profile" className="w-full h-full object-cover" />
             </div>
-            <div className="flex-1 ltr:sm:pl-5 rtl:sm:pr-5 text-center sm:text-left">
-                <h5 className="text-[#3b3f5c] text-[15px] font-semibold mb-2 dark:text-white-light">Luke Ivory</h5>
+            <div className="flex-1 sm:ltr:pl-5 sm:rtl:pr-5 text-center sm:text-left">
+                <h5 className="text-dark text-[15px] font-semibold mb-2 dark:text-white-light">Luke Ivory</h5>
                 <p className="mb-2 text-white-dark">Manager</p>
                 <span className="badge bg-primary rounded-full">4.5</span>
                 <p className="font-semibold text-white-dark mt-4 sm:mt-8">
@@ -345,7 +345,7 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[20rem] w-full bg-secondary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-0 dark:bg-secondary-dark-light dark:shadow-none p-5">
+                        <div className="max-w-[20rem] w-full bg-secondary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-0 dark:bg-secondary-dark-light dark:shadow-none p-5">
                             <div className="text-black-light">
                                 <p className="font-semibold mb-5">Maecenas nec mi vel lacus condimentum rhoncus dignissim egestas orci. Integer blandit porta placerat. Vestibulum in ultricies.</p>
                                 <div className="flex">
@@ -364,7 +364,7 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[20rem] w-full bg-secondary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-0 dark:bg-secondary-dark-light dark:shadow-none p-5">
+    <div className="max-w-[20rem] w-full bg-secondary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-0 dark:bg-secondary-dark-light dark:shadow-none p-5">
         <div className="text-black-light">
             <p className="font-semibold mb-5">Maecenas nec mi vel lacus condimentum rhoncus dignissim egestas orci. Integer blandit porta placerat. Vestibulum in ultricies.</p>
             <div className="flex">
@@ -409,16 +409,16 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[20rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5 ">
+                        <div className="max-w-[20rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5 ">
                             <div className="text-[#515365] dark:text-white-light">
                                 <p className="font-semibold italic mb-5">
                                     Maecenas nec mi vel lacus condimentum rhoncus dignissim egestas orci. Integer blandit porta placerat. Vestibulum in ultricies.
                                 </p>
                                 <div className="flex">
                                     <div className="flex-1">
-                                        <h5 className="text-[#3b3f5c] text-[15px] font-bold mb-1.5 dark:text-white-light">Luke Ivory</h5>
+                                        <h5 className="text-dark text-[15px] font-bold mb-1.5 dark:text-white-light">Luke Ivory</h5>
                                         <p className="text-white-dark mb-1.5">Manager</p>
-                                        <div className="flex justify-start items-center text-[#e2a03f]">
+                                        <div className="flex justify-start items-center text-warning">
                                             <svg className="fill-[#e2a03f]" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
@@ -464,16 +464,16 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[20rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5 ">
+    <div className="max-w-[20rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5 ">
         <div className="text-[#515365] dark:text-white-light">
             <p className="font-semibold italic mb-5">
                 Maecenas nec mi vel lacus condimentum rhoncus dignissim egestas orci. Integer blandit porta placerat. Vestibulum in ultricies.
             </p>
             <div className="flex">
                 <div className="flex-1">
-                    <h5 className="text-[#3b3f5c] text-[15px] font-bold mb-1.5 dark:text-white-light">Luke Ivory</h5>
+                    <h5 className="text-dark text-[15px] font-bold mb-1.5 dark:text-white-light">Luke Ivory</h5>
                     <p className="text-white-dark mb-1.5">Manager</p>
-                    <div className="flex justify-start items-center text-[#e2a03f]">
+                    <div className="flex justify-start items-center text-warning">
                         <svg>...</svg>
                         <svg>...</svg>
                         <svg>...</svg>
@@ -515,11 +515,11 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[20rem] w-full bg-primary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-0 dark:bg-primary-dark-light dark:shadow-none p-5">
+                        <div className="max-w-[20rem] w-full bg-primary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-0 dark:bg-primary-dark-light dark:shadow-none p-5">
                             <div className="text-center font-semibold">
                                 <h5 className="text-white text-xl font-bold mb-5 dark:text-white-light">Rating</h5>
                                 <p className="text-white mb-5 text-base">(4.3)</p>
-                                <div className="flex justify-center items-center gap-1 text-[#e2a03f]">
+                                <div className="flex justify-center items-center gap-1 text-warning">
                                     <svg className="fill-[#e2a03f]" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
@@ -564,11 +564,11 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[20rem] w-full bg-primary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-0 dark:bg-primary-dark-light dark:shadow-none p-5">
+    <div className="max-w-[20rem] w-full bg-primary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-0 dark:bg-primary-dark-light dark:shadow-none p-5">
         <div className="text-center font-semibold">
             <h5 className="text-white text-xl font-bold mb-5 dark:text-white-light">Rating</h5>
             <p className="text-white mb-5 text-base">(4.3)</p>
-            <div className="flex justify-center items-center gap-1 text-[#e2a03f]">
+            <div className="flex justify-center items-center gap-1 text-warning">
                 <svg>...</svg>
                 <svg>...</svg>
                 <svg>...</svg>
@@ -609,7 +609,7 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[24rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
+                        <div className="max-w-[24rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
                             <div className="flex justify-between mb-5">
                                 <h6 className="text-black font-semibold text-base dark:text-white-light">Placed Order</h6>
                                 <span className="badge bg-primary/10 text-primary py-1.5 dark:bg-primary dark:text-white">IN PROGRESS</span>
@@ -644,7 +644,7 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-<div className="max-w-[24rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
+<div className="max-w-[24rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
     <div className="flex justify-between mb-5">
         <h6 className="text-black font-semibold text-base dark:text-white-light">Placed Order</h6>
         <span className="badge bg-primary/10 text-primary py-1.5 dark:bg-primary dark:text-white">IN PROGRESS</span>
@@ -705,15 +705,15 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[22rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+                        <div className="max-w-88 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
                             <div className="py-7 px-6">
                                 <div className="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[260px] overflow-hidden">
                                     <img src="/assets/images/profile-28.jpeg" alt="profile" className="w-full h-full object-cover" />
                                 </div>
                                 <p className="text-primary text-xs mb-1.5 font-bold">25 Sep 2020</p>
-                                <h5 className="text-[#3b3f5c] text-[15px] font-bold mb-4 dark:text-white-light">How to Start a Blog in 5 Easy Steps.</h5>
+                                <h5 className="text-dark text-[15px] font-bold mb-4 dark:text-white-light">How to Start a Blog in 5 Easy Steps.</h5>
                                 <p className="text-white-dark ">Vestibulum vestibulum tortor ut eros tincidunt, ut rutrum elit volutpat.</p>
-                                <div className="relative flex justify-between mt-6 pt-4 before:w-[250px] before:h-[1px] before:bg-white-light before:inset-x-0 before:top-0 before:absolute before:mx-auto dark:before:bg-[#1b2e4b]">
+                                <div className="relative flex justify-between mt-6 pt-4 before:w-[250px] before:h-px before:bg-white-light before:inset-x-0 before:top-0 before:absolute before:mx-auto dark:before:bg-[#1b2e4b]">
                                     <div className="flex items-center font-semibold">
                                         <div className="w-9 h-9 rounded-full overflow-hidden inline-block ltr:mr-2 rtl:ml-2.5">
                                             <span className="flex w-full h-full items-center justify-center bg-[#515365] text-white-light shrink-0">AG</span>
@@ -764,15 +764,15 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[22rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+    <div className="max-w-88 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div className="py-7 px-6">
             <div className="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[260px] overflow-hidden">
                 <img src="/assets/images/profile-28.jpeg" alt="profile" className="w-full h-full object-cover" />
             </div>
             <p className="text-primary text-xs mb-1.5 font-bold">25 Sep 2020</p>
-            <h5 className="text-[#3b3f5c] text-[15px] font-bold mb-4 dark:text-white-light">How to Start a Blog in 5 Easy Steps.</h5>
+            <h5 className="text-dark text-[15px] font-bold mb-4 dark:text-white-light">How to Start a Blog in 5 Easy Steps.</h5>
             <p className="text-white-dark ">Vestibulum vestibulum tortor ut eros tincidunt, ut rutrum elit volutpat.</p>
-            <div className="relative flex justify-between mt-6 pt-4 before:w-[250px] before:h-[1px] before:bg-white-light before:inset-x-0 before:top-0 before:absolute before:mx-auto dark:before:bg-[#1b2e4b]">
+            <div className="relative flex justify-between mt-6 pt-4 before:w-[250px] before:h-px before:bg-white-light before:inset-x-0 before:top-0 before:absolute before:mx-auto dark:before:bg-[#1b2e4b]">
                 <div className="flex items-center font-semibold">
                     <div className="w-9 h-9 rounded-full overflow-hidden inline-block ltr:mr-2 rtl:ml-2.5">
                         <span className="flex w-full h-full items-center justify-center bg-[#515365] text-white-light">AG</span>

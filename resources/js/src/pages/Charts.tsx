@@ -166,7 +166,7 @@ const Charts = () => {
                 bar: {
                     horizontal: false,
                     columnWidth: '55%',
-                    endingShape: 'rounded',
+                    endingShape: 'rounded-sm',
                 },
             },
             grid: {
@@ -974,7 +974,7 @@ const columnChart: any = {
             bar: {
                 horizontal: false,
                 columnWidth: '55%',
-                endingShape: 'rounded',
+                endingShape: 'rounded-sm',
             },
         },
         grid: {

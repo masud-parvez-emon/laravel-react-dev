@@ -126,7 +126,7 @@ const Search = () => {
                                     type="text"
                                     value={search}
                                     placeholder="Search Attendees..."
-                                    className="form-input shadow-[0_0_4px_2px_rgb(31_45_61_/_10%)] bg-white rounded-full h-11 placeholder:tracking-wider ltr:pr-11 rtl:pl-11"
+                                    className="form-input shadow-[0_0_4px_2px_rgb(31_45_61/10%)] bg-white rounded-full h-11 placeholder:tracking-wider ltr:pr-11 rtl:pl-11"
                                     onChange={(e) => setSearch(e.target.value)}
                                 />
                                 <button type="button" className="btn btn-primary absolute ltr:right-1 rtl:left-1 inset-y-0 m-auto rounded-full w-9 h-9 p-0 flex items-center justify-center">
@@ -142,7 +142,7 @@ const Search = () => {
                                 return (
                                     <div
                                         key={item.email}
-                                        className="bg-white dark:bg-[#1b2e4b] rounded-xl shadow-[0_0_4px_2px_rgb(31_45_61_/_10%)] p-3 flex items-center justify-between
+                                        className="bg-white dark:bg-[#1b2e4b] rounded-xl shadow-[0_0_4px_2px_rgb(31_45_61/10%)] p-3 flex items-center justify-between
                                          text-gray-500 font-semibold min-w-[625px] hover:text-primary transition-all duration-300 hover:scale-[1.01]"
                                     >
                                         <div className="user-profile">
@@ -224,7 +224,7 @@ useEffect(() => {
                 type="text"
                 value={search}
                 placeholder="Search Attendees..."
-                className="form-input shadow-[0_0_4px_2px_rgb(31_45_61_/_10%)] bg-white rounded-full h-11 placeholder:tracking-wider ltr:pr-11 rtl:pl-11"
+                className="form-input shadow-[0_0_4px_2px_rgb(31_45_61/10%)] bg-white rounded-full h-11 placeholder:tracking-wider ltr:pr-11 rtl:pl-11"
                 onChange={(e) => setSearch(e.target.value)}
             />
             <button type="button" className="btn btn-primary absolute ltr:right-1 rtl:left-1 inset-y-0 m-auto rounded-full w-9 h-9 p-0 flex items-center justify-center">
@@ -237,7 +237,7 @@ useEffect(() => {
             return (
                 <div
                     key={item.email}
-                    className="bg-white dark:bg-[#1b2e4b] rounded-xl shadow-[0_0_4px_2px_rgb(31_45_61_/_10%)] p-3 flex items-center justify-between
+                    className="bg-white dark:bg-[#1b2e4b] rounded-xl shadow-[0_0_4px_2px_rgb(31_45_61/10%)] p-3 flex items-center justify-between
                         text-gray-500 font-semibold min-w-[625px] hover:text-primary transition-all duration-300 hover:scale-[1.01]"
                 >
                     <div className="user-profile">
@@ -294,7 +294,7 @@ useEffect(() => {
                                     <input
                                         type="text"
                                         placeholder="Search..."
-                                        className={`form-input bg-white h-full placeholder:tracking-wider hidden ltr:pl-12 rtl:pr-12 peer ${focus ? '!block' : ''}`}
+                                        className={`form-input bg-white h-full placeholder:tracking-wider hidden ltr:pl-12 rtl:pr-12 peer ${focus ? 'block!' : ''}`}
                                     />
                                     <button
                                         type="button"
@@ -327,7 +327,7 @@ const overlayClickAway = () => {
             <input
                 type="text"
                 placeholder="Search..."
-                className={\`form-input bg-white h-full placeholder:tracking-wider hidden ltr:pl-12 rtl:pr-12 peer ${focus ? '!block' : ''}\`}
+                className={\`form-input bg-white h-full placeholder:tracking-wider hidden ltr:pl-12 rtl:pr-12 peer ${focus ? 'block!' : ''}\`}
             />
             <button
                 type="button"
@@ -385,7 +385,7 @@ const overlayClickAway = () => {
                                 <input
                                     type="text"
                                     placeholder="Let's find your question in fast way"
-                                    className="form-input border-0 border-l rounded-none bg-white  focus:shadow-[0_0_5px_2px_rgb(194_213_255_/_62%)] dark:shadow-[#1b2e4b] placeholder:tracking-wider focus:outline-none py-3"
+                                    className="form-input border-0 border-l rounded-none bg-white  focus:shadow-[0_0_5px_2px_rgb(194_213_255/62%)] dark:shadow-[#1b2e4b] placeholder:tracking-wider focus:outline-hidden py-3"
                                 />
                             </div>
                         </form>
@@ -409,7 +409,7 @@ const overlaySearchClick = () => {
         <input
             type="text"
             placeholder="Let's find your question in fast way"
-            className="form-input border-0 border-l rounded-none bg-white  focus:shadow-[0_0_5px_2px_rgb(194_213_255_/_62%)] dark:shadow-[#1b2e4b] placeholder:tracking-wider focus:outline-none py-3"
+            className="form-input border-0 border-l rounded-none bg-white  focus:shadow-[0_0_5px_2px_rgb(194_213_255/62%)] dark:shadow-[#1b2e4b] placeholder:tracking-wider focus:outline-hidden py-3"
         />
     </div>
 </form>`}</pre>

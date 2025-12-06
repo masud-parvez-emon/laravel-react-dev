@@ -147,55 +147,55 @@ const Progressbar = () => {
                         </div>
                         <div className="mb-5 space-y-5">
                             <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-                                <div className="bg-gradient-to-r from-[#0081ff] to-[#0045ff] h-4 rounded-full w-3/12"></div>
+                                <div className="bg-linear-to-r from-[#0081ff] to-[#0045ff] h-4 rounded-full w-3/12"></div>
                             </div>
                             <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-                                <div className="bg-gradient-to-r from-[#04befe] to-[#4481eb] h-4 rounded-full w-4/12"></div>
+                                <div className="bg-linear-to-r from-[#04befe] to-[#4481eb] h-4 rounded-full w-4/12"></div>
                             </div>
                             <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-                                <div className="bg-gradient-to-r from-[#3cba92] to-[#0ba360] h-4 rounded-full w-5/12"></div>
+                                <div className="bg-linear-to-r from-[#3cba92] to-[#0ba360] h-4 rounded-full w-5/12"></div>
                             </div>
                             <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-                                <div className="bg-gradient-to-r from-[#f09819] to-[#ff5858] h-4 rounded-full w-6/12"></div>
+                                <div className="bg-linear-to-r from-[#f09819] to-[#ff5858] h-4 rounded-full w-6/12"></div>
                             </div>
                             <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-                                <div className="bg-gradient-to-r from-[#d09693] to-[#c71d6f] h-4 rounded-full w-7/12"></div>
+                                <div className="bg-linear-to-r from-[#d09693] to-[#c71d6f] h-4 rounded-full w-7/12"></div>
                             </div>
                             <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-                                <div className="bg-gradient-to-r from-[#7579ff] to-[#b224ef] h-4 rounded-full w-8/12"></div>
+                                <div className="bg-linear-to-r from-[#7579ff] to-[#b224ef] h-4 rounded-full w-8/12"></div>
                             </div>
                             <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-                                <div className="bg-gradient-to-r from-[#2b5876] to-[#4e4376] h-4 rounded-full w-9/12"></div>
+                                <div className="bg-linear-to-r from-[#2b5876] to-[#4e4376] h-4 rounded-full w-9/12"></div>
                             </div>
                         </div>
                         {codeArr.includes('code2') && (
                             <CodeHighlight>
                                 <pre>{`<div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-    <div className="bg-gradient-to-r from-[#0081ff] to-[#0045ff] h-4 rounded-full w-3/12"></div>
+    <div className="bg-linear-to-r from-[#0081ff] to-[#0045ff] h-4 rounded-full w-3/12"></div>
 </div>
 
 <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-    <div className="bg-gradient-to-r from-[#04befe] to-[#4481eb] h-4 rounded-full w-4/12"></div>
+    <div className="bg-linear-to-r from-[#04befe] to-[#4481eb] h-4 rounded-full w-4/12"></div>
 </div>
 
 <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-    <div className="bg-gradient-to-r from-[#3cba92] to-[#0ba360] h-4 rounded-full w-5/12"></div>
+    <div className="bg-linear-to-r from-[#3cba92] to-[#0ba360] h-4 rounded-full w-5/12"></div>
 </div>
 
 <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-    <div className="bg-gradient-to-r from-[#f09819] to-[#ff5858] h-4 rounded-full w-6/12"></div>
+    <div className="bg-linear-to-r from-[#f09819] to-[#ff5858] h-4 rounded-full w-6/12"></div>
 </div>
 
 <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-    <div className="bg-gradient-to-r from-[#d09693] to-[#c71d6f] h-4 rounded-full w-7/12"></div>
+    <div className="bg-linear-to-r from-[#d09693] to-[#c71d6f] h-4 rounded-full w-7/12"></div>
 </div>
 
 <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-    <div className="bg-gradient-to-r from-[#7579ff] to-[#b224ef] h-4 rounded-full w-8/12"></div>
+    <div className="bg-linear-to-r from-[#7579ff] to-[#b224ef] h-4 rounded-full w-8/12"></div>
 </div>
 
 <div className="w-full h-4 bg-[#ebedf2] dark:bg-dark/40 rounded-full">
-    <div className="bg-gradient-to-r from-[#2b5876] to-[#4e4376] h-4 rounded-full w-9/12"></div>
+    <div className="bg-linear-to-r from-[#2b5876] to-[#4e4376] h-4 rounded-full w-9/12"></div>
 </div>`}</pre>
                             </CodeHighlight>
                         )}

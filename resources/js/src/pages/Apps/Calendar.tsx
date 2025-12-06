@@ -245,22 +245,22 @@ const Calendar = () => {
             <div className="panel mb-5">
                 <div className="mb-4 flex items-center sm:flex-row flex-col sm:justify-between justify-center">
                     <div className="sm:mb-0 mb-4">
-                        <div className="text-lg font-semibold ltr:sm:text-left rtl:sm:text-right text-center">Calendar</div>
+                        <div className="text-lg font-semibold sm:ltr:text-left sm:rtl:text-right text-center">Calendar</div>
                         <div className="flex items-center mt-2 flex-wrap sm:justify-start justify-center">
                             <div className="flex items-center ltr:mr-4 rtl:ml-4">
-                                <div className="h-2.5 w-2.5 rounded-sm ltr:mr-2 rtl:ml-2 bg-primary"></div>
+                                <div className="h-2.5 w-2.5 rounded-xs ltr:mr-2 rtl:ml-2 bg-primary"></div>
                                 <div>Work</div>
                             </div>
                             <div className="flex items-center ltr:mr-4 rtl:ml-4">
-                                <div className="h-2.5 w-2.5 rounded-sm ltr:mr-2 rtl:ml-2 bg-info"></div>
+                                <div className="h-2.5 w-2.5 rounded-xs ltr:mr-2 rtl:ml-2 bg-info"></div>
                                 <div>Travel</div>
                             </div>
                             <div className="flex items-center ltr:mr-4 rtl:ml-4">
-                                <div className="h-2.5 w-2.5 rounded-sm ltr:mr-2 rtl:ml-2 bg-success"></div>
+                                <div className="h-2.5 w-2.5 rounded-xs ltr:mr-2 rtl:ml-2 bg-success"></div>
                                 <div>Personal</div>
                             </div>
                             <div className="flex items-center">
-                                <div className="h-2.5 w-2.5 rounded-sm ltr:mr-2 rtl:ml-2 bg-danger"></div>
+                                <div className="h-2.5 w-2.5 rounded-xs ltr:mr-2 rtl:ml-2 bg-danger"></div>
                                 <div>Important</div>
                             </div>
                         </div>
@@ -295,7 +295,7 @@ const Calendar = () => {
 
             {/* add event modal */}
             <Transition appear show={isAddEventModal} as={Fragment}>
-                <Dialog as="div" onClose={() => setIsAddEventModal(false)} open={isAddEventModal} className="relative z-[51]">
+                <Dialog as="div" onClose={() => setIsAddEventModal(false)} open={isAddEventModal} className="relative z-51">
                     <Transition.Child
                         as={Fragment}
                         enter="duration-300 ease-out"
@@ -322,7 +322,7 @@ const Calendar = () => {
                                 <Dialog.Panel className="panel border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg text-black dark:text-white-dark">
                                     <button
                                         type="button"
-                                        className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none"
+                                        className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-hidden"
                                         onClick={() => setIsAddEventModal(false)}
                                     >
                                         <svg
@@ -450,7 +450,7 @@ const Calendar = () => {
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div className="flex justify-end items-center !mt-8">
+                                            <div className="flex justify-end items-center mt-8!">
                                                 <button type="button" className="btn btn-outline-danger" onClick={() => setIsAddEventModal(false)}>
                                                     Cancel
                                                 </button>

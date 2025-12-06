@@ -88,7 +88,7 @@ const Treeview = () => {
                             <li className="py-[5px]">
                                 <button type="button" className={`${treeview1.includes('css') ? 'active' : ''}`} onClick={() => toggleTreeview1('css')}>
                                     <svg
-                                        className={`w-5 h-5 text-primary inline relative -top-1  ltr:mr-2 rtl:ml-2 ${treeview1.includes('css') ? '!rotate-180' : 'rtl:rotate-180'}`}
+                                        className={`w-5 h-5 text-primary inline relative -top-1  ltr:mr-2 rtl:ml-2 ${treeview1.includes('css') ? 'rotate-180!' : 'rtl:rotate-180'}`}
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +140,7 @@ const Treeview = () => {
                                 <button type="button" className={`${treeview1.includes('images') ? 'active' : ''}`} onClick={() => toggleTreeview1('images')}>
                                     <svg
                                         className={`w-5 h-5 text-primary inline relative -top-1  ltr:manimatedImagesr-2 rtl:ml-2 mr-2 ${
-                                            treeview1.includes('images') ? '!rotate-180' : 'rtl:rotate-180'
+                                            treeview1.includes('images') ? 'rotate-180!' : 'rtl:rotate-180'
                                         }`}
                                         viewBox="0 0 24 24"
                                         fill="none"
@@ -230,7 +230,7 @@ const Treeview = () => {
                             <li className="py-[5px]">
                                 <button type="button" className={`${treeview1.includes('html') ? 'active' : ''}`} onClick={() => toggleTreeview1('html')}>
                                     <svg
-                                        className={`w-5 h-5 text-primary inline relative -top-1 ltr:mr-2 rtl:ml-2 ${treeview1.includes('html') ? '!rotate-180' : 'rtl:rotate-180'}`}
+                                        className={`w-5 h-5 text-primary inline relative -top-1 ltr:mr-2 rtl:ml-2 ${treeview1.includes('html') ? 'rotate-180!' : 'rtl:rotate-180'}`}
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -259,7 +259,7 @@ const Treeview = () => {
                                         <li className="py-[5px]">
                                             <button type="button" className={`${pagesSubMenu ? 'open' : ''} `} onClick={() => setPagesSubMenu(!pagesSubMenu)}>
                                                 <svg
-                                                    className={`w-5 h-5 text-primary inline relative -top-1  ltr:mr-2 rtl:ml-2 ${pagesSubMenu ? '!rotate-180' : ''}`}
+                                                    className={`w-5 h-5 text-primary inline relative -top-1  ltr:mr-2 rtl:ml-2 ${pagesSubMenu ? 'rotate-180!' : ''}`}
                                                     viewBox="0 0 24 24"
                                                     fill="none"
                                                     xmlns="http://www.w3.org/2000/svg"

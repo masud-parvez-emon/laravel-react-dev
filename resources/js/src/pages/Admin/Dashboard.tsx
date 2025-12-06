@@ -410,7 +410,7 @@ const Index = () => {
                                     offset={[0, 1]}
                                     placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                     button={
-                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:!text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:text-primary!" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
@@ -438,7 +438,7 @@ const Index = () => {
                             <div className="bg-white dark:bg-black rounded-lg overflow-hidden">
                                 {loading ? (
                                     <div className="min-h-[325px] grid place-content-center bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08] ">
-                                        <span className="animate-spin border-2 border-black dark:border-white !border-l-transparent  rounded-full w-5 h-5 inline-flex"></span>
+                                        <span className="animate-spin border-2 border-black dark:border-white border-l-transparent!  rounded-full w-5 h-5 inline-flex"></span>
                                     </div>
                                 ) : (
                                     <ReactApexChart series={revenueChart.series} options={revenueChart.options} type="area" height={325} />
@@ -455,7 +455,7 @@ const Index = () => {
                             <div className="bg-white dark:bg-black rounded-lg overflow-hidden">
                                 {loading ? (
                                     <div className="min-h-[325px] grid place-content-center bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08] ">
-                                        <span className="animate-spin border-2 border-black dark:border-white !border-l-transparent  rounded-full w-5 h-5 inline-flex"></span>
+                                        <span className="animate-spin border-2 border-black dark:border-white border-l-transparent!  rounded-full w-5 h-5 inline-flex"></span>
                                     </div>
                                 ) : (
                                     <ReactApexChart series={salesByCategory.series} options={salesByCategory.options} type="donut" height={460} />
@@ -490,7 +490,7 @@ const Index = () => {
                             <div className="bg-white dark:bg-black rounded-lg overflow-hidden">
                                 {loading ? (
                                     <div className="min-h-[325px] grid place-content-center bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08] ">
-                                        <span className="animate-spin border-2 border-black dark:border-white !border-l-transparent  rounded-full w-5 h-5 inline-flex"></span>
+                                        <span className="animate-spin border-2 border-black dark:border-white border-l-transparent!  rounded-full w-5 h-5 inline-flex"></span>
                                     </div>
                                 ) : (
                                     <ReactApexChart series={dailySales.series} options={dailySales.options} type="bar" height={160} />
@@ -505,7 +505,7 @@ const Index = () => {
                                 <Dropdown
                                     placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                     button={
-                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:!text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:text-primary!" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
@@ -551,8 +551,8 @@ const Index = () => {
                                         <h6>Income</h6>
                                         <p className="ltr:ml-auto rtl:mr-auto">$92,600</p>
                                     </div>
-                                    <div className="rounded-full h-2 bg-dark-light dark:bg-[#1b2e4b] shadow">
-                                        <div className="bg-gradient-to-r from-[#7579ff] to-[#b224ef] w-11/12 h-full rounded-full"></div>
+                                    <div className="rounded-full h-2 bg-dark-light dark:bg-[#1b2e4b] shadow-sm">
+                                        <div className="bg-linear-to-r from-[#7579ff] to-[#b224ef] w-11/12 h-full rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
@@ -575,8 +575,8 @@ const Index = () => {
                                         <h6>Profit</h6>
                                         <p className="ltr:ml-auto rtl:mr-auto">$37,515</p>
                                     </div>
-                                    <div className="w-full rounded-full h-2 bg-dark-light dark:bg-[#1b2e4b] shadow">
-                                        <div className="bg-gradient-to-r from-[#3cba92] to-[#0ba360] w-full h-full rounded-full" style={{ width: '65%' }}></div>
+                                    <div className="w-full rounded-full h-2 bg-dark-light dark:bg-[#1b2e4b] shadow-sm">
+                                        <div className="bg-linear-to-r from-[#3cba92] to-[#0ba360] w-full h-full rounded-full" style={{ width: '65%' }}></div>
                                     </div>
                                 </div>
                             </div>
@@ -600,8 +600,8 @@ const Index = () => {
                                         <h6>Expenses</h6>
                                         <p className="ltr:ml-auto rtl:mr-auto">$55,085</p>
                                     </div>
-                                    <div className="w-full rounded-full h-2 bg-dark-light dark:bg-[#1b2e4b] shadow">
-                                        <div className="bg-gradient-to-r from-[#f09819] to-[#ff5858] w-full h-full rounded-full" style={{ width: '80%' }}></div>
+                                    <div className="w-full rounded-full h-2 bg-dark-light dark:bg-[#1b2e4b] shadow-sm">
+                                        <div className="bg-linear-to-r from-[#f09819] to-[#ff5858] w-full h-full rounded-full" style={{ width: '80%' }}></div>
                                     </div>
                                 </div>
                             </div>
@@ -648,7 +648,7 @@ const Index = () => {
                         <div className="bg-transparent rounded-lg overflow-hidden">
                             {loading ? (
                                 <div className="min-h-[325px] grid place-content-center bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08] ">
-                                    <span className="animate-spin border-2 border-black dark:border-white !border-l-transparent  rounded-full w-5 h-5 inline-flex"></span>
+                                    <span className="animate-spin border-2 border-black dark:border-white border-l-transparent!  rounded-full w-5 h-5 inline-flex"></span>
                                 </div>
                             ) : (
                                 <ReactApexChart series={totalOrders.series} options={totalOrders.options} type="area" height={290} />
@@ -781,7 +781,7 @@ const Index = () => {
                             <Link to="/" className=" font-semibold group hover:text-primary p-4 flex items-center justify-center group">
                                 View All
                                 <svg
-                                    className="w-4 h-4 rtl:rotate-180 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition duration-300 ltr:ml-1 rtl:mr-1"
+                                    className="w-4 h-4 rtl:rotate-180 group-hover:translate-x-1 group-hover:rtl:-translate-x-1 transition duration-300 ltr:ml-1 rtl:mr-1"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -798,7 +798,7 @@ const Index = () => {
                                 <Dropdown
                                     placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                     button={
-                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:!text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:text-primary!" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
@@ -926,7 +926,7 @@ const Index = () => {
                     </div>
 
                     <div className="panel h-full p-0 border-0 overflow-hidden">
-                        <div className="p-6 bg-gradient-to-r from-[#4361ee] to-[#160f6b] min-h-[190px]">
+                        <div className="p-6 bg-linear-to-r from-[#4361ee] to-[#160f6b] min-h-[190px]">
                             <div className="flex justify-between items-center mb-6">
                                 <div className="bg-black/50 rounded-full p-1 ltr:pr-3 rtl:pl-3 flex items-center text-white font-semibold">
                                     <img className="w-8 h-8 rounded-full border-2 border-white/50 block object-cover ltr:mr-1 rtl:ml-1" src="/assets/images/profile-34.jpeg" alt="avatar" />
@@ -947,7 +947,7 @@ const Index = () => {
                             </div>
                         </div>
                         <div className="-mt-12 px-8 grid grid-cols-2 gap-2">
-                            <div className="bg-white rounded-md shadow px-4 py-2.5 dark:bg-[#060818]">
+                            <div className="bg-white rounded-md shadow-sm px-4 py-2.5 dark:bg-[#060818]">
                                 <span className="flex justify-between items-center mb-4 dark:text-white">
                                     Received
                                     <svg className="w-4 h-4 text-success" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -956,7 +956,7 @@ const Index = () => {
                                 </span>
                                 <div className="btn w-full  py-1 text-base shadow-none border-0 bg-[#ebedf2] dark:bg-black text-[#515365] dark:text-[#bfc9d4]">$97.99</div>
                             </div>
-                            <div className="bg-white rounded-md shadow px-4 py-2.5 dark:bg-[#060818]">
+                            <div className="bg-white rounded-md shadow-sm px-4 py-2.5 dark:bg-[#060818]">
                                 <span className="flex justify-between items-center mb-4 dark:text-white">
                                     Spent
                                     <svg className="w-4 h-4 text-danger" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

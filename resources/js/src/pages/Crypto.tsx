@@ -799,7 +799,7 @@ const Crypto = () => {
             <div className="flex flex-col xl:flex-row gap-5 relative mt-5">
                 <div
                     className={`${
-                        isShowCryptoMenu ? '!block h-full xl:h-auto' : ''
+                        isShowCryptoMenu ? 'block! h-full xl:h-auto' : ''
                     } panel absolute xl:relative p-0 flex-none w-80 border-0 overflow-y-auto z-10 xl:block divide-y divide-[#ebedf2] dark:divide-[#191e3a] hidden`}
                 >
                     {coins.map((item) => {
@@ -838,7 +838,7 @@ const Crypto = () => {
                     })}
                 </div>
                 <div
-                    className={`bg-black/60 z-[5] w-full h-full absolute rounded-md hidden ${isShowCryptoMenu ? '!block xl:!hidden' : ''}`}
+                    className={`bg-black/60 z-5 w-full h-full absolute rounded-md hidden ${isShowCryptoMenu ? 'block! xl:hidden!' : ''}`}
                     onClick={() => setIsShowCryptoMenu(!isShowCryptoMenu)}
                 ></div>
 
@@ -886,7 +886,7 @@ const Crypto = () => {
                                 </div>
                             </div>
                         </div>
-                        <ul className="ltr:md:ml-auto rtl:md:mr-auto grid grid-cols-2 sm:grid-cols-4 font-semibold sm:divide-x rtl:divide-x-reverse divide-[#ebedf2] dark:divide-[#253b5c] text-white-dark mt-5 sm:mt-0">
+                        <ul className="md:ltr:ml-auto md:rtl:mr-auto grid grid-cols-2 sm:grid-cols-4 font-semibold sm:divide-x rtl:divide-x-reverse divide-[#ebedf2] dark:divide-[#253b5c] text-white-dark mt-5 sm:mt-0">
                             <li className="px-4 py-1">
                                 Market Cap
                                 <span className="text-lg mt-1.5 block text-black dark:text-white-light">${currentCoin.marketcap}B</span>
@@ -934,7 +934,7 @@ const Crypto = () => {
                                     <Dropdown
                                         offset={[0, 5]}
                                         placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
-                                        btnClassName="bg-[#f1f2f3] dark:bg-[#1b2e4b] !flex justify-center gap-1 items-center rounded-none px-3 py-2 font-semibold border dark:border-[#253b5c] ltr:rounded-r-md rtl:rounded-l-md cursor-pointer"
+                                        btnClassName="bg-[#f1f2f3] dark:bg-[#1b2e4b] flex! justify-center gap-1 items-center rounded-none px-3 py-2 font-semibold border dark:border-[#253b5c] ltr:rounded-r-md rtl:rounded-l-md cursor-pointer"
                                         button={
                                             <>
                                                 BTC

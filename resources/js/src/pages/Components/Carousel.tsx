@@ -101,12 +101,12 @@ const Carousel = () => {
                                     );
                                 })}
                             </div>
-                            <button className="swiper-button-prev-ex1 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+                            <button className="swiper-button-prev-ex1 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 rtl:rotate-180">
                                     <path d="M15 5L9 12L15 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </button>
-                            <button className="swiper-button-next-ex1 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+                            <button className="swiper-button-next-ex1 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="rtl:rotate-180">
                                     <path d="M9 5L15 12L9 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
@@ -139,10 +139,10 @@ import { Navigation, Pagination, Autoplay } from 'swiper';
             );
         })}
     </div>
-    <button className="swiper-button-prev-ex1 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+    <button className="swiper-button-prev-ex1 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
         <svg>...</svg>
     </button>
-    <button className="swiper-button-next-ex1 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+    <button className="swiper-button-next-ex1 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
         <svg>...</svg>
     </button>
 </Swiper>`}
@@ -191,7 +191,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper';
                                     return (
                                         <SwiperSlide key={i}>
                                             <img src={`/assets/images/${item}`} className="w-full max-h-80 object-cover" alt="itemImage" />
-                                            <div className="absolute z-[999] text-white top-1/4 ltr:left-12 rtl:right-12">
+                                            <div className="absolute z-999 text-white top-1/4 ltr:left-12 rtl:right-12">
                                                 <div className="sm:text-3xl text-base font-bold">This is blog Image</div>
                                                 <div className="sm:mt-5 mt-1 w-4/5 text-base sm:block hidden font-medium">
                                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -204,12 +204,12 @@ import { Navigation, Pagination, Autoplay } from 'swiper';
                                     );
                                 })}
                             </div>
-                            <button className="swiper-button-prev-ex2 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+                            <button className="swiper-button-prev-ex2 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 rtl:rotate-180">
                                     <path d="M15 5L9 12L15 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </button>
-                            <button className="swiper-button-next-ex2 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+                            <button className="swiper-button-next-ex2 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="rtl:rotate-180">
                                     <path d="M9 5L15 12L9 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
@@ -239,7 +239,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper';
             return (
                 <SwiperSlide key={i}>
                     <img src={\`/assets/images/\${item}\`} className="w-full max-h-80 object-cover" alt="itemImage" />
-                    <div className="absolute z-[999] text-white top-1/4 ltr:left-12 rtl:right-12">
+                    <div className="absolute z-999 text-white top-1/4 ltr:left-12 rtl:right-12">
                         <div className="sm:text-3xl text-base font-bold">This is blog Image</div>
                         <div className="sm:mt-5 mt-1 w-4/5 text-base sm:block hidden font-medium">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -252,10 +252,10 @@ import { Navigation, Pagination, Autoplay } from 'swiper';
             );
         })}
     </div>
-    <button className="swiper-button-prev-ex2 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+    <button className="swiper-button-prev-ex2 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
         <svg>...</svg>
     </button>
-    <button className="swiper-button-next-ex2 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+    <button className="swiper-button-next-ex2 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
         <svg>...</svg>
     </button>
 </Swiper>`}
@@ -303,7 +303,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper';
                                     return (
                                         <SwiperSlide key={i}>
                                             <img src={`/assets/images/${item}`} className="w-full" alt="itemImage" />
-                                            <div className="absolute z-[999] text-white top-1/2 left-1/2 w-full -translate-x-1/2 text-center">
+                                            <div className="absolute z-999 text-white top-1/2 left-1/2 w-full -translate-x-1/2 text-center">
                                                 <div className="sm:text-xl text-base font-medium">Lorem Ipsum is simply dummy text of the printing.</div>
                                             </div>
                                         </SwiperSlide>
@@ -326,7 +326,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper';
             return (
                 <SwiperSlide key={i}>
                     <img src={\`/assets/images/\${item}\`} className="w-full" alt="itemImage" />
-                    <div className="absolute z-[999] text-white top-1/2 left-1/2 w-full -translate-x-1/2 text-center">
+                    <div className="absolute z-999 text-white top-1/2 left-1/2 w-full -translate-x-1/2 text-center">
                         <div className="sm:text-xl text-base font-medium">Lorem Ipsum is simply dummy text of the printing.</div>
                     </div>
                 </SwiperSlide>
@@ -384,33 +384,33 @@ import { Navigation, Pagination, Autoplay } from 'swiper';
                                 >
                                     <SwiperSlide>
                                         <img src="/assets/images/carousel1.jpeg" className="w-full" alt="slide1" />
-                                        <div className="absolute z-[999] text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
+                                        <div className="absolute z-999 text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
                                             <div className="text-3xl font-bold">Slide 1</div>
                                             <div className="mb-4 sm:text-base font-medium">Lorem Ipsum is simply dummy text of the printing.</div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <img src="/assets/images/carousel2.jpeg" className="w-full" alt="slide2" />
-                                        <div className="absolute z-[999] text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
+                                        <div className="absolute z-999 text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
                                             <div className="text-3xl font-bold">Slide 2</div>
                                             <div className="mb-4 sm:text-base font-medium">Lorem Ipsum is simply dummy text of the printing.</div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <img src="/assets/images/carousel3.jpeg" className="w-full" alt="slide3" />
-                                        <div className="absolute z-[999] text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
+                                        <div className="absolute z-999 text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
                                             <div className="text-3xl font-bold">Slide 3</div>
                                             <div className="mb-4 sm:text-base font-medium">Lorem Ipsum is simply dummy text of the printing.</div>
                                         </div>
                                     </SwiperSlide>
                                 </Swiper>
                             </div>
-                            <button className="swiper-button-prev-ex4 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+                            <button className="swiper-button-prev-ex4 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 rtl:rotate-180">
                                     <path d="M15 5L9 12L15 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </button>
-                            <button className="swiper-button-next-ex4 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+                            <button className="swiper-button-next-ex4 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="rtl:rotate-180">
                                     <path d="M9 5L15 12L9 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
@@ -445,31 +445,31 @@ import { Navigation, Pagination, Autoplay } from 'swiper';
         >
             <SwiperSlide>
                 <img src="/assets/images/carousel1.jpeg" className="w-full" alt="slide1" />
-                <div className="absolute z-[999] text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
+                <div className="absolute z-999 text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
                     <div className="text-3xl font-bold">Slide 1</div>
                     <div className="mb-4 sm:text-base font-medium">Lorem Ipsum is simply dummy text of the printing.</div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/assets/images/carousel2.jpeg" className="w-full" alt="slide2" />
-                <div className="absolute z-[999] text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
+                <div className="absolute z-999 text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
                     <div className="text-3xl font-bold">Slide 2</div>
                     <div className="mb-4 sm:text-base font-medium">Lorem Ipsum is simply dummy text of the printing.</div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/assets/images/carousel3.jpeg" className="w-full" alt="slide3" />
-                <div className="absolute z-[999] text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
+                <div className="absolute z-999 text-white bottom-8 left-1/2 w-full -translate-x-1/2 text-center sm:px-0 px-11">
                     <div className="text-3xl font-bold">Slide 3</div>
                     <div className="mb-4 sm:text-base font-medium">Lorem Ipsum is simply dummy text of the printing.</div>
                 </div>
             </SwiperSlide>
         </Swiper>
     </div>
-    <button className="swiper-button-prev-ex4 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+    <button className="swiper-button-prev-ex4 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
         <svg>...</svg>
     </button>
-    <button className="swiper-button-next-ex4 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-1/2 -translate-y-1/2">
+    <button className="swiper-button-next-ex4 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-1/2 -translate-y-1/2">
         <svg>...</svg>
     </button>
 </div>`}
@@ -546,12 +546,12 @@ import { Navigation, Pagination, Autoplay } from 'swiper';
                                     })}
                                 </Swiper>
                             </div>
-                            <button className="swiper-button-prev-ex5 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-[44%] -translate-y-1/2">
+                            <button className="swiper-button-prev-ex5 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-[44%] -translate-y-1/2">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 rtl:rotate-180">
                                     <path d="M15 5L9 12L15 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </button>
-                            <button className="swiper-button-next-ex5 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-[44%] -translate-y-1/2">
+                            <button className="swiper-button-next-ex5 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-[44%] -translate-y-1/2">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="rtl:rotate-180">
                                     <path d="M9 5L15 12L9 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
@@ -610,10 +610,10 @@ import { Navigation, Pagination } from 'swiper';
             })}
         </Swiper>
     </div>
-    <button className="swiper-button-prev-ex5 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-[44%] -translate-y-1/2">
+    <button className="swiper-button-prev-ex5 grid place-content-center ltr:left-2 rtl:right-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-[44%] -translate-y-1/2">
         <svg>...</svg>
     </button>
-    <button className="swiper-button-next-ex5 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-[999] top-[44%] -translate-y-1/2">
+    <button className="swiper-button-next-ex5 grid place-content-center ltr:right-2 rtl:left-2 p-1 transition text-primary hover:text-white border border-primary  hover:border-primary hover:bg-primary rounded-full absolute z-999 top-[44%] -translate-y-1/2">
         <svg>...</svg>
     </button>
 </div>`}

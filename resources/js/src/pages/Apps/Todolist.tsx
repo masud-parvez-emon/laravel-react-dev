@@ -585,10 +585,10 @@ const Todolist = () => {
 
     return (
         <div>
-            <div className="flex gap-5 relative sm:h-[calc(100vh_-_150px)] h-full">
+            <div className="flex gap-5 relative sm:h-[calc(100vh-150px)] h-full">
                 <div
-                    className={`panel p-4 flex-none w-[240px] max-w-full absolute xl:relative z-10 space-y-4 xl:h-auto h-full xl:block ltr:xl:rounded-r-md ltr:rounded-r-none rtl:xl:rounded-l-md rtl:rounded-l-none hidden ${
-                        isShowTaskMenu && '!block'
+                    className={`panel p-4 flex-none w-[240px] max-w-full absolute xl:relative z-10 space-y-4 xl:h-auto h-full xl:block xl:ltr:rounded-r-md ltr:rounded-r-none xl:rtl:rounded-l-md rtl:rounded-l-none hidden ${
+                        isShowTaskMenu && 'block!'
                     }`}
                 >
                     <div className="flex flex-col h-full pb-16">
@@ -731,7 +731,7 @@ const Todolist = () => {
                                 <div className="text-white-dark px-1 py-3">Tags</div>
                                 <button
                                     type="button"
-                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-success ltr:hover:pl-3 rtl:hover:pr-3 duration-300 ${
+                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-success hover:ltr:pl-3 hover:rtl:pr-3 duration-300 ${
                                         selectedTab === 'team' && 'ltr:pl-3 rtl:pr-3 bg-gray-100 dark:bg-[#181F32]'
                                     }`}
                                     onClick={() => {
@@ -750,7 +750,7 @@ const Todolist = () => {
                                 </button>
                                 <button
                                     type="button"
-                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-warning ltr:hover:pl-3 rtl:hover:pr-3 duration-300 ${
+                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-warning hover:ltr:pl-3 hover:rtl:pr-3 duration-300 ${
                                         selectedTab === 'low' && 'ltr:pl-3 rtl:pr-3 bg-gray-100 dark:bg-[#181F32]'
                                     }`}
                                     onClick={() => {
@@ -770,7 +770,7 @@ const Todolist = () => {
 
                                 <button
                                     type="button"
-                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-primary ltr:hover:pl-3 rtl:hover:pr-3 duration-300 ${
+                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-primary hover:ltr:pl-3 hover:rtl:pr-3 duration-300 ${
                                         selectedTab === 'medium' && 'ltr:pl-3 rtl:pr-3 bg-gray-100 dark:bg-[#181F32]'
                                     }`}
                                     onClick={() => {
@@ -789,7 +789,7 @@ const Todolist = () => {
                                 </button>
                                 <button
                                     type="button"
-                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-danger ltr:hover:pl-3 rtl:hover:pr-3 duration-300 ${
+                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-danger hover:ltr:pl-3 hover:rtl:pr-3 duration-300 ${
                                         selectedTab === 'high' && 'ltr:pl-3 rtl:pr-3 bg-gray-100 dark:bg-[#181F32]'
                                     }`}
                                     onClick={() => {
@@ -808,7 +808,7 @@ const Todolist = () => {
                                 </button>
                                 <button
                                     type="button"
-                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-info ltr:hover:pl-3 rtl:hover:pr-3 duration-300 ${
+                                    className={`w-full flex items-center h-10 p-1 hover:bg-white-dark/10 rounded-md dark:hover:bg-[#181F32] font-medium text-info hover:ltr:pl-3 hover:rtl:pr-3 duration-300 ${
                                         selectedTab === 'update' && 'ltr:pl-3 rtl:pr-3 bg-gray-100 dark:bg-[#181F32]'
                                     }`}
                                     onClick={() => {
@@ -846,7 +846,7 @@ const Todolist = () => {
                         </div>
                     </div>
                 </div>
-                <div className={`overlay bg-black/60 z-[5] w-full h-full rounded-md absolute hidden ${isShowTaskMenu && '!block xl:!hidden'}`} onClick={() => setIsShowTaskMenu(!isShowTaskMenu)}></div>
+                <div className={`overlay bg-black/60 z-5 w-full h-full rounded-md absolute hidden ${isShowTaskMenu && 'block! xl:hidden!'}`} onClick={() => setIsShowTaskMenu(!isShowTaskMenu)}></div>
                 <div className="panel p-0 flex-1 overflow-auto h-full">
                     <div className="flex flex-col h-full">
                         <div className="p-4 flex sm:flex-row flex-col w-full sm:items-center gap-4">
@@ -861,7 +861,7 @@ const Todolist = () => {
                                 <div className="relative group flex-1">
                                     <input
                                         type="text"
-                                        className="form-input peer ltr:!pr-10 rtl:!pl-10"
+                                        className="form-input peer ltr:pr-10! rtl:pl-10!"
                                         placeholder="Search Task..."
                                         value={searchTask}
                                         onChange={(e) => setSearchTask(e.target.value)}
@@ -880,7 +880,7 @@ const Todolist = () => {
                                 <button
                                     type="button"
                                     disabled={pager.currentPage === 1}
-                                    className="bg-[#f4f4f4] rounded-md p-1 enabled:hover:bg-primary-light dark:bg-white-dark/20 enabled:dark:hover:bg-white-dark/30 ltr:mr-3 rtl:ml-3 disabled:opacity-60 disabled:cursor-not-allowed"
+                                    className="bg-[#f4f4f4] rounded-md p-1 enabled:hover:bg-primary-light dark:bg-white-dark/20 dark:enabled:hover:bg-white-dark/30 ltr:mr-3 rtl:ml-3 disabled:opacity-60 disabled:cursor-not-allowed"
                                     onClick={() => {
                                         pager.currentPage--;
                                         searchTasks(false);
@@ -893,7 +893,7 @@ const Todolist = () => {
                                 <button
                                     type="button"
                                     disabled={pager.currentPage === pager.totalPages}
-                                    className="bg-[#f4f4f4] rounded-md p-1 enabled:hover:bg-primary-light dark:bg-white-dark/20 enabled:dark:hover:bg-white-dark/30 disabled:opacity-60 disabled:cursor-not-allowed"
+                                    className="bg-[#f4f4f4] rounded-md p-1 enabled:hover:bg-primary-light dark:bg-white-dark/20 dark:enabled:hover:bg-white-dark/30 disabled:opacity-60 disabled:cursor-not-allowed"
                                     onClick={() => {
                                         pager.currentPage++;
                                         searchTasks(false);
@@ -1048,7 +1048,7 @@ const Todolist = () => {
                                                     </td>
                                                     <td className="w-1">
                                                         <div className="flex items-center justify-between w-max ltr:ml-auto rtl:mr-auto">
-                                                            <div className="ltr:mr-2.5 rtl:ml-2.5 flex-shrink-0">
+                                                            <div className="ltr:mr-2.5 rtl:ml-2.5 shrink-0">
                                                                 {task.path && (
                                                                     <div>
                                                                         <img src={`/assets/images/${task.path}`} className="h-8 w-8 rounded-full object-cover" alt="avatar" />
@@ -1245,7 +1245,7 @@ const Todolist = () => {
                 </div>
 
                 <Transition appear show={addTaskModal} as={Fragment}>
-                    <Dialog as="div" open={addTaskModal} onClose={() => setAddTaskModal(false)} className="relative z-[51]">
+                    <Dialog as="div" open={addTaskModal} onClose={() => setAddTaskModal(false)} className="relative z-51">
                         <Transition.Child
                             as={Fragment}
                             enter="ease-out duration-300"
@@ -1273,7 +1273,7 @@ const Todolist = () => {
                                         <button
                                             type="button"
                                             onClick={() => setAddTaskModal(false)}
-                                            className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none"
+                                            className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-hidden"
                                         >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1363,7 +1363,7 @@ const Todolist = () => {
                 </Transition>
 
                 <Transition appear show={viewTaskModal} as={Fragment}>
-                    <Dialog as="div" open={viewTaskModal} onClose={() => setViewTaskModal(false)} className="relative z-[51]">
+                    <Dialog as="div" open={viewTaskModal} onClose={() => setViewTaskModal(false)} className="relative z-51">
                         <Transition.Child
                             as={Fragment}
                             enter="ease-out duration-300"
@@ -1391,7 +1391,7 @@ const Todolist = () => {
                                         <button
                                             type="button"
                                             onClick={() => setViewTaskModal(false)}
-                                            className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none"
+                                            className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-hidden"
                                         >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"

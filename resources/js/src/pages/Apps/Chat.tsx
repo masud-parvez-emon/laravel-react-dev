@@ -292,8 +292,8 @@ const Chat = () => {
     };
     return (
         <div>
-            <div className={`flex gap-5 relative sm:h-[calc(100vh_-_150px)] h-full sm:min-h-0 ${isShowChatMenu ? 'min-h-[999px]' : ''}`}>
-                <div className={`panel p-4 flex-none max-w-xs w-full absolute xl:relative z-10 space-y-4 xl:h-full hidden xl:block overflow-hidden ${isShowChatMenu ? '!block' : ''}`}>
+            <div className={`flex gap-5 relative sm:h-[calc(100vh-150px)] h-full sm:min-h-0 ${isShowChatMenu ? 'min-h-[999px]' : ''}`}>
+                <div className={`panel p-4 flex-none max-w-xs w-full absolute xl:relative z-10 space-y-4 xl:h-full hidden xl:block overflow-hidden ${isShowChatMenu ? 'block!' : ''}`}>
                     <div className="flex justify-between items-center">
                         <div className="flex items-center">
                             <div className="flex-none">
@@ -308,7 +308,7 @@ const Chat = () => {
                             <Dropdown
                                 offset={[0, 5]}
                                 placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
-                                btnClassName="bg-[#f4f4f4] dark:bg-[#1b2e4b] hover:bg-primary-light w-8 h-8 rounded-full !flex justify-center items-center hover:text-primary"
+                                btnClassName="bg-[#f4f4f4] dark:bg-[#1b2e4b] hover:bg-primary-light w-8 h-8 rounded-full flex! justify-center items-center hover:text-primary"
                                 button={
                                     <svg className="opacity-70" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
@@ -438,8 +438,8 @@ const Chat = () => {
                         </button>
                     </div>
                     <div className="h-px w-full border-b border-white-light dark:border-[#1b2e4b]"></div>
-                    <div className="!mt-0">
-                        <PerfectScrollbar className="chat-users relative h-full min-h-[100px] sm:h-[calc(100vh_-_357px)] space-y-0.5 ltr:pr-3.5 rtl:pl-3.5 ltr:-mr-3.5 rtl:-ml-3.5">
+                    <div className="mt-0!">
+                        <PerfectScrollbar className="chat-users relative h-full min-h-[100px] sm:h-[calc(100vh-357px)] space-y-0.5 ltr:pr-3.5 rtl:pl-3.5 ltr:-mr-3.5 rtl:-ml-3.5">
                             {filteredItems.map((person: any) => {
                                 return (
                                     <div key={person.userId}>
@@ -452,7 +452,7 @@ const Chat = () => {
                                         >
                                             <div className="flex-1">
                                                 <div className="flex items-center">
-                                                    <div className="flex-shrink-0 relative">
+                                                    <div className="shrink-0 relative">
                                                         <img src={`/assets/images/${person.path}`} className="rounded-full h-12 w-12 object-cover" alt="" />
                                                         {person.active && (
                                                             <div>
@@ -478,7 +478,7 @@ const Chat = () => {
                         </PerfectScrollbar>
                     </div>
                 </div>
-                <div className={`bg-black/60 z-[5] w-full h-full absolute rounded-md hidden ${isShowChatMenu ? '!block xl:!hidden' : ''}`} onClick={() => setIsShowChatMenu(!isShowChatMenu)}></div>
+                <div className={`bg-black/60 z-5 w-full h-full absolute rounded-md hidden ${isShowChatMenu ? 'block! xl:hidden!' : ''}`} onClick={() => setIsShowChatMenu(!isShowChatMenu)}></div>
                 <div className="panel p-0 flex-1">
                     {!isShowUserChat && (
                         <div className="flex items-center justify-center h-full relative p-4">
@@ -491,7 +491,7 @@ const Chat = () => {
                             </button>
 
                             <div className="py-8 flex items-center justify-center flex-col">
-                                <div className="w-[280px] md:w-[430px] mb-8 h-[calc(100vh_-_320px)] min-h-[120px] text-white dark:text-black">
+                                <div className="w-[280px] md:w-[430px] mb-8 h-[calc(100vh-320px)] min-h-[120px] text-white dark:text-black">
                                     <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" className="w-full h-full" viewBox="0 0 891.29496 745.19434" xmlns-xlink="http://www.w3.org/1999/xlink">
                                         <ellipse cx="418.64354" cy="727.19434" rx="352" ry="18" fill={isDark ? '#888ea8' : '#e6e6e6'} />
                                         <path
@@ -669,7 +669,7 @@ const Chat = () => {
                                     <div className="dropdown">
                                         <Dropdown
                                             placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
-                                            btnClassName="bg-[#f4f4f4] dark:bg-[#1b2e4b] hover:bg-primary-light w-8 h-8 rounded-full !flex justify-center items-center"
+                                            btnClassName="bg-[#f4f4f4] dark:bg-[#1b2e4b] hover:bg-primary-light w-8 h-8 rounded-full flex! justify-center items-center"
                                             button={
                                                 <svg className="hover:text-primary rotate-90 opacity-70" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
@@ -774,7 +774,7 @@ const Chat = () => {
                             </div>
                             <div className="h-px w-full border-b border-white-light dark:border-[#1b2e4b]"></div>
 
-                            <PerfectScrollbar className="relative h-full sm:h-[calc(100vh_-_300px)] chat-conversation-box">
+                            <PerfectScrollbar className="relative h-full sm:h-[calc(100vh-300px)] chat-conversation-box">
                                 <div className="space-y-5 p-4 sm:pb-0 pb-[68px] sm:min-h-[300px] min-h-[400px]">
                                     <div className="block m-6 mt-0">
                                         <h4 className="text-xs text-center border-b border-[#f4f4f4] dark:border-gray-800 relative">
@@ -804,7 +804,7 @@ const Chat = () => {
                                                                     <div
                                                                         className={`dark:bg-gray-800 p-4 py-2 rounded-md bg-black/10 ${
                                                                             message.fromUserId === selectedUser.userId
-                                                                                ? 'ltr:rounded-br-none rtl:rounded-bl-none !bg-primary text-white'
+                                                                                ? 'ltr:rounded-br-none rtl:rounded-bl-none bg-primary! text-white'
                                                                                 : 'ltr:rounded-bl-none rtl:rounded-br-none'
                                                                         }`}
                                                                     >
@@ -812,7 +812,7 @@ const Chat = () => {
                                                                     </div>
                                                                     <div className={`${selectedUser.userId === message.fromUserId ? 'hidden' : ''}`}>
                                                                         <svg
-                                                                            className="w-5 h-5 text-black/70 dark:text-white/70 hover:!text-primary"
+                                                                            className="w-5 h-5 text-black/70 dark:text-white/70 hover:text-primary!"
                                                                             viewBox="0 0 24 24"
                                                                             fill="none"
                                                                             xmlns="http://www.w3.org/2000/svg"
@@ -850,7 +850,7 @@ const Chat = () => {
                                 <div className="sm:flex w-full space-x-3 rtl:space-x-reverse items-center">
                                     <div className="relative flex-1">
                                         <input
-                                            className="form-input rounded-full border-0 bg-[#f4f4f4] px-12 focus:outline-none py-2"
+                                            className="form-input rounded-full border-0 bg-[#f4f4f4] px-12 focus:outline-hidden py-2"
                                             placeholder="Type a message"
                                             value={textMessage}
                                             onChange={(e: any) => setTextMessage(e.target.value)}

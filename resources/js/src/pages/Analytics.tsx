@@ -357,7 +357,7 @@ const Analytics = () => {
                                     placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                     btnClassName="hover:text-primary"
                                     button={
-                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:!text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:text-primary!" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
@@ -412,7 +412,7 @@ const Analytics = () => {
                                     placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                     btnClassName="hover:text-primary"
                                     button={
-                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:!text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:text-primary!" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
@@ -454,7 +454,7 @@ const Analytics = () => {
                         <div className="flex items-center justify-between">
                             <div className="w-full rounded-full h-5 p-1 bg-dark-light overflow-hidden shadow-3xl dark:shadow-none dark:bg-dark-light/10">
                                 <div
-                                    className="bg-gradient-to-r from-[#4361ee] to-[#805dca] w-full h-full rounded-full relative before:absolute before:inset-y-0 ltr:before:right-0.5 rtl:before:left-0.5 before:bg-white before:w-2 before:h-2 before:rounded-full before:m-auto"
+                                    className="bg-linear-to-r from-[#4361ee] to-[#805dca] w-full h-full rounded-full relative before:absolute before:inset-y-0 ltr:before:right-0.5 rtl:before:left-0.5 before:bg-white before:w-2 before:h-2 before:rounded-full before:m-auto"
                                     style={{ width: '65%' }}
                                 ></div>
                             </div>
@@ -466,23 +466,23 @@ const Analytics = () => {
                         className="panel h-full overflow-hidden before:bg-[#1937cc] before:absolute before:-right-44 before:top-0 before:bottom-0 before:m-auto before:rounded-full before:w-96 before:h-96 grid grid-cols-1 content-between"
                         style={{ background: 'linear-gradient(0deg,#00c6fb -227%,#005bea)' }}
                     >
-                        <div className="flex items-start justify-between text-white-light mb-16 z-[7]">
+                        <div className="flex items-start justify-between text-white-light mb-16 z-7">
                             <h5 className="font-semibold text-lg">Total Balance</h5>
 
                             <div className="relative text-xl whitespace-nowrap">
                                 $ 41,741.42
-                                <span className="table text-[#d3d3d3] bg-[#4361ee] rounded p-1 text-xs mt-1 ltr:ml-auto rtl:mr-auto">+ 2453</span>
+                                <span className="table text-[#d3d3d3] bg-primary rounded-sm p-1 text-xs mt-1 ltr:ml-auto rtl:mr-auto">+ 2453</span>
                             </div>
                         </div>
                         <div className="flex items-center justify-between z-10">
                             <div className="flex items-center justify-between">
-                                <button type="button" className="shadow-[0_0_2px_0_#bfc9d4] rounded p-1 text-white-light hover:bg-[#1937cc] place-content-center ltr:mr-2 rtl:ml-2">
+                                <button type="button" className="shadow-[0_0_2px_0_#bfc9d4] rounded-sm p-1 text-white-light hover:bg-[#1937cc] place-content-center ltr:mr-2 rtl:ml-2">
                                     <svg className="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                         <line x1="12" y1="5" x2="12" y2="19"></line>
                                         <line x1="5" y1="12" x2="19" y2="12"></line>
                                     </svg>
                                 </button>
-                                <button type="button" className="shadow-[0_0_2px_0_#bfc9d4] rounded p-1 text-white-light hover:bg-[#1937cc] grid place-content-center">
+                                <button type="button" className="shadow-[0_0_2px_0_#bfc9d4] rounded-sm p-1 text-white-light hover:bg-[#1937cc] grid place-content-center">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12Z"
@@ -495,7 +495,7 @@ const Analytics = () => {
                                     </svg>
                                 </button>
                             </div>
-                            <button type="button" className="shadow-[0_0_2px_0_#bfc9d4] rounded p-1 text-white-light hover:bg-[#4361ee] z-10">
+                            <button type="button" className="shadow-[0_0_2px_0_#bfc9d4] rounded-sm p-1 text-white-light hover:bg-primary z-10">
                                 Upgrade
                             </button>
                         </div>
@@ -512,7 +512,7 @@ const Analytics = () => {
                                     placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                     btnClassName="hover:text-primary"
                                     button={
-                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:!text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:text-primary!" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
@@ -546,7 +546,7 @@ const Analytics = () => {
                                     placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                     btnClassName="hover:text-primary"
                                     button={
-                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:!text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:text-primary!" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
@@ -568,7 +568,7 @@ const Analytics = () => {
                             <div className="space-y-7">
                                 <div className="flex">
                                     <div className="shrink-0 ltr:mr-2 rtl:ml-2 relative z-10 before:w-[2px] before:h-[calc(100%-24px)] before:bg-white-dark/30 before:absolute before:top-10 before:left-4">
-                                        <div className="bg-secondary shadow shadow-secondary w-8 h-8 rounded-full flex items-center justify-center text-white">
+                                        <div className="bg-secondary shadow-sm shadow-secondary w-8 h-8 rounded-full flex items-center justify-center text-white">
                                             <svg className="w-4 h-4" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                 <line x1="12" y1="5" x2="12" y2="19"></line>
                                                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -739,7 +739,7 @@ const Analytics = () => {
                                     <div>
                                         <div className="w-full rounded-full h-5 p-1 bg-dark-light overflow-hidden shadow-3xl dark:bg-dark-light/10 dark:shadow-none">
                                             <div
-                                                className="bg-gradient-to-r from-[#009ffd] to-[#2a2a72] w-full h-full rounded-full relative before:absolute before:inset-y-0 ltr:before:right-0.5 rtl:before:left-0.5 before:bg-white before:w-2 before:h-2 before:rounded-full before:m-auto"
+                                                className="bg-linear-to-r from-[#009ffd] to-[#2a2a72] w-full h-full rounded-full relative before:absolute before:inset-y-0 ltr:before:right-0.5 rtl:before:left-0.5 before:bg-white before:w-2 before:h-2 before:rounded-full before:m-auto"
                                                 style={{ width: '65%' }}
                                             ></div>
                                         </div>
@@ -767,7 +767,7 @@ const Analytics = () => {
                                     <div>
                                         <div className="w-full rounded-full h-5 p-1 bg-dark-light overflow-hidden shadow-3xl dark:bg-dark-light/10 dark:shadow-none">
                                             <div
-                                                className="bg-gradient-to-r from-[#a71d31] to-[#3f0d12] w-full h-full rounded-full relative before:absolute before:inset-y-0 ltr:before:right-0.5 rtl:before:left-0.5 before:bg-white before:w-2 before:h-2 before:rounded-full before:m-auto"
+                                                className="bg-linear-to-r from-[#a71d31] to-[#3f0d12] w-full h-full rounded-full relative before:absolute before:inset-y-0 ltr:before:right-0.5 rtl:before:left-0.5 before:bg-white before:w-2 before:h-2 before:rounded-full before:m-auto"
                                                 style={{ width: '40%' }}
                                             ></div>
                                         </div>
@@ -801,7 +801,7 @@ const Analytics = () => {
                                     <div>
                                         <div className="w-full rounded-full h-5 p-1 bg-dark-light overflow-hidden shadow-3xl dark:bg-dark-light/10 dark:shadow-none">
                                             <div
-                                                className="bg-gradient-to-r from-[#fe5f75] to-[#fc9842] w-full h-full rounded-full relative before:absolute before:inset-y-0 ltr:before:right-0.5 rtl:before:left-0.5 before:bg-white before:w-2 before:h-2 before:rounded-full before:m-auto"
+                                                className="bg-linear-to-r from-[#fe5f75] to-[#fc9842] w-full h-full rounded-full relative before:absolute before:inset-y-0 ltr:before:right-0.5 rtl:before:left-0.5 before:bg-white before:w-2 before:h-2 before:rounded-full before:m-auto"
                                                 style={{ width: '25%' }}
                                             ></div>
                                         </div>
@@ -966,7 +966,7 @@ const Analytics = () => {
                             </div>
 
                             <div className="w-full absolute bottom-0 flex items-center justify-between p-5 -mx-5">
-                                <button type="button" className="btn btn-secondary btn-lg w-full border-0 bg-gradient-to-r from-[#3d38e1] to-[#1e9afe]">
+                                <button type="button" className="btn btn-secondary btn-lg w-full border-0 bg-linear-to-r from-[#3d38e1] to-[#1e9afe]">
                                     View Details
                                 </button>
                             </div>
@@ -991,7 +991,7 @@ const Analytics = () => {
                                     placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                     btnClassName="hover:text-primary"
                                     button={
-                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:!text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="w-5 h-5 text-black/70 dark:text-white/70 hover:text-primary!" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
                                             <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
@@ -1030,7 +1030,7 @@ const Analytics = () => {
                                 <p className="text-primary">65%</p>
                             </div>
                             <div className="rounded-full h-2.5 p-0.5 bg-dark-light dark:bg-dark-light/10 mb-5">
-                                <div className="bg-gradient-to-r from-[#1e9afe] to-[#60dfcd] h-full rounded-full" style={{ width: '65%' }}></div>
+                                <div className="bg-linear-to-r from-[#1e9afe] to-[#60dfcd] h-full rounded-full" style={{ width: '65%' }}></div>
                             </div>
                             <div className="flex items-end justify-between">
                                 <div className="flex items-center rounded-full bg-danger/20 px-2 py-1 text-xs text-danger font-semibold">
@@ -1040,7 +1040,7 @@ const Analytics = () => {
                                     </svg>
                                     3 Days Left
                                 </div>
-                                <div className="flex items-center justify-center group-hover:-space-x-2 rtl:space-x-reverse rtl:group-hover:space-x-reverse">
+                                <div className="flex items-center justify-center group-hover:-space-x-2 rtl:space-x-reverse group-hover:rtl:space-x-reverse">
                                     <span className="bg-[#bfc9d4] dark:bg-dark w-9 h-9 rounded-full flex items-center justify-center text-white font-semibold transition-all duration-300 opacity-0 group-hover:opacity-100">
                                         +6
                                     </span>

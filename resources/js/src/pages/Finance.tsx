@@ -393,7 +393,7 @@ const Finance = () => {
             </ul>
             <div className="pt-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-6 text-white">
-                    <div className="panel bg-gradient-to-r from-cyan-500 to-cyan-400">
+                    <div className="panel bg-linear-to-r from-cyan-500 to-cyan-400">
                         <div className="flex justify-between">
                             <div className="ltr:mr-1 rtl:ml-1 text-md font-semibold">Users Visit</div>
                             <div className="dropdown">
@@ -439,7 +439,7 @@ const Finance = () => {
                     </div>
 
                     {/* Sessions */}
-                    <div className="panel bg-gradient-to-r from-violet-500 to-violet-400">
+                    <div className="panel bg-linear-to-r from-violet-500 to-violet-400">
                         <div className="flex justify-between">
                             <div className="ltr:mr-1 rtl:ml-1 text-md font-semibold">Sessions</div>
                             <div className="dropdown">
@@ -485,7 +485,7 @@ const Finance = () => {
                     </div>
 
                     {/*  Time On-Site */}
-                    <div className="panel bg-gradient-to-r from-blue-500 to-blue-400">
+                    <div className="panel bg-linear-to-r from-blue-500 to-blue-400">
                         <div className="flex justify-between">
                             <div className="ltr:mr-1 rtl:ml-1 text-md font-semibold">Time On-Site</div>
                             <div className="dropdown">
@@ -531,7 +531,7 @@ const Finance = () => {
                     </div>
 
                     {/* Bounce Rate */}
-                    <div className="panel bg-gradient-to-r from-fuchsia-500 to-fuchsia-400">
+                    <div className="panel bg-linear-to-r from-fuchsia-500 to-fuchsia-400">
                         <div className="flex justify-between">
                             <div className="ltr:mr-1 rtl:ml-1 text-md font-semibold">Bounce Rate</div>
                             <div className="dropdown">

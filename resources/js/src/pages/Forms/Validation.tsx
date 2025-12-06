@@ -136,7 +136,7 @@ const Validation = () => {
                                         </div>
                                         <button
                                             type="submit"
-                                            className="btn btn-primary !mt-6"
+                                            className="btn btn-primary mt-6!"
                                             onClick={() => {
                                                 if (touched.fullName && !errors.fullName) {
                                                     submitForm();
@@ -189,7 +189,7 @@ const SubmittedForm = Yup.object().shape({
             </div>
             <button
                 type="submit"
-                className="btn btn-primary !mt-6"
+                className="btn btn-primary mt-6!"
                 onClick={() => {
                     if (touched.fullName && !errors.fullName) {
                         submitForm();
@@ -248,7 +248,7 @@ const SubmittedForm = Yup.object().shape({
                                         </div>
                                         <button
                                             type="submit"
-                                            className="btn btn-primary !mt-6"
+                                            className="btn btn-primary mt-6!"
                                             onClick={() => {
                                                 if (touched.email && !errors.email) {
                                                     submitForm();
@@ -302,7 +302,7 @@ const SubmittedForm = Yup.object().shape({
             </div>
             <button
                 type="submit"
-                className="btn btn-primary !mt-6"
+                className="btn btn-primary mt-6!"
                 onClick={() => {
                     if (touched.email && !errors.email) {
                         submitForm();
@@ -371,7 +371,7 @@ const SubmittedForm = Yup.object().shape({
                                         </div>
                                         <button
                                             type="submit"
-                                            className="btn btn-primary !mt-6"
+                                            className="btn btn-primary mt-6!"
                                             onClick={() => {
                                                 if (touched.select && !errors.select) {
                                                     submitForm();
@@ -435,7 +435,7 @@ const SubmittedForm = Yup.object().shape({
             </div>
             <button
                 type="submit"
-                className="btn btn-primary !mt-6"
+                className="btn btn-primary mt-6!"
                 onClick={() => {
                     if (touched.select && !errors.select) {
                         submitForm();
@@ -560,7 +560,7 @@ const SubmittedForm = Yup.object().shape({
 
                                         <button
                                             type="submit"
-                                            className="btn btn-primary !mt-6"
+                                            className="btn btn-primary mt-6!"
                                             onClick={() => {
                                                 if (Object.keys(touched).length !== 0 && Object.keys(errors).length === 0) {
                                                     submitForm();
@@ -685,7 +685,7 @@ const submitForm4 = Yup.object().shape({
 
             <button
                 type="submit"
-                className="btn btn-primary !mt-6"
+                className="btn btn-primary mt-6!"
                 onClick={() => {
                     if (Object.keys(touched).length !== 0 && Object.keys(errors).length === 0) {
                         submitForm();
@@ -773,7 +773,7 @@ const submitForm4 = Yup.object().shape({
                                         Agree to terms and conditions
                                     </label>
                                 </div>
-                                <button type="submit" className="btn btn-primary !mt-6">
+                                <button type="submit" className="btn btn-primary mt-6!">
                                     Submit Form
                                 </button>
                             </form>
@@ -839,7 +839,7 @@ const submitForm = () => {
         <input type="checkbox" id="agree1 className="form-checkbox" required />
         <label htmlFor="agree1" className="text-white-dark font-semibold mb-0">Agree to terms and conditions</label>
     </div>
-    <button type="submit" className="btn btn-primary !mt-6">
+    <button type="submit" className="btn btn-primary mt-6!">
         Submit Form
     </button>
 </form>`}</pre>
@@ -895,9 +895,9 @@ const submitForm = () => {
 
                                                 {submitCount ? (
                                                     errors.firstname ? (
-                                                        <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.firstname}</div>
+                                                        <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.firstname}</div>
                                                     ) : (
-                                                        <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                                                        <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                                                     )
                                                 ) : (
                                                     ''
@@ -910,9 +910,9 @@ const submitForm = () => {
 
                                                 {submitCount ? (
                                                     errors.lastname ? (
-                                                        <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.lastname}</div>
+                                                        <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.lastname}</div>
                                                     ) : (
-                                                        <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                                                        <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                                                     )
                                                 ) : (
                                                     ''
@@ -931,9 +931,9 @@ const submitForm = () => {
                                                 <div className="mt-2">
                                                     {submitCount ? (
                                                         errors.username ? (
-                                                            <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.username}</div>
+                                                            <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.username}</div>
                                                         ) : (
-                                                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                                                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                                                         )
                                                     ) : (
                                                         ''
@@ -948,9 +948,9 @@ const submitForm = () => {
 
                                                 {submitCount ? (
                                                     errors.city ? (
-                                                        <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.city}</div>
+                                                        <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.city}</div>
                                                     ) : (
-                                                        <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                                                        <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                                                     )
                                                 ) : (
                                                     ''
@@ -962,9 +962,9 @@ const submitForm = () => {
                                                 <Field name="state" type="text" id="customeState" placeholder="Enter State" className="form-input mb-2" />
                                                 {submitCount ? (
                                                     errors.state ? (
-                                                        <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.state}</div>
+                                                        <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.state}</div>
                                                     ) : (
-                                                        <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                                                        <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                                                     )
                                                 ) : (
                                                     ''
@@ -976,9 +976,9 @@ const submitForm = () => {
                                                 <Field name="zip" type="text" id="customeZip" placeholder="Enter Zip" className="form-input mb-2" />
                                                 {submitCount ? (
                                                     errors.zip ? (
-                                                        <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.zip}</div>
+                                                        <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.zip}</div>
                                                     ) : (
-                                                        <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                                                        <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                                                     )
                                                 ) : (
                                                     ''
@@ -994,13 +994,13 @@ const submitForm = () => {
                                                 </label>
                                             </div>
                                             <div className="mt-2">
-                                                {submitCount ? errors.agree ? <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.agree}</div> : '' : ''}
+                                                {submitCount ? errors.agree ? <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.agree}</div> : '' : ''}
                                             </div>
                                         </div>
 
                                         <button
                                             type="submit"
-                                            className="btn btn-primary !mt-6"
+                                            className="btn btn-primary mt-6!"
                                             onClick={() => {
                                                 if (Object.keys(touched).length !== 0 && Object.keys(errors).length === 0) {
                                                     submitForm();
@@ -1064,9 +1064,9 @@ const submitForm4 = Yup.object().shape({
 
                     {submitCount ? (
                         errors.firstname ? (
-                            <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.firstname}</div>
+                            <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.firstname}</div>
                         ) : (
-                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                         )
                     ) : (
                         ''
@@ -1079,9 +1079,9 @@ const submitForm4 = Yup.object().shape({
 
                     {submitCount ? (
                         errors.lastname ? (
-                            <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.lastname}</div>
+                            <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.lastname}</div>
                         ) : (
-                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                         )
                     ) : (
                         ''
@@ -1100,9 +1100,9 @@ const submitForm4 = Yup.object().shape({
                     <div className="mt-2">
                         {submitCount ? (
                             errors.username ? (
-                                <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.username}</div>
+                                <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.username}</div>
                             ) : (
-                                <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                                <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                             )
                         ) : (
                             ''
@@ -1117,9 +1117,9 @@ const submitForm4 = Yup.object().shape({
 
                     {submitCount ? (
                         errors.city ? (
-                            <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.city}</div>
+                            <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.city}</div>
                         ) : (
-                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                         )
                     ) : (
                         ''
@@ -1131,9 +1131,9 @@ const submitForm4 = Yup.object().shape({
                     <Field name="state" type="text" id="customeState" placeholder="Enter State" className="form-input mb-2" />
                     {submitCount ? (
                         errors.state ? (
-                            <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.state}</div>
+                            <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.state}</div>
                         ) : (
-                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                         )
                     ) : (
                         ''
@@ -1145,9 +1145,9 @@ const submitForm4 = Yup.object().shape({
                     <Field name="zip" type="text" id="customeZip" placeholder="Enter Zip" className="form-input mb-2" />
                     {submitCount ? (
                         errors.zip ? (
-                            <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.zip}</div>
+                            <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.zip}</div>
                         ) : (
-                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded inline-block">Looks Good!</div>
+                            <div className="text-white bg-[#1abc9c] py-1 px-2 rounded-sm inline-block">Looks Good!</div>
                         )
                     ) : (
                         ''
@@ -1163,13 +1163,13 @@ const submitForm4 = Yup.object().shape({
                     </label>
                 </div>
                 <div className="mt-2">
-                    {submitCount ? errors.agree ? <div className="text-white bg-danger py-1 px-2 rounded inline-block">{errors.agree}</div> : '' : ''}
+                    {submitCount ? errors.agree ? <div className="text-white bg-danger py-1 px-2 rounded-sm inline-block">{errors.agree}</div> : '' : ''}
                 </div>
             </div>
 
             <button
                 type="submit"
-                className="btn btn-primary !mt-6"
+                className="btn btn-primary mt-6!"
                 onClick={() => {
                     if (Object.keys(touched).length !== 0 && Object.keys(errors).length === 0) {
                         submitForm();

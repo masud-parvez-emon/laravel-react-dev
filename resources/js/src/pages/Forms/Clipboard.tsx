@@ -97,7 +97,7 @@ const Clipboard = () => {
                         </div>
 
                         <div className="mb-5">
-                            <div className="bg-[#f1f2f3] p-5 rounded dark:bg-[#060818]">
+                            <div className="bg-[#f1f2f3] p-5 rounded-sm dark:bg-[#060818]">
                                 <form>
                                     <input type="text" value={message1} className="form-input" onChange={(e) => setMessage1(e.target.value)} />
                                     <div className="sm:flex space-y-2 sm:space-y-0 sm:space-x-2 rtl:space-x-reverse mt-5">
@@ -222,7 +222,7 @@ const [message1, setMessage1] = useState<any>('http://www.admin-dashboard.com');
                             </button>
                         </div>
                         <div className="mb-5">
-                            <div className="bg-[#f1f2f3] p-5 rounded dark:bg-[#060818]">
+                            <div className="bg-[#f1f2f3] p-5 rounded-sm dark:bg-[#060818]">
                                 <form>
                                     <textarea rows={3} wrap="soft" className="form-textarea" value={message2} id="message2" onChange={(e) => setMessage2(e.target.value)}></textarea>
                                     <div className="sm:flex space-y-2 sm:space-y-0 sm:space-x-2 rtl:space-x-reverse mt-5">
@@ -347,7 +347,7 @@ const [message2, setMessage2] = useState<any>('Lorem ipsum dolor sit amet, conse
                             </button>
                         </div>
                         <div className="mb-5">
-                            <div className="bg-[#f1f2f3] p-5 rounded dark:bg-[#060818]">
+                            <div className="bg-[#f1f2f3] p-5 rounded-sm dark:bg-[#060818]">
                                 <form>
                                     <p className="mb-3 font-semibold">
                                         Here is your OTP
@@ -448,7 +448,7 @@ const message3 = '22991';
                             </button>
                         </div>
                         <div className="mb-5">
-                            <div className="bg-[#f1f2f3] p-5 rounded dark:bg-[#060818]">
+                            <div className="bg-[#f1f2f3] p-5 rounded-sm dark:bg-[#060818]">
                                 <form>
                                     <p className="mb-3 font-semibold">
                                         <span> {'Link -> '} </span>

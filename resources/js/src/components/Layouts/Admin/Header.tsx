@@ -114,7 +114,7 @@ const Header = () => {
 
     return (
         <header className={`z-40 ${themeConfig.semidark && themeConfig.menu === 'horizontal' ? 'dark' : ''}`}>
-            <div className="shadow-sm">
+            <div className="shadow-xs">
                 <div className="relative bg-white flex w-full items-center px-5 py-2.5 dark:bg-black">
                     <div className="horizontal-logo flex lg:hidden justify-between items-center ltr:mr-2 rtl:ml-2">
                         <Link to="/" className="main-logo flex items-center shrink-0">
@@ -192,16 +192,16 @@ const Header = () => {
                             </li> */}
                         </ul>
                     </div>
-                    <div className="sm:flex-1 ltr:sm:ml-0 ltr:ml-auto sm:rtl:mr-0 rtl:mr-auto flex items-center space-x-1.5 lg:space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6]">
+                    <div className="sm:flex-1 sm:ltr:ml-0 ltr:ml-auto sm:rtl:mr-0 rtl:mr-auto flex items-center space-x-1.5 lg:space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6]">
                         <div className="sm:ltr:mr-auto sm:rtl:ml-auto">
                             <form
-                                className={`${search && '!block'} sm:relative absolute inset-x-0 sm:top-0 top-1/2 sm:translate-y-0 -translate-y-1/2 sm:mx-0 mx-4 z-10 sm:block hidden`}
+                                className={`${search && 'block!'} sm:relative absolute inset-x-0 sm:top-0 top-1/2 sm:translate-y-0 -translate-y-1/2 sm:mx-0 mx-4 z-10 sm:block hidden`}
                                 onSubmit={() => setSearch(false)}
                             >
                                 <div className="relative">
                                     <input
                                         type="text"
-                                        className="form-input ltr:pl-9 rtl:pr-9 ltr:sm:pr-4 rtl:sm:pl-4 ltr:pr-9 rtl:pl-9 peer sm:bg-transparent bg-gray-100 placeholder:tracking-widest"
+                                        className="form-input ltr:pl-9 rtl:pr-9 sm:ltr:pr-4 sm:rtl:pl-4 ltr:pr-9 rtl:pl-9 peer sm:bg-transparent bg-gray-100 placeholder:tracking-widest"
                                         placeholder="Search..."
                                     />
                                     <button type="button" className="absolute w-9 h-9 inset-0 ltr:right-auto rtl:left-auto appearance-none peer-focus:text-primary">
@@ -302,7 +302,7 @@ const Header = () => {
                                 btnClassName="block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60"
                                 button={<img className="w-5 h-5 object-cover rounded-full" src={`/assets/images/flags/${flag.toUpperCase()}.svg`} alt="flag" />}
                             >
-                                <ul className="!px-2 text-dark dark:text-white-dark grid grid-cols-2 gap-2 font-semibold dark:text-white-light/90 w-[280px]">
+                                <ul className="px-2! text-dark dark:text-white-dark grid grid-cols-2 gap-2 font-semibold dark:text-white-light/90 w-[280px]">
                                     {themeConfig.languageList.map((item: any) => {
                                         return (
                                             <li key={item.code}>
@@ -347,9 +347,9 @@ const Header = () => {
                                     </svg>
                                 }
                             >
-                                <ul className="!py-0 text-dark dark:text-white-dark w-[300px] sm:w-[375px] text-xs">
+                                <ul className="py-0! text-dark dark:text-white-dark w-[300px] sm:w-[375px] text-xs">
                                     <li className="mb-5" onClick={(e) => e.stopPropagation()}>
-                                        <div className="hover:!bg-transparent overflow-hidden relative rounded-t-md p-5 text-white w-full !h-[68px]">
+                                        <div className="hover:bg-transparent! overflow-hidden relative rounded-t-md p-5 text-white w-full h-[68px]!">
                                             <div
                                                 className="absolute h-full w-full bg-no-repeat bg-center bg-cover inset-0 bg-"
                                                 style={{
@@ -373,7 +373,7 @@ const Header = () => {
                                                                 <div className="font-semibold text-sm dark:text-white-light/90">{message.title}</div>
                                                                 <div>{message.message}</div>
                                                             </span>
-                                                            <span className="font-semibold bg-white-dark/20 rounded text-dark/60 px-1 ltr:ml-auto rtl:mr-auto whitespace-pre dark:text-white-dark ltr:mr-2 rtl:ml-2">
+                                                            <span className="font-semibold bg-white-dark/20 rounded-sm text-dark/60 px-1 ltr:ml-auto rtl:mr-auto whitespace-pre dark:text-white-dark ltr:mr-2 rtl:ml-2">
                                                                 {message.time}
                                                             </span>
                                                             <button type="button" className="text-neutral-300 hover:text-danger" onClick={() => removeMessage(message.id)}>
@@ -387,7 +387,7 @@ const Header = () => {
                                                 })}
                                             </li>
                                             <li className="border-t border-white-light text-center dark:border-white/10 mt-5">
-                                                <button type="button" className="text-primary font-semibold group dark:text-gray-400 justify-center !py-4 !h-[48px]">
+                                                <button type="button" className="text-primary font-semibold group dark:text-gray-400 justify-center py-4! h-[48px]!">
                                                     <span className="group-hover:underline ltr:mr-1 rtl:ml-1">VIEW ALL ACTIVITIES</span>
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -404,7 +404,7 @@ const Header = () => {
                                         </>
                                     ) : (
                                         <li className="mb-5" onClick={(e) => e.stopPropagation()}>
-                                            <button type="button" className="!grid place-content-center hover:!bg-transparent text-lg min-h-[200px]">
+                                            <button type="button" className="grid! place-content-center hover:bg-transparent! text-lg min-h-[200px]">
                                                 <div className="mx-auto ring-4 ring-primary/30 rounded-full mb-4 text-white">
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -452,7 +452,7 @@ const Header = () => {
                                     </span>
                                 }
                             >
-                                <ul className="!py-0 text-dark dark:text-white-dark w-[300px] sm:w-[350px] divide-y dark:divide-white/10">
+                                <ul className="py-0! text-dark dark:text-white-dark w-[300px] sm:w-[350px] divide-y dark:divide-white/10">
                                     <li onClick={(e) => e.stopPropagation()}>
                                         <div className="flex items-center px-4 py-2 justify-between font-semibold">
                                             <h4 className="text-lg">Notification</h4>
@@ -465,7 +465,7 @@ const Header = () => {
                                                 return (
                                                     <li key={notification.id} className="dark:text-white-light/90" onClick={(e) => e.stopPropagation()}>
                                                         <div className="group flex items-center px-4 py-2">
-                                                            <div className="grid place-content-center rounded">
+                                                            <div className="grid place-content-center rounded-sm">
                                                                 <div className="w-12 h-12 relative">
                                                                     <img className="w-12 h-12 rounded-full object-cover" alt="profile" src={`/assets/images/${notification.profile}`} />
                                                                     <span className="bg-success w-2 h-2 rounded-full block absolute right-[6px] bottom-0"></span>
@@ -503,7 +503,7 @@ const Header = () => {
                                         </>
                                     ) : (
                                         <li onClick={(e) => e.stopPropagation()}>
-                                            <button type="button" className="!grid place-content-center hover:!bg-transparent text-lg min-h-[200px]">
+                                            <button type="button" className="grid! place-content-center hover:bg-transparent! text-lg min-h-[200px]">
                                                 <div className="mx-auto ring-4 ring-primary/30 rounded-full mb-4">
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -535,14 +535,14 @@ const Header = () => {
                                 btnClassName="relative group block"
                                 button={<img className="w-9 h-9 rounded-full object-cover saturate-50 group-hover:saturate-100" src="/assets/images/user-profile.jpeg" alt="userProfile" />}
                             >
-                                <ul className="text-dark dark:text-white-dark !py-0 w-[230px] font-semibold dark:text-white-light/90">
+                                <ul className="text-dark dark:text-white-dark py-0! w-[230px] font-semibold dark:text-white-light/90">
                                     <li>
                                         <div className="flex items-center px-4 py-4">
                                             <img className="rounded-md w-10 h-10 object-cover" src="/assets/images/user-profile.jpeg" alt="userProfile" />
                                             <div className="ltr:pl-4 rtl:pr-4 truncate">
                                                 <h4 className="text-base">
                                                     John Doe
-                                                    {/* <span className="text-xs bg-success-light rounded text-success px-1 ltr:ml-2 rtl:ml-2">Pro</span> */}
+                                                    {/* <span className="text-xs bg-success-light rounded-sm text-success px-1 ltr:ml-2 rtl:ml-2">Pro</span> */}
                                                 </h4>
                                                 <button type="button" className="text-black/60 hover:text-primary dark:text-dark-light/60 dark:hover:text-white">
                                                     johndoe@gmail.com
@@ -608,7 +608,7 @@ const Header = () => {
                                         </Link>
                                     </li> */}
                                     <li className="border-t border-white-light dark:border-white-light/10">
-                                        <Link to="/auth/boxed-signin" className="text-danger !py-3">
+                                        <Link to="/auth/boxed-signin" className="text-danger py-3!">
                                             <svg className="ltr:mr-2 rtl:ml-2 rotate-90 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     opacity="0.5"
@@ -742,7 +742,7 @@ const Header = () => {
                                         </svg>
                                     </div>
                                 </button>
-                                <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
+                                <ul className="rounded-sm absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-10 text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow-sm p-0 py-2 hidden">
                                     <li>
                                         <NavLink to="/apps/invoice/list">{t('list')}</NavLink>
                                     </li>
@@ -961,7 +961,7 @@ const Header = () => {
                                         </svg>
                                     </div>
                                 </button>
-                                <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
+                                <ul className="rounded-sm absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-10 text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow-sm p-0 py-2 hidden">
                                     <li>
                                         <NavLink to="/datatables/basic">{t('basic')}</NavLink>
                                     </li>
@@ -1121,7 +1121,7 @@ const Header = () => {
                                         </svg>
                                     </div>
                                 </button>
-                                <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
+                                <ul className="rounded-sm absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-10 text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow-sm p-0 py-2 hidden">
                                     <li>
                                         <NavLink to="/users/profile">{t('profile')}</NavLink>
                                     </li>
@@ -1170,7 +1170,7 @@ const Header = () => {
                                         </svg>
                                     </div>
                                 </button>
-                                <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
+                                <ul className="rounded-sm absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-10 text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow-sm p-0 py-2 hidden">
                                     <li>
                                         <NavLink to="/pages/error404" target="_blank">
                                             {t('404')}
@@ -1197,7 +1197,7 @@ const Header = () => {
                                         </svg>
                                     </div>
                                 </button>
-                                <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
+                                <ul className="rounded-sm absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-10 text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow-sm p-0 py-2 hidden">
                                     <li>
                                         <NavLink to="/auth/cover-login" target="_blank">
                                             {t('login_cover')}
@@ -1219,7 +1219,7 @@ const Header = () => {
                                         </svg>
                                     </div>
                                 </button>
-                                <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
+                                <ul className="rounded-sm absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-10 text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow-sm p-0 py-2 hidden">
                                     <li>
                                         <NavLink to="/auth/cover-register" target="_blank">
                                             {t('register_cover')}
@@ -1241,7 +1241,7 @@ const Header = () => {
                                         </svg>
                                     </div>
                                 </button>
-                                <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
+                                <ul className="rounded-sm absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-10 text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow-sm p-0 py-2 hidden">
                                     <li>
                                         <NavLink to="/auth/cover-password-reset" target="_blank">
                                             {t('recover_id_cover')}
@@ -1263,7 +1263,7 @@ const Header = () => {
                                         </svg>
                                     </div>
                                 </button>
-                                <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
+                                <ul className="rounded-sm absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-10 text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow-sm p-0 py-2 hidden">
                                     <li>
                                         <NavLink to="/auth/cover-lockscreen" target="_blank">
                                             {t('unlock_cover')}

@@ -158,8 +158,8 @@ const DragAndDrop = () => {
                                     {sortable1.map((item) => {
                                         return (
                                             <li key={item.id} className="mb-2.5 cursor-grab">
-                                                <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col ltr:md:text-left rtl:md:text-right text-center items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col md:ltr:text-left md:rtl:text-right text-center items-md-center">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img alt="avatar" src={`/assets/images/profile-${item.id}.jpeg`} className="w-11 h-11 rounded-full mx-auto" />
                                                     </div>
                                                     <div className="flex md:flex-row flex-col justify-between items-center flex-1">
@@ -186,8 +186,8 @@ const DragAndDrop = () => {
                                     {sortable2.map((item) => {
                                         return (
                                             <li key={item.id} className="mb-2.5 cursor-grab">
-                                                <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col ltr:md:text-left rtl:md:text-right text-center items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col md:ltr:text-left md:rtl:text-right text-center items-md-center">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img alt="avatar" src={`/assets/images/profile-${item.id}.jpeg`} className="w-11 h-11 rounded-full mx-auto" />
                                                     </div>
                                                     <div className="flex md:flex-row flex-col justify-between items-center flex-1">
@@ -221,7 +221,7 @@ const DragAndDrop = () => {
                                         return (
                                             <li key={item.id} className="mb-2.5 cursor-grab">
                                                 <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col ltr:text-left rtl:text-right items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img alt="avatar" src={`/assets/images/profile-${item.id}.jpeg`} className="w-11 h-11 rounded-full" />
                                                     </div>
                                                     <div className="flex justify-between items-center flex-1">
@@ -254,7 +254,7 @@ const DragAndDrop = () => {
                                         return (
                                             <li key={item.id} className="mb-2.5 cursor-grab">
                                                 <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col ltr:text-left rtl:text-right items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img alt="avatar" src={`/assets/images/profile-${item.id}.jpeg`} className="w-11 h-11 rounded-full" />
                                                     </div>
                                                     <div className="flex justify-between items-center flex-1">
@@ -300,7 +300,7 @@ const DragAndDrop = () => {
                                         return (
                                             <li key={item.id} className="mb-2.5 cursor-grab">
                                                 <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col ltr:text-left rtl:text-right items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img alt="avatar" src={`/assets/images/profile-${item.id}.jpeg`} className="w-11 h-11 rounded-full mx-auto" />
                                                     </div>
                                                     <div className="flex md:flex-row flex-col justify-between items-center flex-1 text-center md:text-left">
@@ -309,7 +309,7 @@ const DragAndDrop = () => {
                                                             <div className="text-white-dark text-xs">{item.name}</div>
                                                         </div>
                                                         <div className="text-white-dark">
-                                                            <span className="handle px-2 ltr:mr-1 rtl:ml-1 bg-[#ebedf2] dark:bg-black rounded cursor-move">+</span>
+                                                            <span className="handle px-2 ltr:mr-1 rtl:ml-1 bg-[#ebedf2] dark:bg-black rounded-sm cursor-move">+</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -327,7 +327,7 @@ const DragAndDrop = () => {
                                         return (
                                             <li key={item.id} className="mb-2.5 cursor-grab">
                                                 <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col ltr:text-left rtl:text-right items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img alt="avatar" src={`/assets/images/profile-${item.id}.jpeg`} className="w-11 h-11 rounded-full mx-auto" />
                                                     </div>
                                                     <div className="sm:flex block justify-between items-center flex-1 text-center md:text-left">
@@ -336,7 +336,7 @@ const DragAndDrop = () => {
                                                             <div className="text-white-dark text-xs">{item.name}</div>
                                                         </div>
                                                         <div className="text-white-dark">
-                                                            <span className="handle px-2 ltr:mr-1 rtl:ml-1 bg-[#ebedf2] dark:bg-black rounded cursor-move">+</span>
+                                                            <span className="handle px-2 ltr:mr-1 rtl:ml-1 bg-[#ebedf2] dark:bg-black rounded-sm cursor-move">+</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -370,7 +370,7 @@ const DragAndDrop = () => {
                                         <div key={item.id}>
                                             <li className="mb-2.5 cursor-grab">
                                                 <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col ltr:text-left rtl:text-right items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img
                                                             alt="avatar"
                                                             src={`/assets/images/profile-${item.id}.jpeg`}
@@ -412,7 +412,7 @@ const DragAndDrop = () => {
                                         <div key={item.id}>
                                             <li className="mb-2.5 cursor-grab">
                                                 <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col ltr:text-left rtl:text-right items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img
                                                             alt="avatar"
                                                             src={`/assets/images/profile-${item.id}.jpeg`}
@@ -448,8 +448,8 @@ const DragAndDrop = () => {
                                     return (
                                         <div className="mb-2.5" key={item.id}>
                                             <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5">
-                                                <div className="py-sm-2.5 sm:flex block ltr:md:text-left rtl:md:text-right text-center items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                <div className="py-sm-2.5 sm:flex block md:ltr:text-left md:rtl:text-right text-center items-md-center">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img alt="avatar" src={`/assets/images/profile-${item.id + 1}.jpeg`} className="w-11 h-11 rounded-lg mx-auto" />
                                                     </div>
                                                     <div className="flex md:flex-row flex-col justify-between items-center flex-1">
@@ -464,7 +464,7 @@ const DragAndDrop = () => {
                                                     veniam, quis nostrud exercitation.
                                                 </div>
                                                 <div className="md:flex items-center flex-wrap">
-                                                    <div className="ltr:md:text-left rtl:md:text-right text-center xl:flex-1">
+                                                    <div className="md:ltr:text-left md:rtl:text-right text-center xl:flex-1">
                                                         <div className="flex md:justify-start justify-center -space-x-2 rtl:space-x-reverse text-white">
                                                             <img
                                                                 className="w-10 h-10 rounded-full object-cover ring-2 ring-white dark:ring-white-dark"
@@ -488,7 +488,7 @@ const DragAndDrop = () => {
                                                             />
                                                         </div>
                                                     </div>
-                                                    <div className="ltr:md:text-right rtl:md:text-left text-center">
+                                                    <div className="md:ltr:text-right md:rtl:text-left text-center">
                                                         <span className="text-xs text-white-dark lg:pt-0 pt-2 block">
                                                             <button className="text-danger dark:text-primary font-semibold text-sm mr-1">Vincent, Mary</button>
                                                             and 19 other like this
@@ -526,7 +526,7 @@ const DragAndDrop = () => {
                                         return (
                                             <li key={item.id} className="mb-2.5 cursor-grab">
                                                 <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col ltr:text-left rtl:text-right items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img alt="avatar" src={`/assets/images/profile-${item.id}.jpeg`} className="w-11 h-11 rounded-full mx-auto" />
                                                     </div>
                                                     <div className="flex md:flex-row flex-col justify-between items-center flex-1 text-center md:text-left">
@@ -561,7 +561,7 @@ const DragAndDrop = () => {
                                         return (
                                             <li key={item.id} className="mb-2.5 cursor-grab">
                                                 <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col ltr:text-left rtl:text-right items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img alt="avatar" src={`/assets/images/profile-${item.id}.jpeg`} className="w-11 h-11 rounded-full mx-auto" />
                                                     </div>
                                                     <div className="flex md:flex-row flex-col justify-between items-center flex-1 text-center md:text-left">
@@ -589,7 +589,7 @@ const DragAndDrop = () => {
                                     return (
                                         <div
                                             key={item.id}
-                                            className="w-24 h-24 border border-white-light rounded-md shadow dark:border-dark flex items-center justify-center font-semibold cursor-grab"
+                                            className="w-24 h-24 border border-white-light rounded-md shadow-sm dark:border-dark flex items-center justify-center font-semibold cursor-grab"
                                         >
                                             {item.name}
                                         </div>
@@ -610,7 +610,7 @@ const DragAndDrop = () => {
                                         return (
                                             <li key={item.id} className=" cursor-grab">
                                                 <div className="bg-white dark:bg-[#1b2e4b] rounded-md border border-white-light dark:border-dark px-6 py-3.5 flex md:flex-row flex-col ltr:text-left rtl:text-right items-md-center">
-                                                    <div className="ltr:sm:mr-4 rtl:sm:ml-4">
+                                                    <div className="sm:ltr:mr-4 sm:rtl:ml-4">
                                                         <img alt="avatar" src={`/assets/images/profile-${item.id}.jpeg`} className="w-11 h-11 rounded-full mx-auto" />
                                                     </div>
                                                     <div className="flex md:flex-row flex-col justify-between items-center flex-1 text-center md:text-left">

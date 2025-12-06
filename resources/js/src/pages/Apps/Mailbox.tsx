@@ -1187,14 +1187,14 @@ const Mailbox = () => {
 
     return (
         <div>
-            <div className="flex gap-5 relative sm:h-[calc(100vh_-_150px)] h-full">
+            <div className="flex gap-5 relative sm:h-[calc(100vh-150px)] h-full">
                 <div
-                    className={`overlay bg-black/60 z-[5] w-full h-full rounded-md absolute hidden ${isShowMailMenu ? '!block xl:!hidden' : ''}`}
+                    className={`overlay bg-black/60 z-5 w-full h-full rounded-md absolute hidden ${isShowMailMenu ? 'block! xl:hidden!' : ''}`}
                     onClick={() => setIsShowMailMenu(!isShowMailMenu)}
                 ></div>
                 <div
-                    className={`panel xl:block p-4 dark:gray-50 w-[250px] max-w-full flex-none space-y-3 xl:relative absolute z-10 xl:h-auto h-full hidden ltr:xl:rounded-r-md ltr:rounded-r-none rtl:xl:rounded-l-md rtl:rounded-l-none overflow-hidden ${
-                        isShowMailMenu ? '!block' : ''
+                    className={`panel xl:block p-4 dark:gray-50 w-[250px] max-w-full flex-none space-y-3 xl:relative absolute z-10 xl:h-auto h-full hidden xl:ltr:rounded-r-md ltr:rounded-r-none xl:rtl:rounded-l-md rtl:rounded-l-none overflow-hidden ${
+                        isShowMailMenu ? 'block!' : ''
                     }`}
                 >
                     <div className="flex flex-col h-full pb-16">
@@ -1376,7 +1376,7 @@ const Mailbox = () => {
                                                     viewBox="0 0 24 24"
                                                     fill="none"
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    className={`shrink-0 rotate-90 ${open ? '!-rotate-90' : ''}`}
+                                                    className={`shrink-0 rotate-90 ${open ? '-rotate-90!' : ''}`}
                                                 >
                                                     <path d="M9 5L15 12L9 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
@@ -1571,7 +1571,7 @@ const Mailbox = () => {
                                     </div>
 
                                     {selectedTab !== 'trash' && (
-                                        <ul className="flex grow items-center sm:flex-none gap-4 ltr:sm:mr-4 rtl:sm:ml-4">
+                                        <ul className="flex grow items-center sm:flex-none gap-4 sm:ltr:mr-4 sm:rtl:ml-4">
                                             <li>
                                                 <div>
                                                     <Tippy content="Archive">
@@ -1746,7 +1746,7 @@ const Mailbox = () => {
                                     )}
 
                                     {selectedTab === 'trash' && (
-                                        <ul className="flex flex-1 items-center sm:flex-none gap-4 ltr:sm:mr-3 rtl:sm:ml-4">
+                                        <ul className="flex flex-1 items-center sm:flex-none gap-4 sm:ltr:mr-3 sm:rtl:ml-4">
                                             <li>
                                                 <div>
                                                     <Tippy content="Permanently Delete">
@@ -1954,7 +1954,7 @@ const Mailbox = () => {
                                         <button
                                             type="button"
                                             disabled={pager.currentPage === 1}
-                                            className="bg-[#f4f4f4] rounded-md p-1 enabled:hover:bg-primary-light dark:bg-white-dark/20 enabled:dark:hover:bg-white-dark/30 ltr:mr-3 rtl:ml-3 disabled:opacity-60 disabled:cursor-not-allowed"
+                                            className="bg-[#f4f4f4] rounded-md p-1 enabled:hover:bg-primary-light dark:bg-white-dark/20 dark:enabled:hover:bg-white-dark/30 ltr:mr-3 rtl:ml-3 disabled:opacity-60 disabled:cursor-not-allowed"
                                             onClick={() => {
                                                 pager.currentPage--;
                                                 searchMails(false);
@@ -1967,7 +1967,7 @@ const Mailbox = () => {
                                         <button
                                             type="button"
                                             disabled={pager.currentPage === pager.totalPages}
-                                            className="bg-[#f4f4f4] rounded-md p-1 enabled:hover:bg-primary-light dark:bg-white-dark/20 enabled:dark:hover:bg-white-dark/30 disabled:opacity-60 disabled:cursor-not-allowed"
+                                            className="bg-[#f4f4f4] rounded-md p-1 enabled:hover:bg-primary-light dark:bg-white-dark/20 dark:enabled:hover:bg-white-dark/30 disabled:opacity-60 disabled:cursor-not-allowed"
                                             onClick={() => {
                                                 pager.currentPage++;
                                                 searchMails(false);
@@ -2165,7 +2165,7 @@ const Mailbox = () => {
                             <div className="h-px border-b border-white-light dark:border-[#1b2e4b]"></div>
                             <div className="p-4 relative">
                                 <div className="flex flex-wrap">
-                                    <div className="flex-shrink-0 ltr:mr-2 rtl:ml-2">
+                                    <div className="shrink-0 ltr:mr-2 rtl:ml-2">
                                         {selectedMail.path ? (
                                             <img src={`/assets/images/${selectedMail.path}`} className="h-12 w-12 rounded-full object-cover" alt="avatar" />
                                         ) : (
@@ -2420,7 +2420,7 @@ const Mailbox = () => {
                                                             <p className="text-xs text-primary font-semibold">{attachment.name}</p>
                                                             <p className="text-[11px] text-gray-400 dark:text-gray-600">{attachment.size}</p>
                                                         </div>
-                                                        <div className="bg-dark-light/40 z-[5] w-full h-full absolute ltr:left-0 rtl:right-0 top-0 rounded-md hidden group-hover:block"></div>
+                                                        <div className="bg-dark-light/40 z-5 w-full h-full absolute ltr:left-0 rtl:right-0 top-0 rounded-md hidden group-hover:block"></div>
                                                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-1 btn btn-primary hidden group-hover:block z-10">
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
                                                                 <path
@@ -2462,7 +2462,7 @@ const Mailbox = () => {
                                 </button>
                                 <h4 className="text-lg text-gray-600 dark:text-gray-400 font-medium">Message</h4>
                             </div>
-                            <div className="h-px bg-gradient-to-l from-indigo-900/20 via-black dark:via-white to-indigo-900/20 opacity-[0.1]"></div>
+                            <div className="h-px bg-linear-to-l from-indigo-900/20 via-black dark:via-white to-indigo-900/20 opacity-[0.1]"></div>
                             <form className="p-6 grid gap-6">
                                 <div>
                                     <input
@@ -2504,7 +2504,7 @@ const Mailbox = () => {
                                 <div>
                                     <input
                                         type="file"
-                                        className="form-input file:py-2 file:px-4 file:border-0 file:font-semibold p-0 file:bg-primary/90 ltr:file:mr-5 rtl:file:ml-5 file:text-white file:hover:bg-primary"
+                                        className="form-input file:py-2 file:px-4 file:border-0 file:font-semibold p-0 file:bg-primary/90 file:ltr:mr-5 file:rtl:ml-5 file:text-white file:hover:bg-primary"
                                         multiple
                                         accept="image/*,.zip,.pdf,.xls,.xlsx,.txt.doc,.docx"
                                         required
