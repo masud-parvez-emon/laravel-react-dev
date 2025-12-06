@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import themeConfigSlice from './themeConfigSlice';
 import AuthSlice from './AuthSlice';
+import { api } from '../api/api';
 
 // const rootReducer = combineReducers({
 //     themeConfig: themeConfigSlice,
@@ -16,7 +17,11 @@ const store = configureStore({
     reducer: {
         themeConfig: themeConfigSlice,
         auth: AuthSlice,
+
+        [api.reducerPath]: api.reducer,
     },
+    middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware().concat(api.middleware)
 });
 
 export default store;

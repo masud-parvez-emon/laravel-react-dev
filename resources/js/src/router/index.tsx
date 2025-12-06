@@ -117,6 +117,8 @@ const DateRangePicker = lazy(() => import('../pages/Forms/DateRangePicker'));
 const Clipboard = lazy(() => import('../pages/Forms/Clipboard'));
 const FrontendLayout = lazy(() => import('../components/Layouts/Frontend/MasterLayout'));
 const AdminLayout = lazy(() => import('../components/Layouts/Admin/MasterLayout'));
+const Container = lazy(() => import('../pages/Admin/Pages/Container/Index'));
+const ContainerForm = lazy(() => import('../pages/Admin/Pages/Container/Form'));
 
 export default function Router() {
     return (
@@ -131,8 +133,15 @@ export default function Router() {
                     <Route path='login' element={<LoginBoxed />} />
                 </Route>
                 <Route element={<AdminLayout />}>
-                    <Route path='dashboard' element={<Dashboard />} />
-                    {/* <Route path='users' element={<Users />} /> */}
+                    {/* <Route path='dashboard' element={<Dashboard />} /> */}
+                    {/* <Route path='containers' element={<Container />} />
+                    <Route path='containers' element={<Container />} /> */}
+
+                    <Route path="containers">
+                        <Route index element={<Container />} />
+                        <Route path="create" element={<ContainerForm />} />
+                        <Route path=":id/edit" element={<ContainerForm />} />
+                    </Route>
                 </Route>
                 //#endregion admin
 

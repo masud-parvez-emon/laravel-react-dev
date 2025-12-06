@@ -6,8 +6,9 @@ import { setPageTitle, toggleRTL } from '../../store/themeConfigSlice';
 // import Dropdown from '../../components/Dropdown';
 import i18next from 'i18next';
 import axiosInstance from '../../axiosInstance';
-import { login } from '../../store/AuthSlice';
+// import { login } from '../../store/AuthSlice';
 import { useAppDispatch } from '../../hooks';
+import { useLoginMutation } from '../../api/api';
 
 const LoginBoxed = () => {
     const dispatch = useAppDispatch();
@@ -16,33 +17,40 @@ const LoginBoxed = () => {
         dispatch(setPageTitle('Login'));
     });
 
-    const [isSubmited, setIsSubmitting] = useState(false);
+    // const [isSubmited, setIsSubmitting] = useState(false);
     const [error, setError] = useState<String | null>(null);
     const email = useRef<HTMLInputElement>(null);
     const password = useRef<HTMLInputElement>(null);
+    const [login, { isLoading }] = useLoginMutation();
 
-    const submitForm = (event: React.FormEvent<HTMLFormElement>) => {
+    const submitForm = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         setError(null);
-        setIsSubmitting(true);
+        // setIsSubmitting(true);
 
         const emailValue = email.current?.value;
         const passwordValue = password.current?.value;
 
         if (!emailValue || !passwordValue) {
             setError('Please fill in all fields');
-            setIsSubmitting(false);
+            // setIsSubmitting(false);
             return;
         }
+
+        // try {
+        //     const payload = await login({ email: emailValue, password: passwordValue }).unwrap();
+        //     navigate('/containers');  
+        // } catch (error) {
+        //     setError(error.data.message);
+        // }
         
-        dispatch(login({ email: emailValue, password: passwordValue }))
-        .unwrap() // unwrap the promise returned by createAsyncThunk for easier handling
+        login({ email: emailValue, password: passwordValue })
+        .unwrap()
         .then(() => {
-            navigate('/dashboard');  
+            navigate('/containers');  
         })
-        .catch((errMessage: string) => {
-            setError(errMessage || 'Login failed');
-            setIsSubmitting(false);
+        .catch((error) => {
+            setError(error.data.message || 'Login failed');
         });
     };
 
@@ -175,7 +183,7 @@ const LoginBoxed = () => {
                                     </label>
                                 </div> */}
                                 <button type="submit" className="btn btn-gradient mt-6! w-full border-0 uppercase shadow-[0_10px_20px_-10px_rgba(67,97,238,0.44)]">
-                                    {isSubmited ? (
+                                    {isLoading ? (
                                         <span className="animate-spin border-2 border-white border-l-transparent rounded-full w-5 h-5 ltr:mr-4 rtl:ml-4 inline-block align-middle"></span>
                                     ) : (
                                         <span>Sign in</span>
