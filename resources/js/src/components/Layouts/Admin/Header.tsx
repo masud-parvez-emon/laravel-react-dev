@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, NavLink, useLocation } from 'react-router';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router';
 import { IRootState } from '../../../store';
 import { toggleRTL, toggleTheme, toggleSidebar } from '../../../store/themeConfigSlice';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import Dropdown from '../../Dropdown';
+import { api, useLogoutMutation } from '../../../api/api';
 
 const Header = () => {
     const location = useLocation();
@@ -73,6 +74,20 @@ const Header = () => {
         setMessages(messages.filter((user) => user.id !== value));
     };
 
+    const navigate = useNavigate();
+    const [logout, { isLoading }] = useLogoutMutation();
+    const handleLogout = async () => {
+        logout()
+        .unwrap()
+        .then(() => {
+            navigate('/login');  
+        })
+        .catch((error) => {
+            // setError(error.data.message || 'Login failed');
+            console.log('logout failed')
+        });
+    }
+
     const [notifications, setNotifications] = useState([
         {
             id: 1,
@@ -111,6 +126,8 @@ const Header = () => {
     const [flag, setFlag] = useState(themeConfig.locale);
 
     const { t } = useTranslation();
+
+    const { data: user } = api.endpoints.fetchUser.useQueryState();
 
     return (
         <header className={`z-40 ${themeConfig.semidark && themeConfig.menu === 'horizontal' ? 'dark' : ''}`}>
@@ -541,11 +558,11 @@ const Header = () => {
                                             <img className="rounded-md w-10 h-10 object-cover" src="/assets/images/user-profile.jpeg" alt="userProfile" />
                                             <div className="ltr:pl-4 rtl:pr-4 truncate">
                                                 <h4 className="text-base">
-                                                    John Doe
+                                                    {/* John Doe */}
                                                     {/* <span className="text-xs bg-success-light rounded-sm text-success px-1 ltr:ml-2 rtl:ml-2">Pro</span> */}
                                                 </h4>
                                                 <button type="button" className="text-black/60 hover:text-primary dark:text-dark-light/60 dark:hover:text-white">
-                                                    johndoe@gmail.com
+                                                    {user?.email}
                                                 </button>
                                             </div>
                                         </div>
@@ -608,7 +625,8 @@ const Header = () => {
                                         </Link>
                                     </li> */}
                                     <li className="border-t border-white-light dark:border-white-light/10">
-                                        <Link to="/auth/boxed-signin" className="text-danger py-3!">
+                                        {/* <Link to="/auth/boxed-signin" className="text-danger py-3!"> */}
+                                        <button className="text-danger py-3!" onClick={handleLogout}> 
                                             <svg className="ltr:mr-2 rtl:ml-2 rotate-90 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     opacity="0.5"
@@ -620,7 +638,8 @@ const Header = () => {
                                                 <path d="M12 15L12 2M12 2L15 5.5M12 2L9 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                             Sign Out
-                                        </Link>
+                                        </button>
+                                        {/* </Link> */}
                                     </li>
                                 </ul>
                             </Dropdown>

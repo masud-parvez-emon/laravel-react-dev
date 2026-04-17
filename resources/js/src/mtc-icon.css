@@ -1,0 +1,918 @@
+@font-face {
+    font-family: "icomoon";
+    src: url("../../../public/assets/mtc-icon-icomoon/fonts/icomoon.woff2") format("woff2"),
+        url("../../../public/assets/mtc-icon-icomoon/fonts/icomoon.ttf") format("truetype"),
+        url("../../../public/assets/mtc-icon-icomoon/fonts/icomoon.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class*=" mtc-icon-"],[class^=mtc-icon-] {
+    /* Use !important to prevent extensions from overriding this font. */
+    font-family: "icomoon" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mtc-icon-email:before {
+    content: ""
+}
+
+.mtc-icon-info:before {
+    content: ""
+}
+
+.mtc-icon-cargo_plane:before {
+    content: ""
+}
+
+.mtc-icon-acrobat:before {
+    content: ""
+}
+
+.mtc-icon-api:before {
+    content: ""
+}
+
+.mtc-icon-arrow-back:before {
+    content: ""
+}
+
+.mtc-icon-calendar:before {
+    content: ""
+}
+
+.mtc-icon-dry-container-logo-empty:before {
+    content: ""
+}
+
+.mtc-icon-dry-container-logo-20:before {
+    content: ""
+}
+
+.mtc-icon-dry-container-20:before {
+    content: ""
+}
+
+.mtc-icon-reefer-container:before {
+    content: ""
+}
+
+.mtc-icon-reefer-container-20:before {
+    content: ""
+}
+
+.mtc-icon-dry-container-40:before {
+    content: ""
+}
+
+.mtc-icon-dry-container-logo-40:before {
+    content: ""
+}
+
+.mtc-icon-dry-container-empty-40:before {
+    content: ""
+}
+
+.mtc-icon-reefer-container-40:before {
+    content: ""
+}
+
+.mtc-icon-reefer-container-logo-40:before {
+    content: ""
+}
+
+.mtc-icon-agriculture:before {
+    content: ""
+}
+
+.mtc-icon-apparel:before {
+    content: ""
+}
+
+.mtc-icon-arrival:before {
+    content: ""
+}
+
+.mtc-icon-assets-and-technology:before {
+    content: ""
+}
+
+.mtc-icon-auditing:before {
+    content: ""
+}
+
+.mtc-icon-automotive:before {
+    content: ""
+}
+
+.mtc-icon-banks:before {
+    content: ""
+}
+
+.mtc-icon-barge:before {
+    content: ""
+}
+
+.mtc-icon-beverages:before {
+    content: ""
+}
+
+.mtc-icon-booking:before {
+    content: ""
+}
+
+.mtc-icon-business-partners:before {
+    content: ""
+}
+
+.mtc-icon-buyers:before {
+    content: ""
+}
+
+.mtc-icon-care-for-people:before {
+    content: ""
+}
+
+.mtc-icon-carrot:before {
+    content: ""
+}
+
+.mtc-icon-cash-flow:before {
+    content: ""
+}
+
+.mtc-icon-chemicals:before {
+    content: ""
+}
+
+.mtc-icon-coaching:before {
+    content: ""
+}
+
+.mtc-icon-coffee:before {
+    content: ""
+}
+
+.mtc-icon-coin-currencies:before {
+    content: ""
+}
+
+.mtc-icon-cold-chain-management:before {
+    content: ""
+}
+
+.mtc-icon-complete:before {
+    content: ""
+}
+
+.mtc-icon-conro:before {
+    content: ""
+}
+
+.mtc-icon-contact-card:before {
+    content: ""
+}
+
+.mtc-icon-container-flat-rack:before {
+    content: ""
+}
+
+.mtc-icon-container-loading:before {
+    content: ""
+}
+
+.mtc-icon-container-mix:before {
+    content: ""
+}
+
+.mtc-icon-container-mix-dry:before {
+    content: ""
+}
+
+.mtc-icon-container-mix-reefer:before {
+    content: ""
+}
+
+.mtc-icon-continuous-evolution:before {
+    content: ""
+}
+
+.mtc-icon-contract:before {
+    content: ""
+}
+
+.mtc-icon-control-procedures:before {
+    content: ""
+}
+
+.mtc-icon-controlled-atmosphere:before {
+    content: ""
+}
+
+.mtc-icon-cost-efficient:before {
+    content: ""
+}
+
+.mtc-icon-cotton:before {
+    content: ""
+}
+
+.mtc-icon-cotton-consumer:before {
+    content: ""
+}
+
+.mtc-icon-cotton-spinning:before {
+    content: ""
+}
+
+.mtc-icon-cross-trading:before {
+    content: ""
+}
+
+.mtc-icon-customer-interactions:before {
+    content: ""
+}
+
+.mtc-icon-customer-registration:before {
+    content: ""
+}
+
+.mtc-icon-customer-scale-up:before {
+    content: ""
+}
+
+.mtc-icon-customer-service:before {
+    content: ""
+}
+
+.mtc-icon-customer-service-clock:before {
+    content: ""
+}
+
+.mtc-icon-customs-clearance:before {
+    content: ""
+}
+
+.mtc-icon-dairy:before {
+    content: ""
+}
+
+.mtc-icon-data-accuracy:before {
+    content: ""
+}
+
+.mtc-icon-dehumidification:before {
+    content: ""
+}
+
+.mtc-icon-delivery:before {
+    content: ""
+}
+
+.mtc-icon-depot:before {
+    content: ""
+}
+
+.mtc-icon-development:before {
+    content: ""
+}
+
+.mtc-icon-distribution-area-cashews:before {
+    content: ""
+}
+
+.mtc-icon-door-to-door-service:before {
+    content: ""
+}
+
+.mtc-icon-ebusiness:before {
+    content: ""
+}
+
+.mtc-icon-ebl-platform:before {
+    content: ""
+}
+
+.mtc-icon-ebl-solution:before {
+    content: ""
+}
+
+.mtc-icon-email-open:before {
+    content: ""
+}
+
+.mtc-icon-employees:before {
+    content: ""
+}
+
+.mtc-icon-equal-opportunities:before {
+    content: ""
+}
+
+.mtc-icon-expectations:before {
+    content: ""
+}
+
+.mtc-icon-export:before {
+    content: ""
+}
+
+.mtc-icon-family-company:before {
+    content: ""
+}
+
+.mtc-icon-faqs:before {
+    content: ""
+}
+
+.mtc-icon-fast:before {
+    content: ""
+}
+
+.mtc-icon-feedback:before {
+    content: ""
+}
+
+.mtc-icon-final-destination:before {
+    content: ""
+}
+
+.mtc-icon-food-beverage:before {
+    content: ""
+}
+
+.mtc-icon-forestry-industry:before {
+    content: ""
+}
+
+.mtc-icon-fruit-apple:before {
+    content: ""
+}
+
+.mtc-icon-fruit-banana:before {
+    content: ""
+}
+
+.mtc-icon-fruit-cashew:before {
+    content: ""
+}
+
+.mtc-icon-fruit-cocoa:before {
+    content: ""
+}
+
+.mtc-icon-fruit-dried:before {
+    content: ""
+}
+
+.mtc-icon-fruit-kiwi:before {
+    content: ""
+}
+
+.mtc-icon-fruit-lemon:before {
+    content: ""
+}
+
+.mtc-icon-fruit-mango:before {
+    content: ""
+}
+
+.mtc-icon-fruit-mix:before {
+    content: ""
+}
+
+.mtc-icon-fruit-orange:before {
+    content: ""
+}
+
+.mtc-icon-fruit-producer:before {
+    content: ""
+}
+
+.mtc-icon-fruit-vegetables:before {
+    content: ""
+}
+
+.mtc-icon-furniture:before {
+    content: ""
+}
+
+.mtc-icon-global-reach:before {
+    content: ""
+}
+
+.mtc-icon-green:before {
+    content: ""
+}
+
+.mtc-icon-import:before {
+    content: ""
+}
+
+.mtc-icon-inland:before {
+    content: ""
+}
+
+.mtc-icon-insurance-cargo:before {
+    content: ""
+}
+
+.mtc-icon-insurance-coverage:before {
+    content: ""
+}
+
+.mtc-icon-inventory:before {
+    content: ""
+}
+
+.mtc-icon-local-market:before {
+    content: ""
+}
+
+.mtc-icon-lashing:before {
+    content: ""
+}
+
+.mtc-icon-list:before {
+    content: ""
+}
+
+.mtc-icon-live-session:before {
+    content: ""
+}
+
+.mtc-icon-loading-propeller:before {
+    content: ""
+}
+
+.mtc-icon-machinery:before {
+    content: ""
+}
+
+.mtc-icon-meat:before {
+    content: ""
+}
+
+.mtc-icon-meat-and-poultry:before {
+    content: ""
+}
+
+.mtc-icon-meet:before {
+    content: ""
+}
+
+.mtc-icon-melon:before {
+    content: ""
+}
+
+.mtc-icon-mining-minerals:before {
+    content: ""
+}
+
+.mtc-icon-minus:before {
+    content: ""
+}
+
+.mtc-icon-mtc-customer:before {
+    content: ""
+}
+
+.mtc-icon-mtc-experts:before {
+    content: ""
+}
+
+.mtc-icon-mtc-trade:before {
+    content: ""
+}
+
+.mtc-icon-offices:before {
+    content: ""
+}
+
+.mtc-icon-passion:before {
+    content: ""
+}
+
+.mtc-icon-petrochemicals:before {
+    content: ""
+}
+
+.mtc-icon-pharmaceuticals:before {
+    content: ""
+}
+
+.mtc-icon-plastics-rubber:before {
+    content: ""
+}
+
+.mtc-icon-ports-of-call:before {
+    content: ""
+}
+
+.mtc-icon-poultry:before {
+    content: ""
+}
+
+.mtc-icon-project-cargo:before {
+    content: ""
+}
+
+.mtc-icon-project-cargo-truck:before {
+    content: ""
+}
+
+.mtc-icon-questions-answers:before {
+    content: ""
+}
+
+.mtc-icon-reefer-service:before {
+    content: ""
+}
+
+.mtc-icon-reinforcement:before {
+    content: ""
+}
+
+.mtc-icon-retail:before {
+    content: ""
+}
+
+.mtc-icon-rice:before {
+    content: ""
+}
+
+.mtc-icon-routes:before {
+    content: ""
+}
+
+.mtc-icon-safe:before {
+    content: ""
+}
+
+.mtc-icon-seafood:before {
+    content: ""
+}
+
+.mtc-icon-seafood-mix:before {
+    content: ""
+}
+
+.mtc-icon-securing:before {
+    content: ""
+}
+
+.mtc-icon-self-service:before {
+    content: ""
+}
+
+.mtc-icon-set-up:before {
+    content: ""
+}
+
+.mtc-icon-simple:before {
+    content: ""
+}
+
+.mtc-icon-smart-container-tracking:before {
+    content: ""
+}
+
+.mtc-icon-soya:before {
+    content: ""
+}
+
+.mtc-icon-specialised-service:before {
+    content: ""
+}
+
+.mtc-icon-sugar:before {
+    content: ""
+}
+
+.mtc-icon-target:before {
+    content: ""
+}
+
+.mtc-icon-textile-manufacturing:before {
+    content: ""
+}
+
+.mtc-icon-tobacco:before {
+    content: ""
+}
+
+.mtc-icon-traceability:before {
+    content: ""
+}
+
+.mtc-icon-train:before {
+    content: ""
+}
+
+.mtc-icon-training:before {
+    content: ""
+}
+
+.mtc-icon-transit-time:before {
+    content: ""
+}
+
+.mtc-icon-truck-dry:before {
+    content: ""
+}
+
+.mtc-icon-truck-reefer:before {
+    content: ""
+}
+
+.mtc-icon-vegetables-capsicup:before {
+    content: ""
+}
+
+.mtc-icon-vegetables-mix:before {
+    content: ""
+}
+
+.mtc-icon-vent-settings:before {
+    content: ""
+}
+
+.mtc-icon-vessel:before {
+    content: ""
+}
+
+.mtc-icon-vgm-icon:before {
+    content: ""
+}
+
+.mtc-icon-voyage:before {
+    content: ""
+}
+
+.mtc-icon-electronics:before {
+    content: ""
+}
+
+.mtc-icon-warehouse-dry:before {
+    content: ""
+}
+
+.mtc-icon-pre-trip-inspection:before {
+    content: ""
+}
+
+.mtc-icon-warehouse-reefer:before {
+    content: ""
+}
+
+.mtc-icon-waste:before {
+    content: ""
+}
+
+.mtc-icon-check:before {
+    content: ""
+}
+
+.mtc-icon-checkmark:before {
+    content: ""
+}
+
+.mtc-icon-chevron:before {
+    content: ""
+}
+
+.mtc-icon-chevron-thin:before {
+    content: ""
+}
+
+.mtc-icon-close:before {
+    content: ""
+}
+
+.mtc-icon-co2:before {
+    content: ""
+}
+
+.mtc-icon-connect:before {
+    content: ""
+}
+
+.mtc-icon-download:before {
+    content: ""
+}
+
+.mtc-icon-edi:before {
+    content: ""
+}
+
+.mtc-icon-excel:before {
+    content: ""
+}
+
+.mtc-icon-exchange:before {
+    content: ""
+}
+
+.mtc-icon-expand:before {
+    color: #000;
+    content: ""
+}
+
+.mtc-icon-facebook:before {
+    content: ""
+}
+
+.mtc-icon-filter:before {
+    content: ""
+}
+
+.mtc-icon-folder:before {
+    content: ""
+}
+
+.mtc-icon-globe:before {
+    content: ""
+}
+
+.mtc-icon-hearth:before {
+    content: ""
+}
+
+.mtc-icon-container-empty:before {
+    content: ""
+}
+
+.mtc-icon-grid-12:before {
+    content: ""
+}
+
+.mtc-icon-grid-4:before {
+    content: ""
+}
+
+.mtc-icon-type:before {
+    content: ""
+}
+
+.mtc-icon-image:before {
+    content: ""
+}
+
+.mtc-icon-instagram:before {
+    content: ""
+}
+
+.mtc-icon-intermodal-solutions:before {
+    content: ""
+}
+
+.mtc-icon-invoice:before {
+    content: ""
+}
+
+.mtc-icon-lightning:before {
+    content: ""
+}
+
+.mtc-icon-linkedin:before {
+    content: ""
+}
+
+.mtc-icon-envelope:before {
+    content: ""
+}
+
+.mtc-icon-marker:before {
+    content: ""
+}
+
+.mtc-icon-metric:before {
+    content: ""
+}
+
+.mtc-icon-mtc:before {
+    color: #000;
+    content: ""
+}
+
+.mtc-icon-mute-off:before {
+    content: ""
+}
+
+.mtc-icon-mute-on:before {
+    content: ""
+}
+
+.mtc-icon-phone:before {
+    content: ""
+}
+
+.mtc-icon-play:before {
+    color: #000;
+    content: ""
+}
+
+.mtc-icon-plus:before {
+    content: ""
+}
+
+.mtc-icon-print:before {
+    content: ""
+}
+
+.mtc-icon-reset:before {
+    content: ""
+}
+
+.mtc-icon-search:before {
+    content: ""
+}
+
+.mtc-icon-sort:before {
+    content: ""
+}
+
+.mtc-icon-twitter:before {
+    content: ""
+}
+
+.mtc-icon-user:before {
+    content: ""
+}
+
+.mtc-icon-user-black:before {
+    content: ""
+}
+
+.mtc-icon-wireless:before {
+    content: ""
+}
+
+.mtc-icon-word:before {
+    content: ""
+}
+
+.mtc-icon-easy-to-use:before {
+    content: ""
+}
+
+.mtc-icon-notification-bell:before {
+    content: ""
+}
+
+.mtc-icon-mtc-icon-external-link:before {
+    content: ""
+}
+
+.mtc-icon-log-out:before {
+    content: ""
+}
+
+.mtc-icon-airplane:before {
+    content: ""
+}
+
+.mtc-icon-airplane-two-way:before {
+    content: ""
+}
+
+.mtc-icon-biofuel:before {
+    content: ""
+}
+
+.mtc-icon-youtube:before {
+    content: ""
+}
+
+.mtc-icon-wechat:before {
+    content: ""
+}
+
+.mtc-icon-packing-processing:before {
+    content: ""
+}
+
+.mtc-icon-announcement:before {
+    content: ""
+}
+
+.mtc-icon-carbon-calculator:before {
+    content: ""
+}
+
+.mtc-icon-download-thin:before {
+    content: ""
+}
+
+.mtc-icon-copy:before {
+    content: ""
+}

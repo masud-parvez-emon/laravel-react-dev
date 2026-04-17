@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContainerRequest;
 use App\Models\Container;
+use App\Models\ContainerTracking;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ContainerController extends Controller
 {
@@ -19,23 +22,56 @@ class ContainerController extends Controller
         return response()->json(['containers' => $containers, 'total_records' => Container::count()]);
     }
 
-    public function store(Request $request)
+    public function store(ContainerRequest $request)
     {
-        dd($request->all());
+        // dd($request->all());
+        DB::beginTransaction();
+        try {
+            $container = Container::create($request->only(['number', 'category_id']));
+            $container->trackings()->createMany($request->trackings);
+            DB::commit();
+        } catch (\Exception $e) {
+            DB::rollback();
+            dd($e->getMessage());
+        }
+        return response()->json();
     }
 
     public function show(Container $container)
     {
-        return response()->json($container->load(['category', 'trackings']));
+        return response()->json($container->load(['trackings']));
     }
 
-    public function update(Request $request, $id)
+    public function update(ContainerRequest $containerRequest, Container $container)
     {
-        //
+        DB::transaction(function() use($containerRequest, $container){
+            $container->fill($containerRequest->all());
+            $container->save();
+
+            [$containerToBeUpdated, $containerToBeCreated] = $containerRequest->collect('trackings')
+                                                                            ->partition(function($item){
+                                                                                return isset($item['id']);
+                                                                            });
+            $container->trackings()->whereIn('id', $containerToBeUpdated->pluck('id'))
+                                    ->get()
+                                    ->each(function($containerTracking) use($containerToBeUpdated){
+                                        $containerTracking->fill(
+                                            $containerToBeUpdated->where('id', $containerTracking->id)->collapse()->all()
+                                        );
+                                        $containerTracking->save();
+                                    });
+
+            $container->trackings()->createMany($containerToBeCreated);
+            
+        });
+
+        
+
+        // $containerRequest->tracking
     }
 
-    public function destroy($id)
-    {
-        //
-    }
+    // public function destroy($id)
+    // {
+    //     //
+    // }
 }

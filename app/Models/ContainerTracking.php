@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class ContainerTracking extends Model
 {
     use HasFactory;
+    
+    protected $fillable = ['date', 'location', 'status', 'description'];
 }

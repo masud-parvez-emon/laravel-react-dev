@@ -7,6 +7,7 @@ const baseQuery = fetchBaseQuery({
         if (xsrfToken) {
             headers.set('X-XSRF-TOKEN', decodeURIComponent(xsrfToken));
         }
+        headers.set('Accept', 'application/json');
         return headers;
     },
 });
@@ -63,8 +64,22 @@ export const api = createApi({
             query: (id) => ({
                 url: `api/containers/${id}`,
             }),
+        }),
+        saveContainer: builder.mutation<any, any>({
+            query: (data) => ({
+                url: 'api/containers',
+                method: 'POST',
+                body: data,
+            }),
+        }),
+        updateContainer: builder.mutation<any, any>({
+            query: ({ id, ...data }) => ({
+                url: `api/containers/${id}`,
+                method: 'PUT',
+                body: data,
+            }),
         })
     }),
 });
 
-export const { useFetchUserQuery, useLoginMutation, useLogoutMutation, useGetContainersQuery, useGetContainerByIdQuery, useGetContainerCategoriesQuery } = api;
+export const { useFetchUserQuery, useLoginMutation, useLogoutMutation, useGetContainersQuery, useGetContainerByIdQuery, useGetContainerCategoriesQuery, useSaveContainerMutation, useUpdateContainerMutation } = api;

@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { IRootState } from './store';
 import { toggleRTL, toggleTheme, toggleLocale, toggleMenu, toggleLayout, toggleAnimation, toggleNavbar, toggleSemidark } from './store/themeConfigSlice';
 import store from './store';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 function App({ menuPosition, children }: PropsWithChildren<{ menuPosition?: string }>) {
     const themeConfig = useSelector((state: IRootState) => state.themeConfig);
@@ -20,13 +22,15 @@ function App({ menuPosition, children }: PropsWithChildren<{ menuPosition?: stri
     }, [dispatch, themeConfig.theme, themeConfig.menu, themeConfig.layout, themeConfig.rtlClass, themeConfig.animation, themeConfig.navbar, themeConfig.locale, themeConfig.semidark]);
 
     return (
-        <div
-            className={`${(store.getState().themeConfig.sidebar && 'toggle-sidebar') || ''} ${menuPosition} ${themeConfig.layout} ${
-                themeConfig.rtlClass
-            } main-section antialiased relative font-nunito text-sm font-normal`}
-        >
-            {children}
-        </div>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <div
+                className={`${(store.getState().themeConfig.sidebar && 'toggle-sidebar') || ''} ${menuPosition} ${themeConfig.layout} ${
+                    themeConfig.rtlClass
+                } main-section antialiased relative font-nunito text-sm font-normal`}
+                >
+                {children}
+            </div>
+        </LocalizationProvider>
     );
 }
 

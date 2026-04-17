@@ -1,4 +1,5 @@
 @layer theme, base, mui, components, utilities;
+@import "mtc-icon.css";
 @import 'tailwindcss';
 
 @theme inline {

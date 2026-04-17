@@ -8,11 +8,22 @@ import Header from './Header';
 import Setting from './Setting';
 import Sidebar from './Sidebar';
 import Portals from '../../Portals';
-import { Outlet } from 'react-router';
+import { Outlet, useNavigate } from 'react-router';
+import { useFetchUserQuery } from '../../../api/api';
 
 const MasterLayout = ({ children }: PropsWithChildren) => {
     const themeConfig = useSelector((state: IRootState) => state.themeConfig);
     const dispatch = useDispatch();
+    const navigate = useNavigate(); // Initialize navigate
+
+    // isFetching tracks the initial request, error tracks if the request failed (e.g., 401 Unauthorized)
+    const { data: user, isFetching, isError } = useFetchUserQuery();
+    // Effect to handle redirection if user is not found or session expired
+    useEffect(() => {
+        if (!isFetching && (isError || !user)) {
+            navigate('/login'); // Adjust this path to your actual login route
+        }
+    }, [user, isFetching, isError]);
 
     const [showLoader, setShowLoader] = useState(true);
     const [showTopButton, setShowTopButton] = useState(false);
@@ -44,7 +55,9 @@ const MasterLayout = ({ children }: PropsWithChildren) => {
         return () => {
             window.removeEventListener('onscroll', onScrollHandler);
         };
-    }, []);
+    }, [user]);
+
+    if (isFetching || isError || !user) return null;
 
     return (
         <App menuPosition="vertical">
